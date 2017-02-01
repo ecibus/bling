@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Accounting">
+  <class name="IncomeBreakdown" table="incomebreakdown">
+    <id name="ApplicationNumber" column="app_num" type="string" length="15" >
+      <generator class="assigned"></generator>
+    </id>
+
+    <property name="CommitPrice" column="commit_price" type="Decimal" not-null="false" />
+    <property name="InvestorPrice" column="investor_price" type="Decimal" not-null="false" />
+    <property name="InvestorSRP" column="investor_srp" type="Decimal" not-null="false" />
+    <property name="InvestorIncentive" column="inv_incentive_pcnt" type="float" not-null="false" />
+    <property name="InvestorInterestPaidToDate" column="[Inv Int Paid To Date]" type="DateTime" not-null="false" />
+    <property name="PMI_MIP_VAFF2" column="[PMI/MIP/VAFF2]" type="Decimal" not-null="false" />
+    <property name="ImpoundDeductedByInvestor" column="imp_ded_by_inv" type="Decimal" not-null="false" />
+    <property name="ReverseMortgagePayable" column="RevMtgPayable" type="Decimal" not-null="false" />
+    <property name="ImpoundsAdjustment" column="[impounds adj2]" type="Decimal" not-null="false" />
+    <property name="GuildByDownFunds" column="[guild by down funds]" type="Decimal" not-null="false" />
+    <property name="SRPReceivable" column="srpreceivable" type="Decimal" not-null="false" />
+    <property name="DaysInterest2" column="[days interest2]" type="Decimal" not-null="false" />
+    <property name="Option1Receivable" column="option1receivable" type="Decimal" not-null="false" />
+    <property name="InterestReceivable" column="interestreceivable" type="Decimal" not-null="false" />
+    <property name="ChargeByInvestor" column="chargebyinvestor" type="Decimal" not-null="false" />
+    <property name="ChargeByInvestor2" column="[charge by investor2]" type="Decimal" not-null="false" />
+    <property name="TaxServiceCharge" column="taxservicecharge" type="Decimal" not-null="false" />
+    <property name="MiscIncome2" column="[misc income2]" type="Decimal" not-null="false" />
+    <property name="DiscountOverage2" column="[disc overage2]" type="Decimal" not-null="false" />
+    <property name="RFCAdvance" column="[rfc advance]" type="Decimal" not-null="false" />
+    <property name="MarketingGain3" column="[marketing gain3]" type="Decimal" not-null="false" />
+    <property name="SRPFundingAdjustment" column="srpfundingadj" type="Decimal" not-null="false" />
+    <property name="SRP4" column="srp4" type="Decimal" not-null="false" />
+    <property name="WireToEscrow" column="[wire to escrow]" type="Decimal" not-null="false" />
+    <property name="WarehouseFee2" column="[warehouse fee2]" type="Decimal" not-null="false" />
+    <property name="InterfirstPercent2" column="[interfirst_percent2]" type="Decimal" not-null="false" />
+    <property name="SecondaryAdjustment" column="[secondary_adj]" type="Decimal" not-null="false" />
+    <property name="AccountReceivableAtFunding" column="[a/r at funding]" type="Decimal" not-null="false" />
+    <property name="SecondaryComment" column="secondary_comment1" type="string" length="255" not-null="false" />
+    <property name="BranchComment" column="secondary_comment2" type="string" length="255" not-null="false" />
+    <property name="AccountingComment" column="acct_comment" type="string" length="255" not-null="false" />
+    
+    <many-to-one name="MWE3" lazy="false" outer-join="true" column="app_num" insert="false" update="false" class="Bling.Domain.Accounting.MWE3Data" cascade="none" unique="true" />
+      
+  </class>
+</hibernate-mapping>

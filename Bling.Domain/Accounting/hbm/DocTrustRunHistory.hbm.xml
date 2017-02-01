@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Accounting">
+  <class name="DocTrustRunHistory" table="DocTrustRunHistory">
+    <id name="Id" column="Id" type="int">
+      <generator class="native"></generator>
+    </id>
+    <property name="CreatedOn" column="CreatedOn" type="DateTime" not-null="true" generated="insert" />
+    <property name="TransferDate" column="TransferDate" type="string" length="10" not-null="true" />
+    <property name="AsOf" column="AsOf" type="string" length="10" not-null="true" />
+    <property name="CreatedBy" column="CreatedBy" type="string" length="50" not-null="true" />
+  </class>
+</hibernate-mapping>

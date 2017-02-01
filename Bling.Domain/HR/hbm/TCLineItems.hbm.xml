@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.HR">
+  <class name="TCLineItems, Bling.Domain" table="none" >
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+    <property name="HeaderId" column="HeaderId" type="int" not-null="true" />
+    <property name="WorkDate" column="WorkDate" type="DateTime" not-null="true" />
+    <property name="WorkDay" column="WorkDay" type="string" not-null="true" />
+    <property name="In1" column="In1" type="string" not-null="true" />
+    <property name="In2" column="In2" type="string" not-null="true" />
+    <property name="In3" column="In3" type="string" not-null="true" />
+    <property name="Out1" column="Out1" type="string" not-null="true" />
+    <property name="Out2" column="Out2" type="string" not-null="true" />
+    <property name="Out3" column="Out3" type="string" not-null="true" />
+    <property name="Reason" column="Reason" type="string" not-null="true" />
+    <property name="Hour1" column="Hour1" type="string" not-null="true" />
+    <property name="Hour2" column="Hour2" type="string" not-null="true" />
+    <property name="Comment" column="Comment" type="string" not-null="true" />
+  </class>
+</hibernate-mapping>

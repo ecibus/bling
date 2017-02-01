@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain">
+  <class name="Bling.Domain.Gen, Bling.Domain" table="Gen"  >
+    <id name="FileId" column="file_id" type="string" length="5" >
+      <generator class="assigned"></generator>
+    </id>
+    <property name="LoanNumber" column="loan_num" type="string" length="15" not-null="true" update="false" />
+    <property name="LastName" column="borrow_ln" type="string" length="60" not-null="true" update="false" />
+    <property name="FirstName" column="borrow_fn" type="string" length="20" not-null="true" update="false" />
+    <property name="LoanAmount" column="loan_amt" type="Decimal" not-null="true" update="false" />
+    <property name="Stage" column="stage" type="string" length="2" not-null="true" update="false" />
+    <property name="LockExpiration" column="lock_expire" type="DateTime" not-null="false" update="false" />
+
+    <many-to-one name="Program" column="programs_id" fetch="join"  insert="false" update="false" 
+                 class="Bling.Domain.Program" cascade="none" unique="true" />
+
+    <many-to-one name="LoanOfficer" column="lo_rep" fetch="join"  insert="false" update="false"
+                 class="Bling.Domain.UserInfo" cascade="none" unique="true" />
+
+    <many-to-one name="GEMLock" column="file_id" fetch="join" insert="false" update="false" not-found="ignore"
+                 class="Bling.Domain.Secondary.LoanLockDetail" cascade="none" unique="true" />
+
+    
+  </class>
+</hibernate-mapping>

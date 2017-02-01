@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Compliance">
+  <class name="DataIntegrityReview, Bling.Domain" table="xGEM_DataIntegrity">
+
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+
+    <property name="CreatedOn" column="CreatedOn" type="DateTime"  not-null="false" />
+    <property name="FileId" column="FileId" type="string" not-null="false" />
+    <property name="ActorId" column="ActorId" type="string" not-null="false" />
+    <property name="Notes" column="Notes" type="string" not-null="false" />
+  </class>
+</hibernate-mapping>

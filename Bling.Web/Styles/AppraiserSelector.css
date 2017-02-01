@@ -1,0 +1,60 @@
+﻿
+#LoanNumber
+{
+    height: 25px;
+    padding: 5px;
+    width: 150px;
+    border: 2px solid #003300;
+    font-size: medium;
+    font-family: Verdana;
+}
+
+#content
+{
+    overflow: auto;
+}
+
+fieldset label
+{
+    height: 25px;
+    padding: 9px 2px 2px 2px;
+    font-size: medium;
+    font-family: Verdana;
+}
+
+#Load
+{
+    width:4em;
+    height:2.5em;    
+}
+
+#LoanInfo 
+{
+    font-size: medium;
+    font-family: Verdana;
+    border:0px solid blue;
+}
+
+#LoanInfo label
+{
+    width:10em;
+    border:0px solid red;
+}
+
+
+#LoanInfo span
+{
+    color: #004080;
+    border: 0px solid green;
+}
+
+
+span#Appraiser
+{
+    color: Red;
+}
+
+.updatedtandpoint
+{
+    font-size:60%;
+}

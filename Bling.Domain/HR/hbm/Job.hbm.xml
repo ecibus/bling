@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.HR">
+  <class name="Job" table="webpage.dbo.EmpOpper">
+    <id name="Id" column="Id" type="Int32" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="Title" column="JobTitle" type="string" not-null="false" length="100" />
+    <property name="Qualification" column="Qual" type="string" not-null="false" length="2000" />
+    <property name="Description" column="Description" type="string" not-null="false" length="2000" />
+    <property name="Salary" column="Salary" type="string" not-null="false" length="50" />
+    <property name="Hourly" column="Hourly" type="string" not-null="false" />
+    <property name="Benefits" column="benefits" type="string" not-null="false" length="2000" />
+    <property name="Education" column="EducationMin" type="string" not-null="false" length="2000" />
+    <property name="Skills" column="Skills" type="string" not-null="false" length="255" />
+    <property name="CloseDate" column="CloseDate" type="DateTime" not-null="false" />
+    <property name="PostDate" column="PostDate" type="DateTime" not-null="false" />
+    <property name="FillDate" column="FillDate" type="DateTime" not-null="false" />
+    <property name="StartDate" column="StartDate" type="DateTime" not-null="false" />
+    <property name="StartDateText" column="StartDate_text" type="string" not-null="false" length="255" />
+    <property name="LocationCity" column="Location_city" type="string" not-null="false" length="50" />
+    <property name="LocationBranch" column="Location_branch" type="string" not-null="false" length="50" />
+    <property name="FileName" column="FileName" type="string" not-null="false" length="50" />
+    <property name="Attachment" column="Attachment" type="string" not-null="false" length="250" />
+  </class>
+</hibernate-mapping>

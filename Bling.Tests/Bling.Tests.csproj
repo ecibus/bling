@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E37E97B6-64F8-4CEE-92F7-4FAFB9028FF6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bling.Tests</RootNamespace>
+    <AssemblyName>Bling.Tests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.DynamicProxy2, Version=2.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="HibernatingRhinos.Profiler.Appender, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0774796e73ebf640, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHProfiler\HibernatingRhinos.Profiler.Appender.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq, Version=3.1.416.3, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\moq.3.1.416.3\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.0.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core, Version=2.4.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks, Version=3.5.0.1, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\AddressTests.cs" />
+    <Compile Include="Domain\Compliance\DIRWLoanInfoTests.cs" />
+    <Compile Include="Domain\HR\WorkWeekTests.cs" />
+    <Compile Include="Presenter\Compliance\AjaxDIRWPresenterTests.cs" />
+    <Compile Include="Repository\Accounting\CashDepositAccountDaoTests.cs" />
+    <Compile Include="Repository\Accounting\CashDepositDaoTests.cs" />
+    <Compile Include="Repository\Accounting\MCRDaoTests.cs" />
+    <Compile Include="Repository\Funding\FundingExceptionSummaryDaoTests.cs" />
+    <Compile Include="Repository\HR\CommissionAnalysisDaoTests.cs" />
+    <Compile Include="Repository\HR\LOAdjustmentDaoTests.cs" />
+    <Compile Include="Repository\HR\LOCommissionDaoTests.cs" />
+    <Compile Include="Repository\AppraiserDaoTests.cs" />
+    <Compile Include="Domain\Accounting\BranchTests.cs" />
+    <Compile Include="Domain\Accounting\DocTrustRunHistoryTests.cs" />
+    <Compile Include="Domain\Accounting\IncomeBreakdownTests.cs" />
+    <Compile Include="Domain\Accounting\MWE3DataTests.cs" />
+    <Compile Include="Domain\Accounting\TrustAccountTests.cs" />
+    <Compile Include="Domain\AppraiserTests.cs" />
+    <Compile Include="Domain\BrokerTests.cs" />
+    <Compile Include="Domain\CustomerService\SecurityConnectionShipDateTests.cs" />
+    <Compile Include="Domain\Extension\DateTimeExtensionTests.cs" />
+    <Compile Include="Domain\Extension\DecimalExtensionTests.cs" />
+    <Compile Include="Domain\Extension\DoubleExtensionTests.cs" />
+    <Compile Include="Domain\Extension\FloatExtensionTests.cs" />
+    <Compile Include="Domain\GEMApplicationTests.cs" />
+    <Compile Include="Domain\HR\ExpiredLicenseEmailTests.cs" />
+    <Compile Include="Domain\InvestorTests.cs" />
+    <Compile Include="Domain\IT\InventoryTests.cs" />
+    <Compile Include="Domain\IT\InventoryUserTests.cs" />
+    <Compile Include="Domain\LOS\AvailableYearTests.cs" />
+    <Compile Include="Domain\LOS\HMDAChangesTest.cs" />
+    <Compile Include="Domain\LOS\HMDATests.cs" />
+    <Compile Include="Domain\LOS\HOPEARuleTests.cs" />
+    <Compile Include="Domain\LOS\LoanCountRuleTests.cs" />
+    <Compile Include="Domain\PaginatorTests.cs" />
+    <Compile Include="Domain\Secondary\LoanSolutionProgramTests.cs" />
+    <Compile Include="Domain\Secondary\LSDTInvestorMappingTests.cs" />
+    <Compile Include="Domain\Secondary\LSMapTests.cs" />
+    <Compile Include="Domain\Secondary\ProgramCodeByInvestorTests.cs" />
+    <Compile Include="Domain\UserInfoTests.cs" />
+    <Compile Include="GEMUserTests.cs" />
+    <Compile Include="LUPopupDaoTests.cs" />
+    <Compile Include="Presenter\BasePagePresenterTests.cs" />
+    <Compile Include="Domain\Extension\StringExtensionTest.cs" />
+    <Compile Include="Presenter\HR\ExpiredLicensePresenterTests.cs" />
+    <Compile Include="Presenter\IT\AjaxInventoryPresenterTests.cs" />
+    <Compile Include="Presenter\IT\InventoryPresenterTests.cs" />
+    <Compile Include="Presenter\LOS\AddUserInFundingReportPresenterTests.cs" />
+    <Compile Include="Presenter\LOS\HMDAPresenterTests.cs">
+    </Compile>
+    <Compile Include="Presenter\MainPresenterTests.cs" />
+    <Compile Include="Presenter\Secondary\AjaxShowHideProgramCodePresenterTests.cs" />
+    <Compile Include="Presenter\Secondary\HideByInvestorPresenterTests.cs" />
+    <Compile Include="Presenter\Secondary\HideByProgramCodePresenterTests.cs" />
+    <Compile Include="Presenter\Secondary\LSDTInvestorPresenterTests.cs" />
+    <Compile Include="Presenter\Secondary\LoanSolutionProgramCodePresenterTests.cs" />
+    <Compile Include="Presenter\Underwriting\BranchScoreCardPresenterTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AbstractDaoTests.cs" />
+    <Compile Include="Repository\Accounting\BranchCodeDaoTests.cs" />
+    <Compile Include="Repository\Accounting\BranchTests.cs" />
+    <Compile Include="Repository\Accounting\DocTrustRunHistoryDaoTests.cs" />
+    <Compile Include="Repository\Accounting\IncomeBreakdownDaoTests.cs" />
+    <Compile Include="Repository\Accounting\RankingBranchTests.cs" />
+    <Compile Include="Repository\Accounting\BranchDaoTests.cs" />
+    <Compile Include="Repository\Accounting\TrackerBranchTests.cs" />
+    <Compile Include="Repository\Accounting\TrustAccountDaoTests.cs" />
+    <Compile Include="Repository\ActorDaoTests.cs" />
+    <Compile Include="Repository\BrokerDaoTests.cs" />
+    <Compile Include="Repository\Calyx\PointDaoTests.cs" />
+    <Compile Include="Repository\CashDepositBranchDaoTests.cs" />
+    <Compile Include="Repository\Compliance\DataIntegrityFieldDaoTests.cs" />
+    <Compile Include="Repository\Compliance\DataIntegrityGroupDaoTests.cs" />
+    <Compile Include="Repository\Compliance\DataIntegrityReviewDaoTests.cs" />
+    <Compile Include="Repository\Compliance\DIRWDataDaoTests.cs" />
+    <Compile Include="Repository\Compliance\DIRWLoanInfoDaoTests.cs" />
+    <Compile Include="Repository\Compliance\LPELoanInfoDaoTests.cs" />
+    <Compile Include="Repository\Compliance\LPEReasonDaoTests.cs" />
+    <Compile Include="Repository\GEMApplicationDaoTests.cs" />
+    <Compile Include="Repository\GEMUserDaoTests.cs" />
+    <Compile Include="Repository\GenDaoTests.cs" />
+    <Compile Include="Repository\HR\CensusDateRangeDaoTests.cs" />
+    <Compile Include="Repository\HR\ExpiredLicenseDaoTests.cs" />
+    <Compile Include="Repository\HR\InsuranceEmployeeInfoDaoTests.cs" />
+    <Compile Include="Repository\HR\InsuranceEnrollmentDaoTests.cs" />
+    <Compile Include="Repository\HR\InsuranceRateDaoTests.cs" />
+    <Compile Include="Repository\HR\InsuranceTitleDaoTests.cs" />
+    <Compile Include="Repository\HR\JobDaoTests.cs" />
+    <Compile Include="Repository\HR\LOBasisPointsDaoTests.cs" />
+    <Compile Include="Repository\HR\LOMasterDaoTests.cs" />
+    <Compile Include="Repository\InvestorDaoTests.cs" />
+    <Compile Include="Repository\IT\InventoryDaoTests.cs" />
+    <Compile Include="Repository\IT\InventoryUserDaoTests.cs" />
+    <Compile Include="Repository\LOS\HMDAChangesDaoTests.cs" />
+    <Compile Include="Repository\Processing\SelectedAppraiserDaoTests.cs" />
+    <Compile Include="Repository\ProgramDaoTests.cs" />
+    <Compile Include="Repository\ReportUserDaoTests.cs" />
+    <Compile Include="Repository\Secondary\HedgeGMACDaoTests.cs" />
+    <Compile Include="Repository\Secondary\LoanLockDetailDaoTests.cs" />
+    <Compile Include="Repository\Secondary\LoanSolutionProgramDaoTests.cs" />
+    <Compile Include="Repository\Secondary\LSDTInvestorMappingDaoTests.cs" />
+    <Compile Include="Repository\Secondary\LSMapDaoTests.cs" />
+    <Compile Include="Repository\Secondary\ProgramCodeByInvestorDaoTests.cs" />
+    <Compile Include="Repository\TranslogDaoTests.cs" />
+    <Compile Include="Repository\Underwriting\ScoreCardCommentDaoTests.cs" />
+    <Compile Include="Repository\Underwriting\ScoreCardDaoTests.cs" />
+    <Compile Include="Repository\Underwriting\ScoreCardGroupDaoTests.cs" />
+    <Compile Include="Repository\Underwriting\ScoreCardLoanInfoDaoTests.cs" />
+    <Compile Include="Repository\UserInfoDaoTests.cs" />
+    <Compile Include="Web\BasePageTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bling.Domain\Bling.Domain.csproj">
+      <Project>{21F081B4-2B02-4B81-9F4E-FEF10EB76D34}</Project>
+      <Name>Bling.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bling.Presenter\Bling.Presenter.csproj">
+      <Project>{8853094F-0B6F-4526-BF8C-EE24D2DDE596}</Project>
+      <Name>Bling.Presenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bling.Repository\Bling.Repository.csproj">
+      <Project>{6BA8B5FF-CA82-4F9E-8089-284D3FE0BC72}</Project>
+      <Name>Bling.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bling.Web\Bling.Web.csproj">
+      <Project>{04F99212-9439-40A6-9843-6660D796E80E}</Project>
+      <Name>Bling.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dmddata.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="hibernate.cfg.xml" />
+    <Content Include="mwdatastore.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

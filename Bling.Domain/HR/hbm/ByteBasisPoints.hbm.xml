@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.HR">
+  <class name="ByteBasisPoints, Bling.Domain" table="xGEM_LOBasisPointsByte" >
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+
+    <property name="CreatedBy" column="CreatedBy" type="string" not-null="false" />
+    <property name="EmployeeId" column="EmployeeId" type="string" not-null="false" />
+    <property name="EmployeeName" insert="false" column="EmployeeName" type="string" not-null="false" />
+    <property name="EffectiveDate" column="EffectiveDate" type="DateTime" not-null="false" />
+    <property name="BaseCommission" column="BaseCommission" type="Decimal" not-null="false" />
+    <property name="Minimum" column="Minimum" type="Decimal" not-null="false" />
+    <property name="Maximum" column="Maximum" type="Decimal" not-null="false" />
+    <property name="Tier1" column="Tier1" type="Decimal" not-null="false" />
+    <property name="Tier2" column="Tier2" type="Decimal" not-null="false" />
+    <property name="Tier3" column="Tier3" type="Decimal" not-null="false" />
+    <property name="Tier4" column="Tier4" type="Decimal" not-null="false" />
+    <property name="Tier5" column="Tier5" type="Decimal" not-null="false" />
+    <property name="Tier6" column="Tier6" type="Decimal" not-null="false" />
+    <property name="BranchOverride" column="BranchOverride" type="Decimal" not-null="false" />
+    <property name="BrokeredLoans" column="BrokeredLoans" type="Decimal" not-null="false" />
+    <property name="InsideSalesRep" column="InsideSalesRep" type="Boolean" not-null="false" />
+    <property name="Manager" column="Manager" type="Boolean" not-null="false" />
+    <property name="Weekly" column="Weekly" type="Boolean" not-null="false" />
+    <property name="Enabled" column="Enabled" type="Boolean" not-null="false" />
+    <property name="DisabledBy" column="DisabledBy" type="string" not-null="false" />
+    <property name="DisabledOn" column="DisabledOn" type="DateTime" not-null="false" />
+    <property name="BrokerId" column="Brokers_Id" type="string" not-null="false" />
+    <property name="BranchName" insert="false" column="BranchName" type="string" not-null="false" />
+  </class>
+</hibernate-mapping>

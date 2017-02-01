@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.HR">
+  <class name="LOAdjustment, Bling.Domain" table="dbo.lo_adjust" >
+    <id name="Id" column="lo_adjust_id" type="int" >
+      <generator class="native"></generator>
+    </id>
+
+    <property name="LOCode" column="lo" type="string" not-null="true" />
+    <property name="Description" column="Description" type="string" not-null="true" />
+    <property name="LoanNumber" column="app_num" type="string" not-null="true" />
+    <property name="DateToPay" column="date_to_pay" type="DateTime" not-null="true" />
+    <property name="Amount" column="Amount" type="Decimal" not-null="true" />
+    <property name="Comment" column="Comment" type="string" not-null="true" />
+  </class>
+</hibernate-mapping>

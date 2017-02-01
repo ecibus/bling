@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Accounting">
+  <class name="Branch" table="BranchCodes">
+    <id name="BranchCode" column="BranchCode" type="int">
+      <generator class="assigned"></generator>
+    </id>
+    <property name="BranchName" column="BranchName_mw" type="string" length="50" not-null="false" />
+    <property name="Active" column="active" type="boolean" not-null="false" />
+  </class>
+</hibernate-mapping>

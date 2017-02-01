@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Secondary">
+    <class name="MCMTrades" table="xGEM_MCMTrades">
+        <id name="TradeNo" type="string">
+            <generator class="assigned"></generator>
+        </id>
+
+        <property name="Program" column="Program" type="string" not-null="false" />
+        <property name="Tran" column="Tran" type="string" not-null="false" />
+        <property name="Dealer" column="Dealer" type="string" not-null="false" />
+        <property name="TradeDate" column="TradeDate" type="DateTime" not-null="false" />
+
+        <property name="Amount" column="Amount" type="double" not-null="false" />
+        <property name="SettlementDate" column="SettlementDate" type="DateTime" not-null="false" />
+        <property name="NotificationDate" column="NotificationDate" type="DateTime" not-null="false" />
+        <property name="Coupon" column="Coupon" type="double" not-null="false" />
+        <property name="Price" column="Price" type="double" not-null="false" />
+        <property name="Margin" column="Margin" type="double" not-null="false" />
+        <property name="LifeCap" column="LifeCap" type="double" not-null="false" />
+        <property name="Premium" column="Premium" type="double" not-null="false" />
+        <property name="Position" column="Position" type="string" not-null="false" />
+    </class>
+</hibernate-mapping>

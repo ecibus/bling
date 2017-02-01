@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.HR">
+  <class name="InsuranceEnrollment" table="hr_insenroll">
+    <id name="Id" column="recid" type="Int32" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="YearMonth" column="Ins_id" type="string" not-null="false" length="6" />
+    <property name="Location" column="Ins_Location" type="string" not-null="false" length="1" />
+    <property name="EmployeeName" column="Emp_Name" type="string" not-null="false" length="50" />
+    <property name="BranchNo" column="Branch" type="string" not-null="false" length="24" />
+    <property name="BirthDate" column="B_Date" type="DateTime" not-null="false" />
+    <property name="Ins1" column="Ins1" type="Decimal" not-null="false" />
+    <property name="Ins2" column="Ins2" type="Decimal" not-null="false" />
+    <property name="Ins3" column="Ins3" type="Decimal" not-null="false" />
+    <property name="Ins4" column="Ins4" type="Decimal" not-null="false" />
+    <property name="Ins5" column="Ins5" type="Decimal" not-null="false" />
+    <property name="Ins6" column="Ins6" type="Decimal" not-null="false" />
+    <property name="Ins7" column="Ins7" type="Decimal" not-null="false" />
+    <property name="Ins9" column="Ins9" type="Decimal" not-null="false" />
+    <property name="Ins10" column="Ins10" type="Decimal" not-null="false" />
+    <property name="Ins11" column="Ins11" type="Decimal" not-null="false" />
+    <property name="Ins12" column="Ins12" type="Decimal" not-null="false" />
+    <property name="EmployeeCost" column="Emp_Cost" type="Decimal" not-null="false" />
+    <property name="Data" column="Data" type="string" not-null="false" length="10" />
+    <property name="IsLO" column="IsLO" type="Boolean" not-null="false" />
+    
+  </class>
+</hibernate-mapping>

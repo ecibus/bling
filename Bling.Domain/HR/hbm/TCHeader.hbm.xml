@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.HR">
+  <class name="TCHeader, Bling.Domain" table="none" >
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+
+    <property name="EmpId" column="EmpId" type="string" not-null="true" />
+    <property name="EmpName" column="EmpName" type="string" not-null="true" />
+    <property name="Location" column="Location" type="string" not-null="true" />
+    <property name="Submitted" column="Submitted" type="string" not-null="true" />
+  </class>
+</hibernate-mapping>

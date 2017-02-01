@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Compliance">
+  <class name="DataIntegrityField, Bling.Domain" table="xGEM_DataIntegrityField" mutable="false" >
+
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+    
+    <property name="Description" column="Description" type="string"  not-null="true" />
+    <property name="Notes" column="Notes" type="string" not-null="false" />
+    <property name="TargetTable" column="TargetTable" type="string" not-null="true" />
+
+    <property name="TargetField" column="TargetField" type="string" not-null="true" />
+    <property name="DisplayAs" column="DisplayAs" type="string" not-null="true" />
+    
+    <property name="LinkTable" column="LinkTable" type="string" not-null="false" />
+    <property name="LinkField" column="LinkField" type="string" not-null="false" />
+    <property name="LinkId" column="LinkId" type="string" not-null="false" />
+    <property name="LinkCriteria" column="LinkCriteria" type="string" not-null="false" />
+    <property name="Field" column="Field" type="string" not-null="false" />
+    <property name="Include" column="Include" type="boolean" not-null="true" />
+    <property name="ExtraUpdateSP" column="ExtraUpdateSP" type="string" not-null="false" />
+    <property name="ExtraTable" column="ExtraTable" type="string" not-null="false" />
+    <property name="ExtraField" column="ExtraField" type="string" not-null="false" />
+    <property name="ExtraId" column="ExtraId" type="string" not-null="false" />
+    <property name="ExtraCriteria" column="ExtraCriteria" type="string" not-null="false" />
+
+    <!--<many-to-one name="Group" class="DataIntegrityGroup" column="GroupId" />-->
+  </class>
+</hibernate-mapping>

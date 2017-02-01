@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Funding">
+  <class name="CustomerBankData, Bling.Domain" table="none" >
+    <id name="OriginatorLoanNumber" column="OriginatorLoanNumber" type="string" >
+      <generator class="assigned"></generator>
+    </id>
+
+    <property name="MortgageeLoanName" column="MortgageeLoanName" type="string" not-null="false" />
+    <property name="OriginatorProductCode" column="OriginatorProductCode" type="string" not-null="false" />
+    <property name="RequestedDate" column="RequestedDate" type="string" not-null="false" />
+    <property name="NoteAmount" column="NoteAmount" type="string" not-null="false" />
+    <property name="NoteDate" column="NoteDate" type="string" not-null="false" />
+    <property name="NoteTerm" column="NoteTerm" type="string" not-null="false" />
+    <property name="NoteRate" column="NoteRate" type="string" not-null="false" />
+    <property name="Borrower1FirstName" column="Borrower1FirstName" type="string" not-null="false" />
+    <property name="Borrower1LastName" column="Borrower1LastName" type="string" not-null="false" />
+    <property name="Borrower1SSN" column="Borrower1SSN" type="string" not-null="false" />
+    <property name="Borrower2FirstName" column="Borrower2FirstName" type="string" not-null="false" />
+    <property name="Borrower2LastName" column="Borrower2LastName" type="string" not-null="false" />
+    <property name="Borrower2SSN" column="Borrower2SSN" type="string" not-null="false" />
+    <property name="Borrower3FirstName" column="Borrower3FirstName" type="string" not-null="false" />
+    <property name="Borrower3LastName" column="Borrower3LastName" type="string" not-null="false" />
+    <property name="Borrower3SSN" column="Borrower3SSN" type="string" not-null="false" />
+    <property name="Address" column="Address" type="string" not-null="false" />
+    <property name="City" column="City" type="string" not-null="false" />
+    <property name="USState" column="USState" type="string" not-null="false" />
+    <property name="Zip" column="Zip" type="string" not-null="false" />
+    <property name="County" column="County" type="string" not-null="false" />
+    <property name="ClosingAgentPrimaryBankABARoutingNo" column="ClosingAgentPrimaryBankABARoutingNo" type="string" not-null="false" />
+    <property name="ClosingAgentFinalBankAccountNumber" column="ClosingAgentFinalBankAccountNumber" type="string" not-null="false" />
+    <property name="ClosingAgentOrderNumber" column="ClosingAgentOrderNumber" type="string" not-null="false" />
+    <property name="AmortizationType" column="AmortizationType" type="string" not-null="false" />
+    <property name="DocumentationType" column="DocumentationType" type="string" not-null="false" />
+    <property name="LoanType" column="LoanType" type="string" not-null="false" />
+    <property name="MERSNumber" column="MERSNumber" type="string" not-null="false" />
+    <property name="LienPosition" column="LienPosition" type="string" not-null="false" />
+    <property name="Occupancy" column="Occupancy" type="string" not-null="false" />
+    <property name="PropertyType" column="PropertyType" type="string" not-null="false" />
+    <property name="RateType" column="RateType" type="string" not-null="false" />
+    <property name="TransactionType" column="TransactionType" type="string" not-null="false" />
+    <property name="AppraisedValue" column="AppraisedValue" type="string" not-null="false" />
+    <property name="CreditScore" column="CreditScore" type="string" not-null="false" />
+    <property name="WarehousePrincipal" column="WarehousePrincipal" type="string" not-null="false" />
+    <property name="FundToSendAmount" column="FundToSendAmount" type="string" not-null="false" />
+    <property name="InvestorName" column="InvestorName" type="string" not-null="false" />
+
+  </class>
+</hibernate-mapping>

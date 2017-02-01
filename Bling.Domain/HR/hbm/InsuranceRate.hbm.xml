@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.HR">
+  <class name="InsuranceRate" table="hr_insrate">
+    <id name="Id" column="recid" type="Int32" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="Location" column="Ins_Location" type="string" not-null="false" length="1" />
+    <property name="InsuranceType" column="Ins_Type" type="string" not-null="false" />
+    <property name="Rate" column="Ins_Rate" type="Decimal" not-null="false" />
+    <property name="Data" column="Ins_Data" type="string" not-null="false" length="10" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Processing">
+    <class name="Bling.Domain.Processing.OrderAppraisal, Bling.Domain" table="xGEM_OrderAppraisal">
+
+        <id name="LoanNumber" column="LoanNumber" type="string" >
+            <generator class="assigned"></generator>
+        </id>
+        <property name="Appraiser" column="Appraiser" type="string"  not-null="true" />
+        <property name="TicketNo" column="TicketNo" type="string" not-null="true" />
+        <property name="OrderedBy" column="OrderedBy" type="string" not-null="true" />
+        <property name="OrderedDate" column="OrderedDate" type="DateTime" not-null="true" />        
+
+    </class>
+</hibernate-mapping>

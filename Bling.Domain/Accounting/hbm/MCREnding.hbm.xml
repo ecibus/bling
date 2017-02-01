@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain" >
+  <class name="Bling.Domain.Accounting.MCREnding, Bling.Domain" table="xGEM_MCR">
+    <id name="Id" column="Id" type="int">
+      <generator class="native"></generator>
+    </id>
+
+    <property name="Year" column="Year" type="string" length="4" not-null="true" />
+    <property name="Quarter" column="Quarter" type="string" length="1" not-null="true" />
+    <property name="Amount" column="EndingAmount" type="double" not-null="true" />
+    <property name="Count" column="EndingCount" type="int" not-null="true" />
+    <property name="Average" column="EndingAvg" type="double" not-null="false" />
+
+  </class>
+</hibernate-mapping>

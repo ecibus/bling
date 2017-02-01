@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Secondary">
+    <class name="MCMFallOutLoan" table="xGEM_MCMFallOut">
+        <id name="FileId" type="string">
+            <generator class="assigned"></generator>
+        </id>
+
+        <property name="LoanNumber" column="LoanNumber" type="string" not-null="false" />
+        <property name="LoanAmount" column="LoanAmount" type="double" not-null="false" />
+        <property name="OrigProgram" column="OrigProgram" type="string" not-null="false" />
+        <property name="OrigRate" column="OrigRate" type="double" not-null="false" />
+        <property name="OrigDiscount" column="OrigDiscount" type="double" not-null="false" />
+        <property name="OrigMargin" column="OrigMargin" type="double" not-null="false" />
+        <property name="OrigLifeCap" column="OrigLifeCap" type="double" not-null="false" />
+        <property name="OrigLockDate" column="OrigLockDate" type="string" not-null="false" />
+        <property name="OrigLockExpirationDate" column="OrigLockExpirationDate" type="string" not-null="false" />
+
+        <property name="Program" column="Program" type="string" not-null="false" />
+        <property name="Rate" column="Rate" type="double" not-null="false" />
+        <property name="Discount" column="Discount" type="double" not-null="false" />
+        <property name="Margin" column="Margin" type="double" not-null="false" />
+        <property name="LifeCap" column="LifeCap" type="double" not-null="false" />
+
+        <property name="LockDate" column="LockDate" type="string" not-null="false" />
+        <property name="LockExpirationDate" column="LockExpirationDate" type="string" not-null="false" />
+        <property name="Purpose" column="Purpose" type="string" not-null="false" />
+        <property name="LTV" column="LTV" type="double" not-null="false" />
+        <property name="Intent" column="Intent" type="string" not-null="false" />
+        <property name="Status" column="Status" type="string" not-null="false" />
+        <property name="Source" column="Source" type="string" not-null="false" />
+        <property name="PropertyType" column="PropertyType" type="string" not-null="false" />
+        <property name="State" column="State" type="string" not-null="false" />
+        <property name="Documentation" column="Documentation" type="string" not-null="false" />
+        <property name="Fico" column="Fico" type="double" not-null="false" />
+        <property name="BuyDown" column="BuyDown" type="double" not-null="false" />
+        <property name="FirstTimeHomeBuyer" column="FirstTimeHomeBuyer" type="string" not-null="false" />
+        <property name="CLTV" column="CLTV" type="double" not-null="false" />
+        <property name="ApplicationDate" column="ApplicationDate" type="string" not-null="false" />
+
+        <property name="CancelDate" column="CancelDate" type="string" not-null="false" />
+        <property name="RejectDate" column="RejectDate" type="string" not-null="false" />
+        <property name="CloseDate" column="CloseDate" type="string" not-null="false" />
+        <property name="Branch" column="Branch" type="string" not-null="false" />
+        <property name="ApprovalDate" column="ApprovalDate" type="string" not-null="false" />
+        <property name="DocsOutDate" column="DocsOutDate" type="string" not-null="false" />
+        <property name="SubmittedDate" column="SubmittedDate" type="string" not-null="false" />
+        <property name="LoanOfficer" column="LoanOfficer" type="string" not-null="false" />
+        <property name="Broker" column="Broker" type="string" not-null="false" />
+        <property name="TotalAdjustment" column="TotalAdjustment" type="double" not-null="false" />
+        <property name="BranchPriceAdjustment" column="BranchPriceAdjustment" type="double" not-null="false" />
+        <property name="IsMarketingGain" column="IsMarketingGain" type="boolean" not-null="false" />
+    </class>
+</hibernate-mapping>

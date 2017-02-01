@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Compliance">
+  <class name="AuditScoreCardLoanInfo, Bling.Domain" table="none" mutable="false">
+    <id name="LoanNumber" column="LoanNumber" type="string">
+      <generator class="assigned"></generator>
+    </id>
+    <property name="LinkedLoanNumber" column="LinkedLoanNumber" not-null="true" />
+    <property name="Borrower" column="Borrower" not-null="true" />
+    <property name="LORep" column="LORep" not-null="true" />
+    <property name="Processor" column="Processor" not-null="true" />
+    <property name="Status" column="Status" not-null="true" />
+    <property name="Program" column="Program" not-null="true" />
+    <property name="LoanAmount" column="LoanAmount" not-null="true" />
+    <property name="InterestRate" column="InterestRate" not-null="true" />
+    <property name="Locked" column="Locked" not-null="true" />
+    <property name="Expires" column="Expires" not-null="true" />
+    <property name="Days" column="Days" not-null="true" />
+    <property name="InitialAuditor" column="InitialAuditor" not-null="true" />
+    <property name="AuditDate" column="AuditDate" not-null="true" />
+    <property name="SubmittedDate" column="SubmittedDate" not-null="true" />
+    <property name="FileId" column="FileId" not-null="true" />
+    <property name="InitialAuditorValue" column="InitialAuditorValue" not-null="true" />
+  </class>
+</hibernate-mapping>

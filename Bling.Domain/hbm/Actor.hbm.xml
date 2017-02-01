@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain">
+  <class name="Bling.Domain.Actor, Bling.Domain" table="Actor">
+
+    <id name="ActorId" column="actor_id" type="string" length="4" >
+      <generator class="assigned"></generator>
+    </id>
+    <property name="LoginName" column="login_name" type="string" length="60" not-null="true" />
+    
+  </class>
+</hibernate-mapping>

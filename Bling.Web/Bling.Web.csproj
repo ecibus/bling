@@ -1,0 +1,1991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04F99212-9439-40A6-9843-6660D796E80E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bling.Web</RootNamespace>
+    <AssemblyName>Bling.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>HR\dll\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>HR\dll\CrystalDecisions.ReportSource.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>HR\dll\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>HR\dll\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="HibernatingRhinos.Profiler.Appender">
+      <HintPath>..\Bling.Library\NHProfiler\HibernatingRhinos.Profiler.Appender.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.0.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Accounting\ActiveBranchForm.aspx" />
+    <Content Include="Accounting\AjaxActiveBranch.aspx" />
+    <Content Include="Accounting\AjaxAMBExportForm.aspx" />
+    <Content Include="Accounting\AjaxAMBImportForm.aspx" />
+    <Content Include="Accounting\AjaxAMBReport.aspx" />
+    <Content Include="Accounting\AjaxByteReportForm.aspx" />
+    <Content Include="Accounting\AjaxCashDepositEntry.aspx" />
+    <Content Include="Accounting\AjaxCSVExportForm.aspx" />
+    <Content Include="Accounting\AjaxMCRForm.aspx" />
+    <Content Include="Accounting\AjaxPennyMacCDRForm.aspx" />
+    <Content Include="Accounting\AjaxReserveRequirement.aspx" />
+    <Content Include="Accounting\AjaxWarehouseAdvanceRecap.aspx" />
+    <Content Include="Accounting\AMBExportForm.aspx" />
+    <Content Include="Accounting\AMBImport.aspx" />
+    <Content Include="Accounting\AMBReportForm.aspx" />
+    <Content Include="Accounting\ByteReportForm.aspx" />
+    <Content Include="Accounting\CashDepositEntry.aspx" />
+    <Content Include="Accounting\CSVExportForm.aspx" />
+    <Content Include="Accounting\js\ActiveBranch.js" />
+    <Content Include="Accounting\js\AMBExportForm.js" />
+    <Content Include="Accounting\js\AMBImportForm.js" />
+    <Content Include="Accounting\js\AMBReportForm.js" />
+    <Content Include="Accounting\js\CashDepositEntry.js" />
+    <Content Include="Accounting\js\CSVExportForm.js" />
+    <Content Include="Accounting\js\MCRForm.js" />
+    <Content Include="Accounting\js\PennyMacCDRForm.js" />
+    <Content Include="Accounting\js\ReserveRequirement.js" />
+    <Content Include="Accounting\js\WarehouseAdvanceRecap.js" />
+    <Content Include="Accounting\MortgageCallReportForm.aspx" />
+    <Content Include="Accounting\PennyMacCDRForm.aspx" />
+    <Content Include="Accounting\ReserveRequirementForm.aspx" />
+    <Content Include="Accounting\WarehouseAdvanceRecap.aspx" />
+    <Content Include="Compliance\AjaxAuditScoreCard.aspx" />
+    <Content Include="ComplianceByte\AjaxByteReportForm.aspx" />
+    <Content Include="Compliance\AjaxChaseFundingForm.aspx" />
+    <Content Include="Compliance\AjaxComplianceEase.aspx" />
+    <Content Include="Compliance\AjaxCSVExportForm.aspx" />
+    <Content Include="Compliance\AjaxDIRW.aspx" />
+    <Content Include="Compliance\AjaxLPE.aspx" />
+    <Content Include="Compliance\AuditScoreCardForm.aspx" />
+    <Content Include="ComplianceByte\ByteReportForm.aspx" />
+    <Content Include="Compliance\ChaseFundingForm.aspx" />
+    <Content Include="Compliance\ChaseFundingForm2.aspx" />
+    <Content Include="Compliance\ComplianceEase.aspx" />
+    <Content Include="Compliance\CSVExportForm.aspx" />
+    <Content Include="Compliance\DIRW.aspx" />
+    <Content Include="Compliance\js\AuditScoreCardForm.js" />
+    <Content Include="Compliance\js\ChaseFundingForm.js" />
+    <Content Include="Compliance\js\ComplianceEase.js" />
+    <Content Include="Compliance\js\CSVExportForm.js" />
+    <Content Include="Compliance\js\DIRW.js" />
+    <Content Include="Compliance\js\LPE.js" />
+    <Content Include="Compliance\LPE.aspx" />
+    <Content Include="Compliance\LPEDetail.aspx" />
+    <Content Include="Compliance\MERSReconciliationForm.aspx" />
+    <Content Include="CustomerService\AjaxByteReportForm.aspx" />
+    <Content Include="CustomerService\ByteReportForm.aspx" />
+    <Content Include="Funding\AjaxByteReportForm.aspx" />
+    <Content Include="Funding\AjaxCustomersBankForm.aspx" />
+    <Content Include="Funding\AjaxFundingExceptionSummaryForm.aspx" />
+    <Content Include="Funding\AjaxJPMorganForm.aspx" />
+    <Content Include="Funding\AjaxTexasCapitalForm.aspx" />
+    <Content Include="Funding\AjaxViewPointForm.aspx" />
+    <Content Include="Funding\AjaxWLSForm.aspx" />
+    <Content Include="Funding\AjaxUSBForm.aspx" />
+    <Content Include="Funding\AjaxCNBForm.aspx" />
+    <Content Include="Funding\ByteReportForm.aspx" />
+    <Content Include="Funding\CNBForm.aspx" />
+    <Content Include="Funding\JPMorganForm.aspx" />
+    <Content Include="Funding\js\CNBForm.js" />
+    <Content Include="Funding\js\JPMorganForm.js" />
+    <Content Include="Funding\js\TexasCapitalForm.js" />
+    <Content Include="Funding\js\USBForm.js" />
+    <Content Include="Funding\js\ViewPointForm.js" />
+    <Content Include="Funding\TexasCapitalForm.aspx" />
+    <Content Include="Funding\USBForm.aspx" />
+    <Content Include="Funding\CustomersBankForm.aspx" />
+    <Content Include="Funding\FundingExceptionSummaryForm.aspx" />
+    <Content Include="Funding\js\CustomersBank.js" />
+    <Content Include="Funding\js\FundingExceptionSummary.js" />
+    <Content Include="Funding\js\WLSForm.js" />
+    <Content Include="Funding\ViewPointForm.aspx" />
+    <Content Include="Funding\WLSForm.aspx" />
+    <Content Include="gemsql01.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HR\401KForm.aspx" />
+    <Content Include="HR\Ajax401K.aspx" />
+    <Content Include="HR\AjaxByteReportForm.aspx" />
+    <Content Include="HR\AjaxCommissionAnalysis.aspx" />
+    <Content Include="HR\AjaxCommissionReport.aspx" />
+    <Content Include="HR\AjaxLOAdjustment.aspx" />
+    <Content Include="HR\AjaxLOBasisPoints.aspx" />
+    <Content Include="HR\AjaxProcessLOCommission.aspx" />
+    <Content Include="HR\AjaxStampDateForm.aspx" />
+    <Content Include="HR\AjaxTimeCardForm.aspx" />
+    <Content Include="HR\AjaxValidateTimeCard.aspx" />
+    <Content Include="HR\BenefitNotification.aspx" />
+    <Content Include="HR\ByteLOBasisPoints.aspx" />
+    <Content Include="HR\ByteReportForm.aspx" />
+    <Content Include="HR\CommissionAnalysisForm.aspx" />
+    <Content Include="HR\CommissionAnalysisList.aspx" />
+    <Content Include="HR\CommissionReport.aspx" />
+    <Content Include="HR\CommissionReportDT.aspx" />
+    <Content Include="HR\dll\CrystalDecisions.CrystalReports.Engine.dll" />
+    <Content Include="HR\dll\CrystalDecisions.ReportSource.dll" />
+    <Content Include="HR\dll\CrystalDecisions.Shared.dll" />
+    <Content Include="HR\dll\CrystalDecisions.Web.dll" />
+    <Content Include="HR\js\401K.js" />
+    <Content Include="HR\js\BenefitNotification.js" />
+    <Content Include="HR\js\ByteLOBasisPoints.js" />
+    <Content Include="HR\js\CommissionAnalysisForm.js" />
+    <Content Include="HR\js\CommissionAnalysisList.js" />
+    <Content Include="HR\js\CommissionReport.js" />
+    <Content Include="HR\js\CommissionReportDT.js" />
+    <Content Include="HR\js\MTBG.js" />
+    <Content Include="HR\js\ValidateTimeCard.js" />
+    <Content Include="HR\MullinTBG.aspx" />
+    <Content Include="HR\ReportViewer.aspx" />
+    <Content Include="HR\styles\images\animated-overlay.gif" />
+    <Content Include="HR\styles\images\ui-bg_dots-small_30_a32d00_2x2.png" />
+    <Content Include="HR\styles\images\ui-bg_flat_0_3b3737_40x100.png" />
+    <Content Include="HR\styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="HR\styles\images\ui-bg_flat_15_0b3e6f_40x100.png" />
+    <Content Include="HR\styles\images\ui-bg_flat_20_333333_40x100.png" />
+    <Content Include="HR\styles\images\ui-bg_flat_30_0b58a2_40x100.png" />
+    <Content Include="HR\styles\images\ui-bg_flat_40_0b0a0a_40x100.png" />
+    <Content Include="HR\styles\images\ui-bg_gloss-wave_20_f3f2f2_500x100.png" />
+    <Content Include="HR\styles\images\ui-bg_spotlight_40_00498f_600x600.png" />
+    <Content Include="HR\styles\images\ui-icons_00498f_256x240.png" />
+    <Content Include="HR\styles\images\ui-icons_98d2fb_256x240.png" />
+    <Content Include="HR\styles\images\ui-icons_9ccdfc_256x240.png" />
+    <Content Include="HR\styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="HR\styles\jquery-ui.css" />
+    <Content Include="HR\styles\stylez.css" />
+    <Content Include="HR\ValidateTimeCard.aspx" />
+    <Content Include="Insuring\AjaxByteReportForm.aspx" />
+    <Content Include="Insuring\ByteReportForm.aspx" />
+    <Content Include="js\underscore.js" />
+    <Content Include="Processing\AjaxCSVExportForm.aspx" />
+    <Content Include="Processing\AjaxQCExportForm.aspx" />
+    <Content Include="Processing\CSVExportForm.aspx" />
+    <Content Include="Processing\js\CSVExportForm.js" />
+    <Content Include="Processing\js\QCExportForm.js" />
+    <Content Include="Processing\QCExportForm.aspx" />
+    <Content Include="Secondary\AjaxByteReportForm.aspx" />
+    <Content Include="Secondary\AjaxCSVExportForm.aspx" />
+    <Content Include="Secondary\AjaxHedgeGMACExtractForm.aspx" />
+    <Content Include="Secondary\AjaxTradeForm.aspx" />
+    <Content Include="Secondary\ByteReportForm.aspx" />
+    <Content Include="Secondary\CountryPlaceForm.aspx" />
+    <Content Include="Secondary\CSVExportForm.aspx" />
+    <Content Include="Secondary\GreenTree.aspx" />
+    <Content Include="Secondary\js\CSVExportForm.js" />
+    <Content Include="Secondary\js\GreenTree.js" />
+    <Content Include="Secondary\js\HedgeGMACExtractForm.js" />
+    <Content Include="HR\js\LOAdjustForm.js" />
+    <Content Include="HR\js\LOBasisPoints.js" />
+    <Content Include="HR\js\ProcessLOCommission.js" />
+    <Content Include="HR\js\StampPayDateForm.js" />
+    <Content Include="HR\js\TimeCardForm.js" />
+    <Content Include="HR\LOAdjustForm.aspx" />
+    <Content Include="HR\LOBasisPoints.aspx" />
+    <Content Include="HR\ProcessLOCommission.aspx" />
+    <Content Include="HR\StampPayDateForm.aspx" />
+    <Content Include="HR\TimeCardForm.aspx" />
+    <Content Include="js\jquery.busy.min.js" />
+    <Content Include="Processing\AppraiserSelector2.aspx" />
+    <Content Include="Secondary\HedgeGMACExtractForm.aspx" />
+    <Content Include="Secondary\js\TradeForm.js" />
+    <Content Include="Secondary\styles\images\animated-overlay.gif" />
+    <Content Include="Secondary\styles\images\ui-bg_dots-small_30_a32d00_2x2.png" />
+    <Content Include="Secondary\styles\images\ui-bg_flat_0_3b3737_40x100.png" />
+    <Content Include="Secondary\styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Secondary\styles\images\ui-bg_flat_15_0b3e6f_40x100.png" />
+    <Content Include="Secondary\styles\images\ui-bg_flat_20_333333_40x100.png" />
+    <Content Include="Secondary\styles\images\ui-bg_flat_30_0b58a2_40x100.png" />
+    <Content Include="Secondary\styles\images\ui-bg_flat_40_0b0a0a_40x100.png" />
+    <Content Include="Secondary\styles\images\ui-bg_gloss-wave_20_f3f2f2_500x100.png" />
+    <Content Include="Secondary\styles\images\ui-bg_spotlight_40_00498f_600x600.png" />
+    <Content Include="Secondary\styles\images\ui-icons_00498f_256x240.png" />
+    <Content Include="Secondary\styles\images\ui-icons_98d2fb_256x240.png" />
+    <Content Include="Secondary\styles\images\ui-icons_9ccdfc_256x240.png" />
+    <Content Include="Secondary\styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Secondary\styles\jquery-ui.css" />
+    <Content Include="Secondary\styles\stylez.css" />
+    <Content Include="Secondary\TradeForm.aspx" />
+    <Content Include="Styles\AuditScoreCardForm.css" />
+    <Content Include="Styles\blueprint\grid.css" />
+    <Content Include="Styles\blueprint\ie.css" />
+    <Content Include="Styles\blueprint\plugins\buttons\icons\cross.png" />
+    <Content Include="Styles\blueprint\plugins\buttons\icons\key.png" />
+    <Content Include="Styles\blueprint\plugins\buttons\icons\tick.png" />
+    <Content Include="Styles\blueprint\plugins\buttons\readme.txt" />
+    <Content Include="Styles\blueprint\plugins\buttons\screen.css" />
+    <Content Include="Styles\blueprint\plugins\fancy-type\readme.txt" />
+    <Content Include="Styles\blueprint\plugins\fancy-type\screen.css" />
+    <Content Include="Styles\blueprint\plugins\link-icons\icons\doc.png" />
+    <Content Include="Styles\blueprint\plugins\link-icons\icons\email.png" />
+    <Content Include="Styles\blueprint\plugins\link-icons\icons\external.png" />
+    <Content Include="Styles\blueprint\plugins\link-icons\icons\feed.png" />
+    <Content Include="Styles\blueprint\plugins\link-icons\icons\im.png" />
+    <Content Include="Styles\blueprint\plugins\link-icons\icons\pdf.png" />
+    <Content Include="Styles\blueprint\plugins\link-icons\icons\visited.png" />
+    <Content Include="Styles\blueprint\plugins\link-icons\icons\xls.png" />
+    <Content Include="Styles\blueprint\plugins\link-icons\readme.txt" />
+    <Content Include="Styles\blueprint\plugins\link-icons\screen.css" />
+    <Content Include="Styles\blueprint\plugins\rtl\readme.txt" />
+    <Content Include="Styles\blueprint\plugins\rtl\screen.css" />
+    <Content Include="Styles\blueprint\print.css" />
+    <Content Include="Styles\blueprint\src\forms.css" />
+    <Content Include="Styles\blueprint\src\grid.css" />
+    <Content Include="Styles\blueprint\src\grid.png" />
+    <Content Include="Styles\blueprint\src\ie.css" />
+    <Content Include="Styles\blueprint\src\print.css" />
+    <Content Include="Styles\blueprint\src\reset.css" />
+    <Content Include="Styles\blueprint\src\typography.css" />
+    <Content Include="Styles\CommissionAnalysisForm.css" />
+    <Content Include="Styles\CustomersBankForm.css" />
+    <Content Include="Styles\DIRW.css" />
+    <Content Include="Styles\FundingExceptionSummary.css" />
+    <Content Include="Styles\LPE.css" />
+    <Content Include="Styles\ProcessLOCommission.css" />
+    <Content Include="Styles\ReserveRequirement.css" />
+    <Content Include="Styles\StampPayDateForm.css" />
+    <Content Include="Styles\TimeCardForm.css" />
+    <Content Include="Underwriting\AjaxByteCorpUWReportForm.aspx" />
+    <Content Include="Underwriting\AjaxByteReportForm.aspx" />
+    <Content Include="Underwriting\ByteReportForm.aspx" />
+    <Content Include="Underwriting\ByteCorpUWReportForm.aspx" />
+    <Content Include="Underwriting\js\bytecorpuw.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounting\ActiveBranchForm.aspx.cs">
+      <DependentUpon>ActiveBranchForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\ActiveBranchForm.aspx.designer.cs">
+      <DependentUpon>ActiveBranchForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AddBranch.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AddBranchToRankingReport.aspx.cs">
+      <DependentUpon>AddBranchToRankingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AddBranchToRankingReport.aspx.designer.cs">
+      <DependentUpon>AddBranchToRankingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AddBranchToTracker.aspx.cs">
+      <DependentUpon>AddBranchToTracker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AddBranchToTracker.aspx.designer.cs">
+      <DependentUpon>AddBranchToTracker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxActiveBranch.aspx.cs">
+      <DependentUpon>AjaxActiveBranch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxActiveBranch.aspx.designer.cs">
+      <DependentUpon>AjaxActiveBranch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxAMBExportForm.aspx.cs">
+      <DependentUpon>AjaxAMBExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxAMBExportForm.aspx.designer.cs">
+      <DependentUpon>AjaxAMBExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxAMBImportForm.aspx.cs">
+      <DependentUpon>AjaxAMBImportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxAMBImportForm.aspx.designer.cs">
+      <DependentUpon>AjaxAMBImportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxAMBReport.aspx.cs">
+      <DependentUpon>AjaxAMBReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxAMBReport.aspx.designer.cs">
+      <DependentUpon>AjaxAMBReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxByteReportForm.aspx.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxByteReportForm.aspx.designer.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxCashDepositEntry.aspx.cs">
+      <DependentUpon>AjaxCashDepositEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxCashDepositEntry.aspx.designer.cs">
+      <DependentUpon>AjaxCashDepositEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxCSVExportForm.aspx.cs">
+      <DependentUpon>AjaxCSVExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxCSVExportForm.aspx.designer.cs">
+      <DependentUpon>AjaxCSVExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxMCRForm.aspx.cs">
+      <DependentUpon>AjaxMCRForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxMCRForm.aspx.designer.cs">
+      <DependentUpon>AjaxMCRForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxPennyMacCDRForm.aspx.cs">
+      <DependentUpon>AjaxPennyMacCDRForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxPennyMacCDRForm.aspx.designer.cs">
+      <DependentUpon>AjaxPennyMacCDRForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxReserveRequirement.aspx.cs">
+      <DependentUpon>AjaxReserveRequirement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxReserveRequirement.aspx.designer.cs">
+      <DependentUpon>AjaxReserveRequirement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxTrustAccount.aspx.cs">
+      <DependentUpon>AjaxTrustAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxTrustAccount.aspx.designer.cs">
+      <DependentUpon>AjaxTrustAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxWarehouseAdvanceRecap.aspx.cs">
+      <DependentUpon>AjaxWarehouseAdvanceRecap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxWarehouseAdvanceRecap.aspx.designer.cs">
+      <DependentUpon>AjaxWarehouseAdvanceRecap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AMBExportForm.aspx.cs">
+      <DependentUpon>AMBExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AMBExportForm.aspx.designer.cs">
+      <DependentUpon>AMBExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AMBImport.aspx.cs">
+      <DependentUpon>AMBImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AMBImport.aspx.designer.cs">
+      <DependentUpon>AMBImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AMBReportForm.aspx.cs">
+      <DependentUpon>AMBReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AMBReportForm.aspx.designer.cs">
+      <DependentUpon>AMBReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\ByteReportForm.aspx.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\ByteReportForm.aspx.designer.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\CashDepositEntry.aspx.cs">
+      <DependentUpon>CashDepositEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\CashDepositEntry.aspx.designer.cs">
+      <DependentUpon>CashDepositEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\CSVExportForm.aspx.cs">
+      <DependentUpon>CSVExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\CSVExportForm.aspx.designer.cs">
+      <DependentUpon>CSVExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\DocTrustAcctTransfer.aspx.cs">
+      <DependentUpon>DocTrustAcctTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\DocTrustAcctTransfer.aspx.designer.cs">
+      <DependentUpon>DocTrustAcctTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\IncomeBreakdown.aspx.cs">
+      <DependentUpon>IncomeBreakdown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\IncomeBreakdown.aspx.designer.cs">
+      <DependentUpon>IncomeBreakdown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\IncomeBreakdownServer.aspx.cs">
+      <DependentUpon>IncomeBreakdownServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\IncomeBreakdownServer.aspx.designer.cs">
+      <DependentUpon>IncomeBreakdownServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\MortgageCallReportForm.aspx.cs">
+      <DependentUpon>MortgageCallReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\MortgageCallReportForm.aspx.designer.cs">
+      <DependentUpon>MortgageCallReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\PennyMacCDRForm.aspx.cs">
+      <DependentUpon>PennyMacCDRForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\PennyMacCDRForm.aspx.designer.cs">
+      <DependentUpon>PennyMacCDRForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\RemoveTrustAccountEntry.aspx.cs">
+      <DependentUpon>RemoveTrustAccountEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\RemoveTrustAccountEntry.aspx.designer.cs">
+      <DependentUpon>RemoveTrustAccountEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\ReserveRequirementForm.aspx.cs">
+      <DependentUpon>ReserveRequirementForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\ReserveRequirementForm.aspx.designer.cs">
+      <DependentUpon>ReserveRequirementForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\WarehouseAdvanceRecap.aspx.cs">
+      <DependentUpon>WarehouseAdvanceRecap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\WarehouseAdvanceRecap.aspx.designer.cs">
+      <DependentUpon>WarehouseAdvanceRecap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bling.Master.cs">
+      <DependentUpon>Bling.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bling.Master.designer.cs">
+      <DependentUpon>Bling.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\AjaxAuditScoreCard.aspx.cs">
+      <DependentUpon>AjaxAuditScoreCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\AjaxAuditScoreCard.aspx.designer.cs">
+      <DependentUpon>AjaxAuditScoreCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComplianceByte\AjaxByteReportForm.aspx.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComplianceByte\AjaxByteReportForm.aspx.designer.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\AjaxChaseFundingForm.aspx.cs">
+      <DependentUpon>AjaxChaseFundingForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\AjaxChaseFundingForm.aspx.designer.cs">
+      <DependentUpon>AjaxChaseFundingForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\AjaxComplianceEase.aspx.cs">
+      <DependentUpon>AjaxComplianceEase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\AjaxComplianceEase.aspx.designer.cs">
+      <DependentUpon>AjaxComplianceEase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\AjaxCSVExportForm.aspx.cs">
+      <DependentUpon>AjaxCSVExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\AjaxCSVExportForm.aspx.designer.cs">
+      <DependentUpon>AjaxCSVExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\AjaxDIRW.aspx.cs">
+      <DependentUpon>AjaxDIRW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\AjaxDIRW.aspx.designer.cs">
+      <DependentUpon>AjaxDIRW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\AjaxLPE.aspx.cs">
+      <DependentUpon>AjaxLPE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\AjaxLPE.aspx.designer.cs">
+      <DependentUpon>AjaxLPE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\AuditScoreCardForm.aspx.cs">
+      <DependentUpon>AuditScoreCardForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\AuditScoreCardForm.aspx.designer.cs">
+      <DependentUpon>AuditScoreCardForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComplianceByte\ByteReportForm.aspx.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComplianceByte\ByteReportForm.aspx.designer.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\ChaseFundingForm.aspx.cs">
+      <DependentUpon>ChaseFundingForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\ChaseFundingForm.aspx.designer.cs">
+      <DependentUpon>ChaseFundingForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\ChaseFundingForm2.aspx.cs">
+      <DependentUpon>ChaseFundingForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\ChaseFundingForm2.aspx.designer.cs">
+      <DependentUpon>ChaseFundingForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\ComplianceEase.aspx.cs">
+      <DependentUpon>ComplianceEase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\ComplianceEase.aspx.designer.cs">
+      <DependentUpon>ComplianceEase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\CSVExportForm.aspx.cs">
+      <DependentUpon>CSVExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\CSVExportForm.aspx.designer.cs">
+      <DependentUpon>CSVExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\DIRW.aspx.cs">
+      <DependentUpon>DIRW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\DIRW.aspx.designer.cs">
+      <DependentUpon>DIRW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\LPE.aspx.cs">
+      <DependentUpon>LPE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\LPE.aspx.designer.cs">
+      <DependentUpon>LPE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\LPEDetail.aspx.cs">
+      <DependentUpon>LPEDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\LPEDetail.aspx.designer.cs">
+      <DependentUpon>LPEDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\MERSReconciliationForm.aspx.cs">
+      <DependentUpon>MERSReconciliationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compliance\MERSReconciliationForm.aspx.designer.cs">
+      <DependentUpon>MERSReconciliationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compliance\Report\AuditScoreCard.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuditScoreCard.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Conversation.cs" />
+    <Compile Include="CustomerService\AjaxByteReportForm.aspx.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerService\AjaxByteReportForm.aspx.designer.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService\ByteReportForm.aspx.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerService\ByteReportForm.aspx.designer.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\AjaxByteReportForm.aspx.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\AjaxByteReportForm.aspx.designer.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\AjaxJPMorganForm.aspx.cs">
+      <DependentUpon>AjaxJPMorganForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\AjaxJPMorganForm.aspx.designer.cs">
+      <DependentUpon>AjaxJPMorganForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\AjaxTexasCapitalForm.aspx.cs">
+      <DependentUpon>AjaxTexasCapitalForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\AjaxTexasCapitalForm.aspx.designer.cs">
+      <DependentUpon>AjaxTexasCapitalForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\AjaxUSBForm.aspx.cs">
+      <DependentUpon>AjaxUSBForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\AjaxUSBForm.aspx.designer.cs">
+      <DependentUpon>AjaxUSBForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\AjaxCNBForm.aspx.cs">
+      <DependentUpon>AjaxCNBForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\AjaxCNBForm.aspx.designer.cs">
+      <DependentUpon>AjaxCNBForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\AjaxViewPointForm.aspx.cs">
+      <DependentUpon>AjaxViewPointForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\AjaxViewPointForm.aspx.designer.cs">
+      <DependentUpon>AjaxViewPointForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\ByteReportForm.aspx.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\ByteReportForm.aspx.designer.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\CNBForm.aspx.cs">
+      <DependentUpon>CNBForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\CNBForm.aspx.designer.cs">
+      <DependentUpon>CNBForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\JPMorganForm.aspx.cs">
+      <DependentUpon>JPMorganForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\JPMorganForm.aspx.designer.cs">
+      <DependentUpon>JPMorganForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\TexasCapitalForm.aspx.cs">
+      <DependentUpon>TexasCapitalForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\TexasCapitalForm.aspx.designer.cs">
+      <DependentUpon>TexasCapitalForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\USBForm.aspx.cs">
+      <DependentUpon>USBForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\USBForm.aspx.designer.cs">
+      <DependentUpon>USBForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\ViewPointForm.aspx.cs">
+      <DependentUpon>ViewPointForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\ViewPointForm.aspx.designer.cs">
+      <DependentUpon>ViewPointForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\greentree.ashx.cs">
+      <DependentUpon>greentree.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AjaxByteReportForm.aspx.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AjaxByteReportForm.aspx.designer.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AjaxValidateTimeCard.aspx.cs">
+      <DependentUpon>AjaxValidateTimeCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AjaxValidateTimeCard.aspx.designer.cs">
+      <DependentUpon>AjaxValidateTimeCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ByteLOBasisPoints.aspx.cs">
+      <DependentUpon>ByteLOBasisPoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\ByteLOBasisPoints.aspx.designer.cs">
+      <DependentUpon>ByteLOBasisPoints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ByteReportForm.aspx.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\ByteReportForm.aspx.designer.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\CommissionReportDT.aspx.cs">
+      <DependentUpon>CommissionReportDT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\CommissionReportDT.aspx.designer.cs">
+      <DependentUpon>CommissionReportDT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ReportViewer.aspx.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\ReportViewer.aspx.designer.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\Report\401K.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>401K.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\AMBTEST.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AMBTEST.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\BasisPts.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BasisPts.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\BenefitNotification.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BenefitNotification.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\BranchBP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BranchBP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\BranchBPCurrent.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BranchBPCurrent.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\BranchBPHistory.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BranchBPHistory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\BranchBPHistory2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BranchBPHistory2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\BranchBPISR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BranchBPISR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\CAGLT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAGLT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\CommAccr.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommAccr.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\Commission.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Commission.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\CommissionBranchLO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommissionBranchLO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\CommissionByLO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommissionByLO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\CommissionByLO_DT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommissionByLO_DT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\CommissionInsideSales.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommissionInsideSales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\CommissionOverride.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommissionOverride.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\CommissionSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommissionSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\Commission_DT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Commission_DT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\EmpCount.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpCount.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\InsEnrol.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsEnrol.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\InsEnrolPB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsEnrolPB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\Job.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Job.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\LOAdjust.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LOAdjust.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\LoBpCurrent.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoBpCurrent.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\LoBpHistory.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoBpHistory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Report\PlaceHolder.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlaceHolder.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomerService\SecurityConnectionShippedDate.aspx.cs">
+      <DependentUpon>SecurityConnectionShippedDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerService\SecurityConnectionShippedDate.aspx.designer.cs">
+      <DependentUpon>SecurityConnectionShippedDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\AjaxCustomersBankForm.aspx.cs">
+      <DependentUpon>AjaxCustomersBankForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\AjaxCustomersBankForm.aspx.designer.cs">
+      <DependentUpon>AjaxCustomersBankForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\AjaxFundingExceptionSummaryForm.aspx.cs">
+      <DependentUpon>AjaxFundingExceptionSummaryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\AjaxFundingExceptionSummaryForm.aspx.designer.cs">
+      <DependentUpon>AjaxFundingExceptionSummaryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\AjaxWLSForm.aspx.cs">
+      <DependentUpon>AjaxWLSForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\AjaxWLSForm.aspx.designer.cs">
+      <DependentUpon>AjaxWLSForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\CustomersBankForm.aspx.cs">
+      <DependentUpon>CustomersBankForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\CustomersBankForm.aspx.designer.cs">
+      <DependentUpon>CustomersBankForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\FundingExceptionSummaryForm.aspx.cs">
+      <DependentUpon>FundingExceptionSummaryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\FundingExceptionSummaryForm.aspx.designer.cs">
+      <DependentUpon>FundingExceptionSummaryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funding\WLSForm.aspx.cs">
+      <DependentUpon>WLSForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funding\WLSForm.aspx.designer.cs">
+      <DependentUpon>WLSForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\create_csv.ashx.cs">
+      <DependentUpon>create_csv.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\401KForm.aspx.cs">
+      <DependentUpon>401KForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\401KForm.aspx.designer.cs">
+      <DependentUpon>401KForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AddEnrolee.aspx.cs">
+      <DependentUpon>AddEnrolee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AddEnrolee.aspx.designer.cs">
+      <DependentUpon>AddEnrolee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\Ajax401K.aspx.cs">
+      <DependentUpon>Ajax401K.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\Ajax401K.aspx.designer.cs">
+      <DependentUpon>Ajax401K.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AjaxCensusDateRange.aspx.cs">
+      <DependentUpon>AjaxCensusDateRange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AjaxCensusDateRange.aspx.designer.cs">
+      <DependentUpon>AjaxCensusDateRange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AjaxCommissionAnalysis.aspx.cs">
+      <DependentUpon>AjaxCommissionAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AjaxCommissionAnalysis.aspx.designer.cs">
+      <DependentUpon>AjaxCommissionAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AjaxCommissionReport.aspx.cs">
+      <DependentUpon>AjaxCommissionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AjaxCommissionReport.aspx.designer.cs">
+      <DependentUpon>AjaxCommissionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AjaxInsuranceEnrollment.aspx.cs">
+      <DependentUpon>AjaxInsuranceEnrollment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AjaxInsuranceEnrollment.aspx.designer.cs">
+      <DependentUpon>AjaxInsuranceEnrollment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AjaxJobListing.aspx.cs">
+      <DependentUpon>AjaxJobListing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AjaxJobListing.aspx.designer.cs">
+      <DependentUpon>AjaxJobListing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AjaxLOAdjustment.aspx.cs">
+      <DependentUpon>AjaxLOAdjustment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AjaxLOAdjustment.aspx.designer.cs">
+      <DependentUpon>AjaxLOAdjustment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AjaxLOBasisPoints.aspx.cs">
+      <DependentUpon>AjaxLOBasisPoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AjaxLOBasisPoints.aspx.designer.cs">
+      <DependentUpon>AjaxLOBasisPoints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AjaxProcessLOCommission.aspx.cs">
+      <DependentUpon>AjaxProcessLOCommission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AjaxProcessLOCommission.aspx.designer.cs">
+      <DependentUpon>AjaxProcessLOCommission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AjaxStampDateForm.aspx.cs">
+      <DependentUpon>AjaxStampDateForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AjaxStampDateForm.aspx.designer.cs">
+      <DependentUpon>AjaxStampDateForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AjaxTimeCardForm.aspx.cs">
+      <DependentUpon>AjaxTimeCardForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AjaxTimeCardForm.aspx.designer.cs">
+      <DependentUpon>AjaxTimeCardForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\BenefitNotification.aspx.cs">
+      <DependentUpon>BenefitNotification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\BenefitNotification.aspx.designer.cs">
+      <DependentUpon>BenefitNotification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\CensusDateRange.aspx.cs">
+      <DependentUpon>CensusDateRange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\CensusDateRange.aspx.designer.cs">
+      <DependentUpon>CensusDateRange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ChangeEEStatus.aspx.cs">
+      <DependentUpon>ChangeEEStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\ChangeEEStatus.aspx.designer.cs">
+      <DependentUpon>ChangeEEStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ChangeEmpCost.aspx.cs">
+      <DependentUpon>ChangeEmpCost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\ChangeEmpCost.aspx.designer.cs">
+      <DependentUpon>ChangeEmpCost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ChangeRate.aspx.cs">
+      <DependentUpon>ChangeRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\ChangeRate.aspx.designer.cs">
+      <DependentUpon>ChangeRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ChangeTitle.aspx.cs">
+      <DependentUpon>ChangeTitle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\ChangeTitle.aspx.designer.cs">
+      <DependentUpon>ChangeTitle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\CommissionAnalysisForm.aspx.cs">
+      <DependentUpon>CommissionAnalysisForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\CommissionAnalysisForm.aspx.designer.cs">
+      <DependentUpon>CommissionAnalysisForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\CommissionAnalysisList.aspx.cs">
+      <DependentUpon>CommissionAnalysisList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\CommissionAnalysisList.aspx.designer.cs">
+      <DependentUpon>CommissionAnalysisList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\CommissionReport.aspx.cs">
+      <DependentUpon>CommissionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\CommissionReport.aspx.designer.cs">
+      <DependentUpon>CommissionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\EmployeeCount.aspx.cs">
+      <DependentUpon>EmployeeCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\EmployeeCount.aspx.designer.cs">
+      <DependentUpon>EmployeeCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ExpiredLicense.aspx.cs">
+      <DependentUpon>ExpiredLicense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\ExpiredLicense.aspx.designer.cs">
+      <DependentUpon>ExpiredLicense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\InsuranceEnrollment.aspx.cs">
+      <DependentUpon>InsuranceEnrollment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\InsuranceEnrollment.aspx.designer.cs">
+      <DependentUpon>InsuranceEnrollment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\JobListing.aspx.cs">
+      <DependentUpon>JobListing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\JobListing.aspx.designer.cs">
+      <DependentUpon>JobListing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\LOAdjustForm.aspx.cs">
+      <DependentUpon>LOAdjustForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\LOAdjustForm.aspx.designer.cs">
+      <DependentUpon>LOAdjustForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\LOBasisPoints.aspx.cs">
+      <DependentUpon>LOBasisPoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\LOBasisPoints.aspx.designer.cs">
+      <DependentUpon>LOBasisPoints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\MullinTBG.aspx.cs">
+      <DependentUpon>MullinTBG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\MullinTBG.aspx.designer.cs">
+      <DependentUpon>MullinTBG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ProcessLOCommission.aspx.cs">
+      <DependentUpon>ProcessLOCommission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\ProcessLOCommission.aspx.designer.cs">
+      <DependentUpon>ProcessLOCommission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\StampPayDateForm.aspx.cs">
+      <DependentUpon>StampPayDateForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\StampPayDateForm.aspx.designer.cs">
+      <DependentUpon>StampPayDateForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\TimeCardForm.aspx.cs">
+      <DependentUpon>TimeCardForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\TimeCardForm.aspx.designer.cs">
+      <DependentUpon>TimeCardForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ValidateTimeCard.aspx.cs">
+      <DependentUpon>ValidateTimeCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\ValidateTimeCard.aspx.designer.cs">
+      <DependentUpon>ValidateTimeCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Insuring\AjaxByteReportForm.aspx.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Insuring\AjaxByteReportForm.aspx.designer.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Insuring\ByteReportForm.aspx.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Insuring\ByteReportForm.aspx.designer.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IT\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IT\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IT\AjaxInventory.aspx.cs">
+      <DependentUpon>AjaxInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IT\AjaxInventory.aspx.designer.cs">
+      <DependentUpon>AjaxInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IT\AssignApplication.aspx.cs">
+      <DependentUpon>AssignApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IT\AssignApplication.aspx.designer.cs">
+      <DependentUpon>AssignApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IT\AssignGroup.aspx.cs">
+      <DependentUpon>AssignGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IT\AssignGroup.aspx.designer.cs">
+      <DependentUpon>AssignGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IT\Inventory.aspx.cs">
+      <DependentUpon>Inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IT\Inventory.aspx.designer.cs">
+      <DependentUpon>Inventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOS\AddUserInFundingReport.aspx.cs">
+      <DependentUpon>AddUserInFundingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOS\AddUserInFundingReport.aspx.designer.cs">
+      <DependentUpon>AddUserInFundingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOS\AddUserInUnderwritingReport.aspx.cs">
+      <DependentUpon>AddUserInUnderwritingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOS\AddUserInUnderwritingReport.aspx.designer.cs">
+      <DependentUpon>AddUserInUnderwritingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOS\HMDA.aspx.cs">
+      <DependentUpon>HMDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOS\HMDA.aspx.designer.cs">
+      <DependentUpon>HMDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOS\HMDAChanges.aspx.cs">
+      <DependentUpon>HMDAChanges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOS\HMDAChanges.aspx.designer.cs">
+      <DependentUpon>HMDAChanges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOS\LOS.aspx.cs">
+      <DependentUpon>LOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOS\LOS.aspx.designer.cs">
+      <DependentUpon>LOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NoAccess.aspx.cs">
+      <DependentUpon>NoAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NoAccess.aspx.designer.cs">
+      <DependentUpon>NoAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Processing\AjaxAppraiserSelector.aspx.cs">
+      <DependentUpon>AjaxAppraiserSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Processing\AjaxAppraiserSelector.aspx.designer.cs">
+      <DependentUpon>AjaxAppraiserSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Processing\AjaxCSVExportForm.aspx.cs">
+      <DependentUpon>AjaxCSVExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Processing\AjaxCSVExportForm.aspx.designer.cs">
+      <DependentUpon>AjaxCSVExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Processing\AjaxQCExportForm.aspx.cs">
+      <DependentUpon>AjaxQCExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Processing\AjaxQCExportForm.aspx.designer.cs">
+      <DependentUpon>AjaxQCExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Processing\AppraiserSelector.aspx.cs">
+      <DependentUpon>AppraiserSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Processing\AppraiserSelector.aspx.designer.cs">
+      <DependentUpon>AppraiserSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Processing\AppraiserSelector2.aspx.cs">
+      <DependentUpon>AppraiserSelector2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Processing\AppraiserSelector2.aspx.designer.cs">
+      <DependentUpon>AppraiserSelector2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Processing\CPP.aspx.cs">
+      <DependentUpon>CPP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Processing\CPP.aspx.designer.cs">
+      <DependentUpon>CPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Processing\CSVExportForm.aspx.cs">
+      <DependentUpon>CSVExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Processing\CSVExportForm.aspx.designer.cs">
+      <DependentUpon>CSVExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Processing\GEMAppraisal.aspx.cs">
+      <DependentUpon>GEMAppraisal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Processing\GEMAppraisal.aspx.designer.cs">
+      <DependentUpon>GEMAppraisal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Processing\QCExportForm.aspx.cs">
+      <DependentUpon>QCExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Processing\QCExportForm.aspx.designer.cs">
+      <DependentUpon>QCExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\AjaxByteReportForm.aspx.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\AjaxByteReportForm.aspx.designer.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\AjaxChangeProgramCode.aspx.cs">
+      <DependentUpon>AjaxChangeProgramCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\AjaxChangeProgramCode.aspx.designer.cs">
+      <DependentUpon>AjaxChangeProgramCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\AjaxCSVExportForm.aspx.cs">
+      <DependentUpon>AjaxCSVExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\AjaxCSVExportForm.aspx.designer.cs">
+      <DependentUpon>AjaxCSVExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\AjaxHedgeGMACExtractForm.aspx.cs">
+      <DependentUpon>AjaxHedgeGMACExtractForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\AjaxHedgeGMACExtractForm.aspx.designer.cs">
+      <DependentUpon>AjaxHedgeGMACExtractForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\AjaxLoanSolution.aspx.cs">
+      <DependentUpon>AjaxLoanSolution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\AjaxLoanSolution.aspx.designer.cs">
+      <DependentUpon>AjaxLoanSolution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\AjaxShowHideProgramCode.aspx.cs">
+      <DependentUpon>AjaxShowHideProgramCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\AjaxShowHideProgramCode.aspx.designer.cs">
+      <DependentUpon>AjaxShowHideProgramCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\AjaxTradeForm.aspx.cs">
+      <DependentUpon>AjaxTradeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\AjaxTradeForm.aspx.designer.cs">
+      <DependentUpon>AjaxTradeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\ByteReportForm.aspx.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\ByteReportForm.aspx.designer.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\ChangeProgramCode.aspx.cs">
+      <DependentUpon>ChangeProgramCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\ChangeProgramCode.aspx.designer.cs">
+      <DependentUpon>ChangeProgramCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\CountryPlaceForm.aspx.cs">
+      <DependentUpon>CountryPlaceForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\CountryPlaceForm.aspx.designer.cs">
+      <DependentUpon>CountryPlaceForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\CSVExportForm.aspx.cs">
+      <DependentUpon>CSVExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\CSVExportForm.aspx.designer.cs">
+      <DependentUpon>CSVExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\GreenTree.aspx.cs">
+      <DependentUpon>GreenTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\GreenTree.aspx.designer.cs">
+      <DependentUpon>GreenTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\HedgeGMACExtractForm.aspx.cs">
+      <DependentUpon>HedgeGMACExtractForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\HedgeGMACExtractForm.aspx.designer.cs">
+      <DependentUpon>HedgeGMACExtractForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\HideByInvestor.aspx.cs">
+      <DependentUpon>HideByInvestor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\HideByInvestor.aspx.designer.cs">
+      <DependentUpon>HideByInvestor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\HideByProgramCode.aspx.cs">
+      <DependentUpon>HideByProgramCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\HideByProgramCode.aspx.designer.cs">
+      <DependentUpon>HideByProgramCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\TradeForm.aspx.cs">
+      <DependentUpon>TradeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\TradeForm.aspx.designer.cs">
+      <DependentUpon>TradeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\UploadLoanSolution.aspx.cs">
+      <DependentUpon>UploadLoanSolution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\UploadLoanSolution.aspx.designer.cs">
+      <DependentUpon>UploadLoanSolution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\LSDTInvestorMapper.aspx.cs">
+      <DependentUpon>LSDTInvestorMapper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\LSDTInvestorMapper.aspx.designer.cs">
+      <DependentUpon>LSDTInvestorMapper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secondary\UploadMCM.aspx.cs">
+      <DependentUpon>UploadMCM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secondary\UploadMCM.aspx.designer.cs">
+      <DependentUpon>UploadMCM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionPerRequest.cs" />
+    <Compile Include="Underwriting\AjaxByteCorpUWReportForm.aspx.cs">
+      <DependentUpon>AjaxByteCorpUWReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Underwriting\AjaxByteCorpUWReportForm.aspx.designer.cs">
+      <DependentUpon>AjaxByteCorpUWReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Underwriting\AjaxByteReportForm.aspx.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Underwriting\AjaxByteReportForm.aspx.designer.cs">
+      <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Underwriting\AjaxScoreCard.aspx.cs">
+      <DependentUpon>AjaxScoreCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Underwriting\AjaxScoreCard.aspx.designer.cs">
+      <DependentUpon>AjaxScoreCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Underwriting\BranchScoreCard.aspx.cs">
+      <DependentUpon>BranchScoreCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Underwriting\BranchScoreCard.aspx.designer.cs">
+      <DependentUpon>BranchScoreCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Underwriting\ByteReportForm.aspx.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Underwriting\ByteReportForm.aspx.designer.cs">
+      <DependentUpon>ByteReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Underwriting\ByteCorpUWReportForm.aspx.cs">
+      <DependentUpon>ByteCorpUWReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Underwriting\ByteCorpUWReportForm.aspx.designer.cs">
+      <DependentUpon>ByteCorpUWReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Underwriting\ScoreCard.aspx.cs">
+      <DependentUpon>ScoreCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Underwriting\ScoreCard.aspx.designer.cs">
+      <DependentUpon>ScoreCard.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\FundingCalculator\FundingCalculator.asp">
+      <Link>Html\FundingCalculator.asp</Link>
+    </Content>
+    <Content Include="Accounting\AddBranchToRankingReport.aspx" />
+    <Content Include="Accounting\AddBranchToTracker.aspx" />
+    <Content Include="Accounting\AjaxTrustAccount.aspx" />
+    <Content Include="Accounting\DocTrustAcctTransfer.aspx" />
+    <Content Include="Accounting\IncomeBreakdown.aspx" />
+    <Content Include="Accounting\IncomeBreakdownServer.aspx" />
+    <Content Include="Accounting\js\AddBranch.js" />
+    <Content Include="Accounting\js\DocTrustAcctTransfer.js" />
+    <Content Include="Accounting\js\IncomeBreakdown.js" />
+    <Content Include="Accounting\js\RemoveTrustAccountEntry.js" />
+    <Content Include="Accounting\RemoveTrustAccountEntry.aspx" />
+    <Content Include="Bling.Master" />
+    <Content Include="CustomerService\js\SecurityConnectionShippedDate.js" />
+    <Content Include="CustomerService\SecurityConnectionShippedDate.aspx" />
+    <Content Include="gemapp.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="dmddata.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="HR\AddEnrolee.aspx" />
+    <Content Include="HR\AjaxCensusDateRange.aspx" />
+    <Content Include="HR\AjaxInsuranceEnrollment.aspx" />
+    <Content Include="HR\AjaxJobListing.aspx" />
+    <Content Include="HR\CensusDateRange.aspx" />
+    <Content Include="HR\ChangeEEStatus.aspx" />
+    <Content Include="HR\ChangeEmpCost.aspx" />
+    <Content Include="HR\ChangeRate.aspx" />
+    <Content Include="HR\ChangeTitle.aspx" />
+    <Content Include="HR\EmployeeCount.aspx" />
+    <Content Include="HR\ExpiredLicense.aspx" />
+    <Content Include="HR\InsuranceEnrollment.aspx" />
+    <Content Include="HR\JobListing.aspx" />
+    <Content Include="HR\js\AddEnrolee.js" />
+    <Content Include="HR\js\CensusDateRange.js" />
+    <Content Include="HR\js\ChangeEEStatus.js" />
+    <Content Include="HR\js\ChangeEmpCost.js" />
+    <Content Include="HR\js\ChangeRate.js" />
+    <Content Include="HR\js\ChangeTitle.js" />
+    <Content Include="HR\js\EmployeeCount.js" />
+    <Content Include="HR\js\ExpiredLicense.js" />
+    <Content Include="HR\js\InsuranceEnrollment.js" />
+    <Content Include="HR\js\JobListing.js" />
+    <Content Include="IT\AddUser.aspx" />
+    <Content Include="IT\AjaxInventory.aspx" />
+    <Content Include="IT\AssignApplication.aspx" />
+    <Content Include="IT\AssignGroup.aspx" />
+    <Content Include="IT\Inventory.aspx" />
+    <Content Include="IT\js\Inventory.js" />
+    <Content Include="js\Base.js" />
+    <Content Include="js\jquery-1.3.2.min.js" />
+    <Content Include="js\jquery-ui-1.7.custom.min.js" />
+    <Content Include="js\jquery.nyroModal-1.5.5.min.js" />
+    <Content Include="js\jquery.validate.min.js" />
+    <Content Include="js\Main.js" />
+    <Content Include="js\Master.js" />
+    <Content Include="LOS\AddUserInFundingReport.aspx" />
+    <Content Include="LOS\AddUserInUnderwritingReport.aspx" />
+    <Content Include="LOS\HMDA.aspx" />
+    <Content Include="LOS\HMDAChanges.aspx" />
+    <Content Include="LOS\js\HMDAChanges.js" />
+    <Content Include="LOS\LOS.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="mwdatastore.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NoAccess.aspx" />
+    <Content Include="Processing\AjaxAppraiserSelector.aspx" />
+    <Content Include="Processing\AppraiserSelector.aspx" />
+    <Content Include="Processing\CPP.aspx" />
+    <Content Include="Processing\GEMAppraisal.aspx" />
+    <Content Include="Processing\js\AppraiserSelector.js" />
+    <Content Include="Processing\js\CPP.js" />
+    <Content Include="Secondary\AjaxChangeProgramCode.aspx" />
+    <Content Include="Secondary\AjaxLoanSolution.aspx" />
+    <Content Include="Secondary\AjaxShowHideProgramCode.aspx" />
+    <Content Include="Secondary\ChangeProgramCode.aspx" />
+    <Content Include="Secondary\HideByInvestor.aspx" />
+    <Content Include="Secondary\HideByProgramCode.aspx" />
+    <Content Include="Secondary\js\ChangeProgramCode.js" />
+    <Content Include="Secondary\js\HideByInvestor.js" />
+    <Content Include="Secondary\js\HideByProgramCode.js" />
+    <Content Include="Secondary\js\LSDTInvestorMapper.js" />
+    <Content Include="Secondary\UploadLoanSolution.aspx" />
+    <Content Include="Secondary\LSDTInvestorMapper.aspx" />
+    <Content Include="Secondary\UploadMCM.aspx" />
+    <Content Include="Styles\AppraiserSelector.css" />
+    <Content Include="Styles\Bling.css" />
+    <Content Include="Styles\InsuranceEnrollment.css" />
+    <Content Include="Styles\MCM.css" />
+    <Content Include="Styles\nyroModal.css" />
+    <Content Include="Styles\ScoreCard.css" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Styles\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Styles\ui-lightness\jquery-ui-1.7.custom.css" />
+    <Content Include="Underwriting\AjaxScoreCard.aspx" />
+    <Content Include="Underwriting\BranchScoreCard.aspx" />
+    <Content Include="Underwriting\js\ScoreCard.js" />
+    <Content Include="Underwriting\ScoreCard.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bling.Domain\Bling.Domain.csproj">
+      <Project>{21F081B4-2B02-4B81-9F4E-FEF10EB76D34}</Project>
+      <Name>Bling.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bling.Presenter\Bling.Presenter.csproj">
+      <Project>{8853094F-0B6F-4526-BF8C-EE24D2DDE596}</Project>
+      <Name>Bling.Presenter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="CustomerService\Data\" />
+    <Folder Include="handlers\output\" />
+    <Folder Include="HR\handlers\output\" />
+    <Folder Include="Images\" />
+    <Folder Include="LOS\HMDADATA\" />
+    <Folder Include="Secondary\Data\" />
+    <Folder Include="Secondary\handlers\output\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secondary\web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Processing\js\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Compliance\Report\web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\create_csv.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Compliance\Report\AuditScoreCard.pdf" />
+    <Content Include="handlers\greentree.ashx" />
+    <Content Include="ComplianceByte\web.config" />
+    <None Include="HR\Report\401K.csv" />
+    <None Include="HR\Report\401k.pdf" />
+    <None Include="HR\Report\BasisPoints.pdf" />
+    <None Include="HR\Report\BasisPointsCurrent.pdf" />
+    <None Include="HR\Report\BasisPointsHistory.pdf" />
+    <None Include="HR\Report\Commission-105.pdf" />
+    <None Include="HR\Report\Commission-106.pdf" />
+    <None Include="HR\Report\Commission-111.pdf" />
+    <None Include="HR\Report\Commission-121.pdf" />
+    <None Include="HR\Report\Commission-138.pdf" />
+    <None Include="HR\Report\Commission-144.pdf" />
+    <None Include="HR\Report\Commission-145.pdf" />
+    <None Include="HR\Report\Commission-148.pdf" />
+    <None Include="HR\Report\Commission-159.pdf" />
+    <None Include="HR\Report\Commission-160.pdf" />
+    <None Include="HR\Report\Commission-167.pdf" />
+    <None Include="HR\Report\Commission-168.pdf" />
+    <None Include="HR\Report\Commission-182.pdf" />
+    <None Include="HR\Report\Commission-192.pdf" />
+    <None Include="HR\Report\Commission-2012-06-15.pdf" />
+    <None Include="HR\Report\Commission-2012-06-22.pdf" />
+    <None Include="HR\Report\Commission-2012-07-13.pdf" />
+    <None Include="HR\Report\Commission-254.pdf" />
+    <None Include="HR\Report\Commission-256.pdf" />
+    <None Include="HR\Report\Commission-257.pdf" />
+    <None Include="HR\Report\Commission-259.pdf" />
+    <None Include="HR\Report\Commission-260.pdf" />
+    <None Include="HR\Report\Commission-303.pdf" />
+    <None Include="HR\Report\Commission-312.pdf" />
+    <None Include="HR\Report\Commission-317.pdf" />
+    <None Include="HR\Report\Commission-321.pdf" />
+    <None Include="HR\Report\Commission-326.pdf" />
+    <None Include="HR\Report\Commission-336.pdf" />
+    <None Include="HR\Report\Commission-338.pdf" />
+    <None Include="HR\Report\Commission-340.pdf" />
+    <None Include="HR\Report\Commission-349.pdf" />
+    <None Include="HR\Report\Commission-353.pdf" />
+    <None Include="HR\Report\Commission-362.pdf" />
+    <None Include="HR\Report\Commission-366.pdf" />
+    <None Include="HR\Report\Commission-371.pdf" />
+    <None Include="HR\Report\Commission-379.pdf" />
+    <None Include="HR\Report\Commission-387.pdf" />
+    <None Include="HR\Report\Commission-388.pdf" />
+    <None Include="HR\Report\Commission-391.pdf" />
+    <None Include="HR\Report\Commission-392.pdf" />
+    <None Include="HR\Report\Commission-393.pdf" />
+    <None Include="HR\Report\Commission-652.pdf" />
+    <None Include="HR\Report\Commission-662.pdf" />
+    <None Include="HR\Report\Commission-665.pdf" />
+    <None Include="HR\Report\Commission-667.pdf" />
+    <None Include="HR\Report\CommissionOverride-317.pdf" />
+    <None Include="HR\Report\CommissionOverride-336.pdf" />
+    <None Include="HR\Report\CommissionOverride-398.pdf" />
+    <None Include="HR\Report\CommissionOverride-ALL.pdf" />
+    <None Include="HR\Report\CommissionsAccrual.pdf" />
+    <None Include="HR\Report\CommissionsAccrualGLTotals.pdf" />
+    <None Include="HR\Report\CommissionSummary-08-31-2012.pdf" />
+    <None Include="HR\Report\crlo.pdf" />
+    <None Include="HR\Report\DEMortgageUnderwriter.pdf" />
+    <None Include="HR\Report\Employee Referral Program.pdf" />
+    <None Include="HR\Report\HUDSettlementStatementAssistant.pdf" />
+    <None Include="HR\Report\InsEnrol.pdf" />
+    <None Include="HR\Report\InsEnrolPB.pdf" />
+    <None Include="HR\Report\LOAdjust.pdf" />
+    <None Include="HR\Report\LOAdjustment.pdf" />
+    <None Include="HR\Report\LoBpCurrent.pdf" />
+    <None Include="HR\Report\LoBpHistory.pdf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\Report\AuditScoreCard.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AuditScoreCard.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\401K.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>401K.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\AMBTEST.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AMBTEST.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\BasisPts.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BasisPts.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\BenefitNotification.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BenefitNotification.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\BranchBP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BranchBP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\BranchBPCurrent.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BranchBPCurrent.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\BranchBPHistory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BranchBPHistory.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\BranchBPHistory2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BranchBPHistory2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\BranchBPISR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BranchBPISR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\CAGLT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CAGLT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\CommAccr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CommAccr.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\Commission.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Commission.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\CommissionBranchLO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CommissionBranchLO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\CommissionByLO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CommissionByLO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\CommissionByLO_DT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CommissionByLO_DT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\CommissionInsideSales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CommissionInsideSales.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\CommissionOverride.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CommissionOverride.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\CommissionSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CommissionSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\Commission_DT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Commission_DT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\EmpCount.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EmpCount.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\InsEnrol.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InsEnrol.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\InsEnrolPB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InsEnrolPB.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\Job.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Job.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\LOAdjust.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LOAdjust.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\LoBpCurrent.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LoBpCurrent.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\LoBpHistory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LoBpHistory.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Report\PlaceHolder.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PlaceHolder.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3106</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

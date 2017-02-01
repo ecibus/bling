@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Compliance">
+  <class name="DIRWData, Bling.Domain" table="none" mutable="false">
+
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+
+    <property name="CurrentData" column="CurrentData" type="string"  not-null="false" />
+    <property name="OldData" column="OldData" type="string" not-null="false" />
+    <property name="Elevated" column="Elevated" type="boolean" not-null="false" />
+    <property name="YN" column="YN" type="string" not-null="true" />
+    <property name="KeyId" column="KeyId" type="string" not-null="true" />
+  </class>
+</hibernate-mapping>

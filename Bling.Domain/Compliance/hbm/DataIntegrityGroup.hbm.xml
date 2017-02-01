@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Compliance">
+  <class name="DataIntegrityGroup, Bling.Domain" table="xGEM_DataIntegrityGroup" mutable="false">
+
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+
+    <property name="GroupName" column="GroupName" type="string" not-null="true" />
+    <property name="OrderBy" column="OrderBy" type="int" not-null="true" />
+    <property name="Extra" column="Extra" type="boolean" not-null="false" />
+    
+    
+    <bag name="Fields" fetch="subselect" order-by="OrderBy" >      
+      <key column="GroupId" />      
+      <one-to-many class="DataIntegrityField" />
+    </bag>
+    
+  </class>
+</hibernate-mapping>

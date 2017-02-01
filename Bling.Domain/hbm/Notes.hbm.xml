@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain">
+  <class name="Bling.Domain.Notes, Bling.Domain" table="Notes">
+    <id name="Id" column="view_link" type="Int32" unsaved-value="0" >
+      <generator class="native"></generator>
+    </id>
+    <property name="FileId" column="file_id" type="string" not-null="true" />
+    <property name="CreatedOn" column="datetime" type="DateTime" not-null="true" />
+    <property name="GroupId" column="group_id" type="string" not-null="true" />
+    <property name="ActorId" column="actor_id" type="string" not-null="true" />
+    <property name="Note" column="note" type="string" not-null="true" />
+    <property name="ShareWithWebTrac" column="shrd_web" type="boolean" not-null="true" />
+  </class>
+</hibernate-mapping>

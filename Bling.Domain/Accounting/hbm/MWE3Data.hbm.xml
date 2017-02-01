@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Accounting">
+  <class name="MWE3Data" table="mwe3_data">
+    <id name="ApplicationNumber" column="app_num" type="string" length="15" >
+      <generator class="assigned"></generator>
+    </id>
+    <property name="LoanNumber" column="loan_num" type="string" length="15" not-null="false" />
+    <property name="DMILoanNumber" column="dmi_loan_num" type="string" length="15" not-null="false" />
+    <property name="ClosedDate" column="closed_date" type="DateTime" not-null="false" />
+    <property name="LoanOfficer" column="lo_name" type="string" length="50" not-null="false" />
+    <property name="AdjustedLoanAmount" column="adj_note_amount" type="Decimal" not-null="false" />
+    <property name="InterestRate" column="note_rate" type="float" not-null="false" />
+    <property name="LoanTerm" column="loan_term" type="int" not-null="false" />
+    <property name="InterestOnly" column="isintonly" type="Boolean" not-null="false" />
+    <property name="BorrowerFirstName" column="borr_fname" type="string" length="50" not-null="false" />
+    <property name="BorrowerLastName" column="borr_lname" type="string" length="50" not-null="false" />
+    <property name="BranchName" column="branch_name" type="string" length="60" not-null="false" />
+    <property name="LoanProgramDescription" column="loan_prog_desc" type="string" length="50" not-null="false" />
+    <property name="InvestorName" column="investor_name" type="string" length="60" not-null="false" />
+    <property name="CSPurchaseDate" column="cspurch_date" type="DateTime" not-null="false" />
+    <property name="BranchPrice" column="branch_price" type="float" not-null="false" />
+    <property name="BranchSRP" column="sec_srp" type="float" not-null="false" />
+    <property name="LOPrice" column="lo_price" type="float" not-null="false" />
+    <property name="CommitSRP" column="com_srp" type="float" not-null="false" />
+    <property name="H5125_SHB" column="h5125_shb" type="Decimal" not-null="false" />
+    <property name="UnpaidPrincipalBalance" column="unpaid_principal_balance" type="Decimal" not-null="false" />
+    <property name="LockInDate" column="lockin_sec_date" type="DateTime" not-null="false" />
+    <property name="H827_ReverseMortgage" column="h827_rev_mort" type="Decimal" not-null="false" />
+    <property name="Origination" column="h801_orig_fee" type="Decimal" not-null="false" />
+    <property name="PurchasedDate" column="purchased_date" type="DateTime" not-null="false" />
+    <property name="PaidoffDate" column="paidoff_date" type="DateTime" not-null="false" />
+    <property name="H803_AppraisalFee" column="h803_appr_fee" type="Decimal" not-null="false" />
+    <property name="H1304_ReinspectionFee" column="h1304_reinsp_fee" type="Decimal" not-null="false" />
+    <property name="H208_AppraisalCredit" column="h208_appr_credit" type="Decimal" not-null="false" />
+    <property name="Channel" column="channel" type="string" length="15" not-null="false" />
+    <property name="FloodFee" column="h812_floodcert" type="Decimal" not-null="false" />
+    <property name="H804_CreditReportFee" column="h804_crdrpt_fee" type="Decimal" not-null="false" />
+    <property name="H209_CreditReportCredit" column="h209_crdrpt_credit" type="Decimal" not-null="false" />
+    <property name="FirstPaymentDate" column="first_payment_date" type="DateTime" not-null="false" />
+    <property name="DBSource" column="db_source" type="string" length="1" not-null="false" />
+    <property name="H902_MI" column="h902_mi" type="Decimal" not-null="false" />
+    <property name="H809_VAFundingFee" column="h809_vafunding_fee" type="Decimal" not-null="false" />
+    <property name="H213_MICredit" column="h213_mi_credit" type="Decimal" not-null="false" />
+    <property name="InitPMI" column="init_pmi" type="Decimal" not-null="false" />
+    <property name="ImpoundsAtClose" column="impounds_at_close" type="Decimal" not-null="false" />
+    <property name="HelocDrawFee" column="h1306_helocdraw_fee" type="Decimal" not-null="false" />
+    <property name="H1001_HazardInsurance" column="h1001m_hazins" type="Decimal" not-null="false" />
+    <property name="H1002_MI" column="h1002m_mi" type="Decimal" not-null="false" />
+    <property name="H1004_CountyTax" column="h1004m_countytax" type="Decimal" not-null="false" />
+    <property name="H1006_FloodInsurance" column="h1006m_floodins" type="Decimal" not-null="false" />
+    <property name="H1007_Other" column="h1007m_other" type="Decimal" not-null="false" />
+    <property name="H818_EEM" column="h818_eem" type="Decimal" not-null="false" />
+    <property name="H816_DocFee" column="h816_doc_fee" type="Decimal" not-null="false" />
+    <property name="H817_WireFee" column="h817_wire_fee" type="Decimal" not-null="false" />
+    <property name="H815_TaxServiceFee" column="h815_taxsvc_fee" type="Decimal" not-null="false" />
+    <property name="H813_ProcessingFee" column="h813_processing_fee" type="Decimal" not-null="false" />
+    <property name="H814_UnderwritingFee" column="h814_uw_fee" type="Decimal" not-null="false" />
+    <property name="OddDaysInterest" column="odd_days_interest" type="int" not-null="false" />
+    <property name="H901_DaysInterest" column="h901_daysint" type="Decimal" not-null="false" />
+    <property name="PerDiemDays" column="perdiem_days" type="int" not-null="false" />
+    <property name="H810_BuyDown" column="h810_buydown" type="Decimal" not-null="false" />
+    <property name="WarehouseLine" column="whline" type="string" length="16" not-null="false" />
+    <property name="H1305_MiscFee" column="h1305_misc_fee" type="Decimal" not-null="false" />
+    <property name="H808_BrokerOrigFee" column="h808_brokerorig_fee" type="Decimal" not-null="false" />
+    <property name="H805_AdminFee" column="h805_admin_fee" type="Decimal" not-null="false" />
+    <property name="H1113_ClosingFee" column="h1113_closing_fee" type="Decimal" not-null="false" />
+    <property name="InvestorWireAmount" column="investor_wire_amount" type="Decimal" not-null="false" />
+    <property name="DiscountOverage" column="discovg" type="Decimal" not-null="false" />
+    <property name="InvestorBuyPrice" column="inv_buy_price" type="Decimal" not-null="false" />
+    <property name="MarketDiscount" column="mkt_discount" type="Decimal" not-null="false" />
+    <property name="AdjustedNoteAmount" column="adj_note_amount" type="Decimal" not-null="false" />
+    <property name="LoanProgramCode" column="loan_prog_code" type="string" length="60" not-null="false" />
+    <property name="SecSRP" column="sec_srp" type="Decimal" not-null="false" />
+    <property name="H1303_WarehouseFee" column="h1303_warehouse_fee" type="Decimal" not-null="false" />
+    <property name="H805_LenderInspectionFee" column="H805_LenderInspectionFee" type="Decimal" not-null="false" />
+    
+  </class>
+</hibernate-mapping>

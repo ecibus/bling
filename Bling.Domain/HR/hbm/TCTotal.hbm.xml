@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.HR">
+  <class name="TCTotal, Bling.Domain" table="none" >
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+
+    <property name="HeaderId" column="HeaderId" type="int" not-null="true" />
+    <property name="Reg" column="Reg" type="Decimal" not-null="false" />
+    <property name="OT" column="OT" type="Decimal" not-null="false" />
+    <property name="DT" column="DT" type="Decimal" not-null="false" />
+    <property name="Sick" column="Sick" type="Decimal" not-null="false" />
+    <property name="Vacation" column="Vacation" type="Decimal" not-null="false" />
+    <property name="Holiday" column="Holiday" type="Decimal" not-null="false" />
+    <property name="Bereave" column="Bereave" type="Decimal" not-null="false" />
+    <property name="NotPaid" column="NotPaid" type="Decimal" not-null="false" />
+    <property name="MakeUp" column="MakeUp" type="Decimal" not-null="false" />
+    <property name="NetOT" column="NetOT" type="Decimal" not-null="false" />
+  </class>
+</hibernate-mapping>

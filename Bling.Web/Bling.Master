@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Bling.master.cs" Inherits="Bling.Web.Bling" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="-1">
+    <title></title>
+    <link href="/Styles/Bling.css" rel="stylesheet" type="text/css" />
+    <link href="/Styles/ui-lightness/jquery-ui-1.7.custom.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/Images/gem.jpg" />
+    <script src="/js/JQuery-1.3.2.min.js" type="text/javascript"></script>
+    <script src="/js/jquery-ui-1.7.custom.min.js" type="text/javascript"></script> 
+    <script src="/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/js/Base.js" type="text/javascript"></script>
+    <script src="/js/Master.js" type="text/javascript"></script>
+
+    <link href="/Styles/nyroModal.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/js/jquery.nyroModal-1.5.5.min.js" type="text/javascript"></script>  
+    
+     
+    <asp:ContentPlaceHolder ID="head" runat="server">        
+    </asp:ContentPlaceHolder>
+</head>
+<body id="master">
+    <form id="form1" runat="server" >
+        <div id="workarea">
+            <div id="header">
+                <div id="user">Welcome <%=DisplayName %><br />Today is <%=DateTime.Now.ToLongDateString() %></div>
+                <img src="/Images/GEM.jpg" alt="GEM Logo" />
+                <h1><span>GEM</span> Mortgage</h1>
+                <h2>A Division of Golden Empire Mortgage, Inc.</h2>
+                
+            </div>
+            <div class="sep"></div>
+            <div id="menu"><%=m_menu %></div>
+            <div class="sep2"></div>
+            <br />
+            <div id="message"><%=Message%></div><div id="error"><%=ErrorMessage%></div>
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">        
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </form>    
+</body>
+</html>

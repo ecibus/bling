@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Funding">
+  <class name="FundingExceptionSummary, Bling.Domain" table="none" >
+    <id name="BrokerId" column="brokers_Id" type="string" >
+      <generator class="assigned"></generator>
+    </id>
+
+    <property name="Branch" column="Branch" type="string" not-null="false" />
+    <property name="Month" column="Month" type="int" not-null="false" />
+    <property name="Year" column="Year" type="int" not-null="false" />
+    <property name="ExceptionCount" column="ExceptionCount" type="int" not-null="false" />
+    <property name="Comment" column="Comment" type="string" not-null="false" />
+
+  </class>
+</hibernate-mapping>

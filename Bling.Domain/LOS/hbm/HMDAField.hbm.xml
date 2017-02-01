@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Bling.Domain.LOS" assembly="Bling.Domain">
+  <class name="Bling.Domain.LOS.HMDAField, Bling.Domain" table="xGEM_HMDA_Fields">
+    <id name="Id" column="Id" type="Int32" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="Name" column="Name" type="string" length="200" />
+  </class>
+</hibernate-mapping>

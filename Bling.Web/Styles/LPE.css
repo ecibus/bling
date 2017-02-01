@@ -1,0 +1,30 @@
+﻿.comment { width: 200;  }
+
+label { text-align: left; font-weight: bold; width:250px; }
+textarea {width:300px;height:100px;padding:5px;}
+
+table.t1 td { vertical-align: top; padding: 0.0em 0.7em; font: 11px/18px Verdana, Arial, Helvetica, sans-serif; }
+
+.notice {color:orange;}
+/*.success { color:Green;  }*/
+
+/*tr.success td { font-weight: bolder; }*/
+
+tr.hover { background-color: #99ff99;  }
+
+tr.hover td {
+	border-top: 2px solid Green;
+	border-bottom: 2px solid Green;
+}
+
+.span-10 {width:570px;}
+
+.box_error, .box_notice, .box_success {padding:.8em;margin-bottom:1em;border:2px solid #ddd;}
+.box_error {background:#FBE3E4;color:#8a1f11;border-color:#FBC2C4;width:430px;}
+.box_notice {background:#FFF6BF;color:#514721;border-color:#FFD324;width:430px;}
+.box_success {background:#E6EFC2;color:#264409;border-color:#C6D880;width:430px;}
+.box_error a {color:#8a1f11;}
+.box_notice a {color:#514721;}
+.box_success a {color:#264409;}
+
+.red { color: red; }

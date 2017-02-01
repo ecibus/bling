@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain">
+  <class name="Translog, Bling.Domain" table="translog" mutable="false">
+
+    <id name="Id" column="translog_id" type="int" >
+      <generator class="native"></generator>
+    </id>
+
+    <property name="FileId" column="file_id" type="string"  not-null="true" />
+    <property name="ActorId" column="actor_id" type="string" not-null="false" />
+    <property name="Field" column="field" type="string" not-null="true" />
+    <property name="OldValue" column="OldVal" type="string" not-null="true" />
+    <property name="NewValue" column="NewVal" type="string" not-null="true" />
+    <property name="ChangeDate" column="ChangDate" type="DateTime" not-null="false" />
+  </class>
+</hibernate-mapping>

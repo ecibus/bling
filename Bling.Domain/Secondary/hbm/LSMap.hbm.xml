@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Secondary">
+  <class name="Bling.Domain.Secondary.LSMap, Bling.Domain" table="xGEM_LSMap">
+    <id name="Id" column="rec_Id" type="Int32" unsaved-value="0">
+      <generator class="native"></generator>
+    </id>
+    <property name="LS_InvestorCode" column="LS_InvCode" type="string" length="50" not-null="false" />
+    <property name="LS_LoanCode" column="LS_LoanCode" type="string" length="50" not-null="false" />
+    <property name="LS_LoanDescription" column="LS_LoanDesc" type="string" length="150" not-null="false" />
+    <property name="Exclude" column="GEMLock_Exclude" type="boolean" not-null="false" />
+    <property name="UpdatedOn" column="UpdatedOn" type="DateTime" not-null="false" />
+    <property name="UpdatedBy" column="UpdatedBy" type="string" length="50" not-null="false" />
+  </class>
+</hibernate-mapping>

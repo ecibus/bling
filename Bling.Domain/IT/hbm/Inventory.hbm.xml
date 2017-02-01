@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.IT">
+  <class name="Inventory" table="xGEM_Inventory">
+    <id name="Id" column="Id" type="Int32" unsaved-value="0">
+      <generator class="native"></generator>
+    </id>
+    <property name="IssuedOn" column="IssuedOn" type="DateTime" not-null="true" />
+    
+    <property name="Make" column="Make" type="string" not-null="true" />
+    <property name="Model" column="Model" type="string" not-null="true" />
+    <property name="SerialNumber" column="SerialNumber" type="string" not-null="true" />
+    <property name="Quantity" column="Quantity" type="Int32" not-null="true" />
+    <property name="AddedOn" column="dtAddedOn" type="DateTime" not-null="true" />
+    <property name="BranchName" column="BranchName" type="string" not-null="true" />
+
+    <property name="IssuedTo" column="IssuedTo" type="string" not-null="true" />
+    <property name="AddedBy" column="AddedBy" type="string" not-null="true" />
+
+    <!--<many-to-one name="IssuedTo" not-found="ignore" column="IssuedTo" fetch="join" insert="true" update="false" class="Bling.Domain.UserInfo" cascade="none" />-->
+    <!--<many-to-one name="AddedBy" not-found="ignore" column="AddedBy" fetch="join" insert="true" update="false" class="Bling.Domain.UserInfo" cascade="none" />-->
+  </class>
+</hibernate-mapping>

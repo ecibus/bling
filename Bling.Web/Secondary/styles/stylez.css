@@ -1,0 +1,47 @@
+﻿.hdrText
+{
+    text-align:center;
+}
+
+#btnCreate
+{
+    font-size:small;
+}
+
+#selOptions
+{
+	font-size:medium;
+	width:120px;
+}
+
+.dvTable
+{
+	display:table;
+}
+
+.dvRow
+{
+	display:table-row;
+}
+
+.dvCell
+{
+	display:table-cell;
+	padding:5px;
+	
+}
+
+#txtPend
+{
+	width:120px;
+	margin-left:8px;
+}
+
+#txtPstart
+{
+	width:120px;
+}
+.fileLink
+{
+	color:blue;
+}

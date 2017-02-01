@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.IT">
+  <class name="InventoryUser">
+    <id name="EmployId" column="employ_id" type="string" >
+      <generator class="assigned"></generator>
+    </id>
+    <property name="LastName" column="Last_Name" type="string" not-null="true" />
+    <property name="FirstName" column="first_Name" type="string" not-null="true" />
+    <property name="Branch" column="Branch" type="string" not-null="true" />
+  </class>
+</hibernate-mapping>

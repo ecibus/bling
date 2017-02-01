@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain">
+  
+
+  <class name="Bling.Domain.LUPopup, Bling.Domain" table="lu_popup" where="exclude=0" >
+    <id name="Id" column="view_link" type="int" >
+      <generator class="assigned"></generator>
+    </id>
+    <property name="Alias" column="alias" type="string" length="3" />
+    <property name="Description" column="descriptn" type="string" length="35" not-null="true" />
+    <property name="Type" column="type" type="string" length="10" not-null="true" />
+    <property name="ColumnOrder" column="col_order" type="int" not-null="true" />
+    
+  </class>
+
+</hibernate-mapping>

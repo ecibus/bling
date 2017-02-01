@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain">
+  <class name="Bling.Domain.ReportUser, Bling.Domain" table="xreport_user">
+    <id name="EmployId" column="employ_id" type="string" length="3" >
+      <generator class="assigned"></generator>
+    </id>
+    <property name="FirstName" column="fname" type="string" length="50" not-null="true" />
+    <property name="LastName" column="lname" type="string" length="50" not-null="true" />
+    <property name="IsFunder" column="funder" type="boolean" not-null="true" />
+    <property name="IsUnderwriter" column="uw" type="boolean" not-null="true" />
+    <property name="IsCorp" column="corp" type="boolean" not-null="true" />
+    
+  </class>
+</hibernate-mapping>

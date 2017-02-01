@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Accounting">
+  <class name="CashDepositAccount, Bling.Domain" table="[CashDeposits-AccountTable]">
+
+    <id name="AccountNo" column="Account#" type="string"  >
+      <generator class="assigned"></generator>
+    </id>
+    <property name="AccountDescription" column="AccountDescription" type="string" not-null="true" />
+
+  </class>
+</hibernate-mapping>

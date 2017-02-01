@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain">
+  <class name="Bling.Domain.GEMGroup, Bling.Domain" table="xGEM_Group">
+    <id name="Id" column="Id" type="Int32" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="GroupName" column="GroupName" type="string" not-null="true" length="50" />
+    
+    <!--<bag name="Users" generic="true" lazy="false" table="xGEM_UserGroup">
+      <key column="GroupId" />
+      <many-to-many column="UserId" class="Bling.Domain.GEMUser,Bling.Domain" />
+    </bag>-->
+
+    <bag name="Applications" generic="true" lazy="false" table="xGEM_ApplicationGroup">
+      <key column="GroupId" />
+      <many-to-many column="ApplicationId" class="Bling.Domain.GEMApplication,Bling.Domain" />
+    </bag>
+    
+  </class>
+</hibernate-mapping>

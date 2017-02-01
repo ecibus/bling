@@ -1,0 +1,2 @@
+InvestorName,InvestorProductName,InvestorProductCodeAlias
+Test CitiMortgage,Agency 15 Year Fixed - EA I BE,AM15

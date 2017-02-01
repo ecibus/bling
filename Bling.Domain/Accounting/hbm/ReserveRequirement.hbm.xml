@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Accounting">
+  <class name="ReserveRequirement, Bling.Domain" table="xGEM_ReserveRequirement">
+
+    <id name="Id" column="Id" type="int"  >
+      <generator class="native"></generator>
+    </id>
+    <property name="CostCenter" column="CostCenter" type="string" not-null="false" />
+    <property name="Recipient" column="Recipient" type="string" not-null="false" />
+    <property name="ReserveMinimum" column="ReserveMinimum" type="Decimal" not-null="false" />
+    <property name="FixedReserve" column="FixedReserve" type="Decimal" not-null="false" />
+  </class>
+</hibernate-mapping>

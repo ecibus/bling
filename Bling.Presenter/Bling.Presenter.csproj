@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8853094F-0B6F-4526-BF8C-EE24D2DDE596}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bling.Presenter</RootNamespace>
+    <AssemblyName>Bling.Presenter</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\Crystal\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\Crystal\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.CRAXDRT, Version=9.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\Interop\Interop.CRAXDRT.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Bling.Library\json.net\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.0.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Web\bin\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounting\AddBranchPresenter.cs" />
+    <Compile Include="Accounting\AjaxActiveBranchPresenter.cs" />
+    <Compile Include="Accounting\AjaxAMBExportFormPresenter.cs" />
+    <Compile Include="Accounting\AjaxAMBImportFormPresenter.cs" />
+    <Compile Include="Accounting\AjaxAMBReportFormPresenter.cs" />
+    <Compile Include="Accounting\AjaxByteReportFormPresenter.cs" />
+    <Compile Include="Accounting\AjaxCashDepositEntryPresenter.cs" />
+    <Compile Include="Accounting\AjaxMCRFormPresenter.cs" />
+    <Compile Include="Accounting\AjaxPennyMacCDRFormPresenter.cs" />
+    <Compile Include="Accounting\AjaxReserveRequirementPresenter.cs" />
+    <Compile Include="Accounting\AjaxTrustAccountPresenter.cs" />
+    <Compile Include="Accounting\AjaxWarehouseAdvanceRecapPresenter.cs" />
+    <Compile Include="Accounting\CashDepositEntryPresenter.cs" />
+    <Compile Include="Accounting\CrystalForCommission.cs" />
+    <Compile Include="Accounting\DocTrustPresenter.cs" />
+    <Compile Include="Accounting\IncomeBreakdownPresenter.cs" />
+    <Compile Include="Accounting\IncomeBreakdownServerPresenter.cs" />
+    <Compile Include="Accounting\MCRPresenter.cs" />
+    <Compile Include="Accounting\ReserveRequirementPresenter.cs" />
+    <Compile Include="Compliance\AjaxAuditScoreCardPresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compliance\AjaxChaseFundingFormPresenter.cs" />
+    <Compile Include="Compliance\AjaxComplianceEasePresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compliance\AjaxDIRWPresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compliance\AjaxLPEPresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compliance\AuditScoreCardFormPresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compliance\DIRWPresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compliance\LPEDetailPresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compliance\LPEPresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compliance\MERSReconciliationFormPresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Crystal.cs" />
+    <Compile Include="CrystalInfo.cs" />
+    <Compile Include="CrystalParameter.cs" />
+    <Compile Include="CSVExportPresenter.cs" />
+    <Compile Include="CustomerService\SecurityConnectionPresenter.cs" />
+    <Compile Include="FTP.cs" />
+    <Compile Include="Funding\AjaxCustomersBankFormPresenter.cs" />
+    <Compile Include="Funding\AjaxFundingExceptionSummaryPresenter.cs" />
+    <Compile Include="Funding\AjaxJPMorganFormPresenter.cs" />
+    <Compile Include="Funding\AjaxTexasCapitalFormPresenter.cs" />
+    <Compile Include="Funding\AjaxViewPointFormPresenter.cs" />
+    <Compile Include="Funding\AjaxWLSFormPresenter.cs" />
+    <Compile Include="Funding\AjaxUSBFormPresenter.cs" />
+    <Compile Include="Funding\AjaxCNBFormPresenter.cs" />
+    <Compile Include="HR\AddEnroleePresenter.cs" />
+    <Compile Include="HR\Ajax401KPresenter.cs" />
+    <Compile Include="HR\AjaxCensusDateRangePresenter.cs" />
+    <Compile Include="HR\AjaxCommissionAnalysisPresenter.cs" />
+    <Compile Include="HR\AjaxCommissionReportPresenter.cs" />
+    <Compile Include="HR\AjaxInsuranceEnrollmentPresenter.cs" />
+    <Compile Include="HR\AjaxJobListingPresenter.cs" />
+    <Compile Include="HR\AjaxLOAdjustmentPresenter.cs" />
+    <Compile Include="HR\AjaxLOBasisPointsPresenter.cs" />
+    <Compile Include="HR\AjaxProcessLOCommissionPresenter.cs" />
+    <Compile Include="HR\AjaxStampDatePresenter.cs" />
+    <Compile Include="HR\AjaxTimeCardPresenter.cs" />
+    <Compile Include="HR\AjaxValidateTimeCardPresenter.cs" />
+    <Compile Include="HR\BenefitNotificationPresenter.cs" />
+    <Compile Include="HR\CensusDateRangePresenter.cs" />
+    <Compile Include="HR\ChangeEEStatusPresenter.cs" />
+    <Compile Include="HR\ChangeRatePresenter.cs" />
+    <Compile Include="HR\CommissionReportPresenter.cs" />
+    <Compile Include="HR\EmployeeCountPresenter.cs" />
+    <Compile Include="HR\ExpiredLicensePresenter.cs" />
+    <Compile Include="HR\InsuranceEnrollmentPresenter.cs" />
+    <Compile Include="HR\JobListingPresenter.cs" />
+    <Compile Include="HR\LOAdjustFormPresenter.cs" />
+    <Compile Include="HR\LOBasisPointsPresenter.cs" />
+    <Compile Include="HR\ProcessLOCommissionPresenter.cs" />
+    <Compile Include="HR\TimeCardFormPresenter.cs" />
+    <Compile Include="IT\AddUserPresenter.cs" />
+    <Compile Include="IT\AjaxInventoryPresenter.cs" />
+    <Compile Include="IT\AssignApplicationPresenter.cs" />
+    <Compile Include="IT\AssignGroupPresenter.cs" />
+    <Compile Include="IT\InventoryPresenter.cs" />
+    <Compile Include="LOS\AddUserInFundingReportPresenter.cs" />
+    <Compile Include="LOS\AddUserInReportPresenter.cs" />
+    <Compile Include="LOS\AddUserInUnderwritingReportPresenter.cs" />
+    <Compile Include="LOS\IAddUserInReportView.cs" />
+    <Compile Include="LOS\LOSPresenter.cs" />
+    <Compile Include="LOS\HMDAChangesPresenter.cs" />
+    <Compile Include="LOS\HMDAPresenter.cs" />
+    <Compile Include="LOS\IHMDA.cs" />
+    <Compile Include="Presenter.cs" />
+    <Compile Include="BasePagePresenter.cs" />
+    <Compile Include="MainPresenter.cs" />
+    <Compile Include="Processing\AjaxAppraiserSelectorPresenter.cs" />
+    <Compile Include="Processing\AjaxCSVExportFormPresenter.cs" />
+    <Compile Include="Processing\AjaxQCExportFormPresenter.cs" />
+    <Compile Include="Processing\CPPPresenter.cs" />
+    <Compile Include="Processing\GEMAppraisalPresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Secondary\AjaxChangeProgramCodePresenter.cs" />
+    <Compile Include="Secondary\AjaxCSVExportFormPresenter.cs" />
+    <Compile Include="Secondary\AjaxHedgeGMACPresenter.cs" />
+    <Compile Include="Secondary\AjaxLoanSolutionPresenter.cs" />
+    <Compile Include="IAjaxView.cs" />
+    <Compile Include="Secondary\AjaxShowHideProgramCodePresenter.cs" />
+    <Compile Include="Secondary\AjaxTradeFormPresenter.cs" />
+    <Compile Include="Secondary\CountryPlaceFormPresenter.cs" />
+    <Compile Include="Secondary\HideByInvestorPresenter.cs" />
+    <Compile Include="Secondary\HideByProgramCodePresenter.cs" />
+    <Compile Include="Secondary\LSDTInvestorMapperPresenter.cs" />
+    <Compile Include="Secondary\LoanSolutionProgramCodePresenter.cs" />
+    <Compile Include="Secondary\UploadMCMPresenter.cs" />
+    <Compile Include="StaticSessionManager.cs" />
+    <Compile Include="Underwriting\AjaxByteCorpUWReportFormPresenter.cs" />
+    <Compile Include="Underwriting\AjaxScoreCardPresenter.cs" />
+    <Compile Include="Underwriting\BranchScoreCardPresenter.cs" />
+    <Compile Include="Underwriting\ScoreCardPresenter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bling.Domain\Bling.Domain.csproj">
+      <Project>{21F081B4-2B02-4B81-9F4E-FEF10EB76D34}</Project>
+      <Name>Bling.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bling.Repository\Bling.Repository.csproj">
+      <Project>{6BA8B5FF-CA82-4F9E-8089-284D3FE0BC72}</Project>
+      <Name>Bling.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Mcr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Fc" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScheduleASection"  minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="A010_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A020_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A032_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A034_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A036_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A040_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A050_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A062_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A064_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A066_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A070_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A080_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A090_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A100_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A110_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A160_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A170_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A180_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A190_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A200_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A210_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A230_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A250_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A260_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A262_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A264_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A266_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030A_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030A_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030A_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030A_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030B_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030B_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030B_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030B_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030C_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030C_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030C_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030C_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030D_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030D_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030D_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030D_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030E_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030E_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030E_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030E_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030F_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030F_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030F_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030F_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030G_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030G_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030G_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030G_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030L_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030L_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030L_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030L_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030M_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030M_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030M_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030M_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030N_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030N_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030N_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030N_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030O_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030O_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030O_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030O_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030P_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030P_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030P_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030P_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030Q_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030Q_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030Q_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030Q_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030S_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030S_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030S_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030S_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030U_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030U_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030U_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030U_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030W_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030W_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030W_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A030W_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060A_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060A_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060A_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060A_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060B_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060B_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060B_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060B_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060C_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060C_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060C_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060C_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060D_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060D_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060D_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060D_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060E_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060E_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060E_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060E_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060F_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060F_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060F_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060F_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060G_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060G_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060G_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060G_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060H_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060H_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060H_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060H_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060L_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060L_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060L_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060L_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060M_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060M_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060M_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060M_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060N_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060N_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060N_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060N_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060O_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060O_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060O_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060O_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060P_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060P_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060P_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060P_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060Q_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060Q_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060Q_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060Q_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060R_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060R_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060R_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060R_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060X_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060X_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060Y_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060Y_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060Z_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060Z_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AA_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AA_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AB_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AB_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AC_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AC_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AD_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AE_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AF_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AH_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AH_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AH_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AH_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AI_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AI_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AI_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A060AI_4" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A090A_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A090B_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A090T_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A120A_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A120B_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A120C_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A120D_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A120E_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A120F_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A120G_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A120H_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A130A_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A130B_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A130T_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A130E_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A150A_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A150B_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A150C_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A150D_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A150E_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A150F_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A150G_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A150H_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220A_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220A_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220B_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220B_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220C_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220C_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220D_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220D_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220E_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220E_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220F_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220F_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220G_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220G_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220H_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A220H_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A230A_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A230B_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A230C_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A230D_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A230E_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A230F_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A230G_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A230H_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="A230J_1" type="ExplanatoryText" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ScheduleBSection"  minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="B010_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B020_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B030_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B040_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B050_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B060_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B070_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B080_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B090_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B100_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B110_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B120_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B130_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B140_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B150_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B160_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B170_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B180_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B190_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B200_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B210_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B230_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B240_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B250_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B260_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B270_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B280_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B290_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B300_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B310_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B320_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B330_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B340_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350A_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350B_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350C_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350D_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350E_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350F_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350G_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350H_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350I_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350J_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350K_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350L_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350M_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="B350N_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ScheduleCSection"  minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="C010_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C010_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C010_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C020_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C020_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C020_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C030_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C030_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C030_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C040_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C040_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C040_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C050_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C050_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C050_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C060_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C060_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C060_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C060_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C060_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C070_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C070_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C070_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C070_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C080_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C080_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C080_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C100_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C100_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C100_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C110_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C110_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C110_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C120_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C120_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C120_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C130_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C130_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C140_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C140_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C150_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C150_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C150_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C150_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C150_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C200_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C200_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C200_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C210_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C210_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C210_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C220_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C220_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C220_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C230_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C230_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C230_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C240_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C240_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C240_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C250_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C250_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C250_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C300_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C300_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C300_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C310_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C310_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C310_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C320_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C320_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C320_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C330_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C330_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C330_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C340_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C340_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C340_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C350_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C350_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C350_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C360_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C360_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C360_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C370_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C370_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C370_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C380_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C380_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C380_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C390_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C390_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C390_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C400_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C400_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C400_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C410_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C410_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C410_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C420_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C420_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C420_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C430_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C430_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C430_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C440_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C440_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C440_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C500_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C500_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C500_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C510_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C510_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C510_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C520_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C520_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C520_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C530_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C530_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C530_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C540_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C540_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C540_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C550_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C550_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C550_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C560_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C560_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C560_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C570_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C570_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C570_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C580_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C580_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C580_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C590_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C590_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C590_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C600_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C600_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C600_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C610_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C610_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C610_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C620_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C620_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C620_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C630_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C630_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C630_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C630_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C640_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C640_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C640_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C700_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C700_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C700_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C710_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C710_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C710_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C720_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C720_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C720_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C720_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C720_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C730_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C730_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C730_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C740_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C740_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C740_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C740_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C740_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C750_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C750_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C750_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C760_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C760_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C760_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C760_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C760_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C770_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C770_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C770_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C770_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="C770_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="CF010_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="CF020_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="CF030_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ScheduleDSection"  minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="D010_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D010_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D020_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D020_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D030_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D030_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D040_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D040_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D050_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D050_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D050_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D060_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D060_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D060_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D060_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D080_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D080_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D080_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D090_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D090_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D090_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D110_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D110_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D120_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D120_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D120_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D120_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D140_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D140_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D140_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D140_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D140_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D150_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D150_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D150_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D150_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D150_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D160_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D160_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D160_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D160_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D160_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D200_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D200_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D200_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D200_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D200_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D210_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D210_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D210_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D210_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D210_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D220_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D220_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D220_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D220_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D220_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D230_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D230_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D230_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D230_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D230_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D240_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D240_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D240_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D240_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D240_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D250_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D250_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D250_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D250_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D260_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D260_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D260_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D260_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D270_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D270_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D270_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D270_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D270_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D280_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D280_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D280_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D280_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D280_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D290_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D290_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D290_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D290_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D290_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D320_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D320_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D320_3" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D320_4" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D320_5" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D400_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D410_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D420_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D430_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D510_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D520_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D540_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="D560_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ScheduleOSection"  minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="O010_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O020_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O030_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O040_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O050_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O060_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O110_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O120_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O130_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O210_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O220_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O230_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O240_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O250_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O310_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O320_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O330_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O340_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O350_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O360_1" type="Dollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="O370_1" type="Count" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Rmla" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SectionISection"  minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AC010_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC010_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC010_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC010_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC020_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC020_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC020_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC020_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC030_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC030_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC030_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC030_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC040_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC040_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC040_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC040_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC050_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC050_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC050_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC050_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC060_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC060_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC060_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC060_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC070_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC070_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC070_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC070_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC080_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC080_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC080_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC080_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC100_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC100_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC100_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC100_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC100_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC100_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC110_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC110_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC110_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC110_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC110_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC110_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC120_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC120_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC120_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC120_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC120_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC120_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC130_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC130_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC130_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC130_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC130_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC130_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC200_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC200_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC200_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC200_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC200_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC200_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC210_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC210_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC210_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC210_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC210_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC210_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC220_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC220_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC220_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC220_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC220_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC220_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC300_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC300_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC300_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC300_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC300_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC300_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC310_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC310_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC310_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC310_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC310_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC310_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC320_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC320_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC320_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC320_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC320_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC320_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC400_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC400_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC400_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC400_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC400_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC400_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC500_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC500_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC500_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC500_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC500_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC500_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC510_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC510_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC510_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC510_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC510_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC510_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC520_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC520_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC520_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC520_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC520_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC520_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC600_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC610_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC610_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC700_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC700_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC700_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC700_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC700_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC700_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC710_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC710_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC710_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC710_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC710_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC710_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC720_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC720_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC720_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC720_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC720_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC720_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC800_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC800_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC800_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC800_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC800_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC800_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC620_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC630_3" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC630_5" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC900_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC910_4" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC910_6" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC1000_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AC1000_2" type="Count" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ListSectionOfSectionILinesOfCreditItem" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="DetailItemList" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="SectionILinesOfCreditItem" minOccurs="0" maxOccurs="3000">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ItemId" type="xs:unsignedLong" minOccurs="0" maxOccurs="1" />
+                                <xs:element name="ACLOC" type="ShortText" minOccurs="0" maxOccurs="1" />
+                                <xs:element name="ACLOC_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                                <xs:element name="ACLOC_2" type="Dollar" minOccurs="0" maxOccurs="1" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ListSectionOfSectionIMlosItem" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="DetailItemList" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="SectionIMlosItem" minOccurs="0" maxOccurs="3000">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ItemId" type="xs:unsignedLong" minOccurs="0" maxOccurs="1" />
+                                <xs:element name="ACMLO" type="Number" minOccurs="0" maxOccurs="1" />
+                                <xs:element name="ACMLO_2" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                                <xs:element name="ACMLO_3" type="Count" minOccurs="0" maxOccurs="1" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="SectionIISection"  minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="I010_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I010_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I020_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I020_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I030_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I030_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I040_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I040_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I050_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I050_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I060_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I060_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I070_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I070_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I080_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I080_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I110_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I110_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I120_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I120_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I130_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I130_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I140_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I140_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I150_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I150_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I160_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I160_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I170_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I170_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I210_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I210_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I220_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I220_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I230_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I230_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I250_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I250_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I251_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I251_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I260_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I260_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I261_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I261_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I270_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I270_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I271_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I271_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I280_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I280_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I281_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I281_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I290_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I290_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I291_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I291_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I300_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I300_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I301_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I301_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I310_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I310_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I311_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I311_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I312_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I312_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I313_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I313_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I314_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I314_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I320_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I320_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I321_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I321_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I330_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I330_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I331_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I331_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I340_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I340_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I341_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I341_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I350_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I350_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I351_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I351_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I352_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I352_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I353_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I353_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I354_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I354_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I360_2" type="Number" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I365_2" type="Number" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I370_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I370_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I371_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I371_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I372_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I372_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I373_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I373_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I374_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I374_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I375_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I375_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I380_2" type="Hundredth" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I385_2" type="Hundredth" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I390_2" type="Hundredth" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I400_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I400_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I401_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I401_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I402_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I402_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I403_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I403_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I404_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I404_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I405_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I405_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I410_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I410_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I420_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I420_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I430_3" type="Hundredth" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I440_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I440_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I450_3" type="Number" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I455_3" type="Number" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I456_3" type="Number" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I460_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="I460_2" type="Count" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="SectionIIISection"  minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="S100_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S100_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S110_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S110_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S120_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S120_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S130_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S130_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S140_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S140_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S150_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S150_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S160_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S160_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S200_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S200_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S210_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S210_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S220_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S220_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S230_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S230_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S240_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S240_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S300_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S300_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S305_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S305_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S310_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S310_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S315_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S315_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S320_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S320_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S325_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S325_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S330_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S330_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S335_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S335_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S340_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S340_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S345_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S345_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S350_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S350_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S355_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S355_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S400_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S400_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S410_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S410_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S420_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S420_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S430_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S430_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S440_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S440_2" type="Count" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S450_1" type="PositiveDollar" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="S450_2" type="Count" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ExplanatoryNotesSection"  minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ACNOTE_1" type="ExplanatoryText" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="stateCode" use="required" >
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="AL" />
+                  <xs:enumeration value="AK" />
+                  <xs:enumeration value="AZ" />
+                  <xs:enumeration value="AR" />
+                  <xs:enumeration value="CA" />
+                  <xs:enumeration value="CO" />
+                  <xs:enumeration value="CT" />
+                  <xs:enumeration value="DE" />
+                  <xs:enumeration value="DC" />
+                  <xs:enumeration value="FL" />
+                  <xs:enumeration value="GA" />
+                  <xs:enumeration value="GU" />
+                  <xs:enumeration value="HI" />
+                  <xs:enumeration value="ID" />
+                  <xs:enumeration value="IL" />
+                  <xs:enumeration value="IN" />
+                  <xs:enumeration value="IA" />
+                  <xs:enumeration value="KS" />
+                  <xs:enumeration value="KY" />
+                  <xs:enumeration value="LA" />
+                  <xs:enumeration value="ME" />
+                  <xs:enumeration value="MD" />
+                  <xs:enumeration value="MA" />
+                  <xs:enumeration value="MI" />
+                  <xs:enumeration value="MN" />
+                  <xs:enumeration value="MS" />
+                  <xs:enumeration value="MO" />
+                  <xs:enumeration value="MT" />
+                  <xs:enumeration value="NE" />
+                  <xs:enumeration value="NV" />
+                  <xs:enumeration value="NH" />
+                  <xs:enumeration value="NJ" />
+                  <xs:enumeration value="NM" />
+                  <xs:enumeration value="NY" />
+                  <xs:enumeration value="NC" />
+                  <xs:enumeration value="ND" />
+                  <xs:enumeration value="OH" />
+                  <xs:enumeration value="OK" />
+                  <xs:enumeration value="OR" />
+                  <xs:enumeration value="PA" />
+                  <xs:enumeration value="PR" />
+                  <xs:enumeration value="RI" />
+                  <xs:enumeration value="SC" />
+                  <xs:enumeration value="SD" />
+                  <xs:enumeration value="TN" />
+                  <xs:enumeration value="TX" />
+                  <xs:enumeration value="UT" />
+                  <xs:enumeration value="VT" />
+                  <xs:enumeration value="VI" />
+                  <xs:enumeration value="VA" />
+                  <xs:enumeration value="WA" />
+                  <xs:enumeration value="WV" />
+                  <xs:enumeration value="WI" />
+                  <xs:enumeration value="WY" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="type" use="required" >
+        <xs:simpleType>
+          <xs:restriction base="xs:string" >
+            <xs:enumeration value="E" />
+            <xs:enumeration value="S" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="year" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="2011" />
+            <xs:totalDigits value="4" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="periodType" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" >
+            <xs:enumeration value="MCRQ1" />
+            <xs:enumeration value="MCRQ2" />
+            <xs:enumeration value="MCRQ3" />
+            <xs:enumeration value="MCRQ4" />
+            <xs:enumeration value="MCRANNUAL" />
+            <xs:enumeration value="MCRFQ1" />
+            <xs:enumeration value="MCRFQ2" />
+            <xs:enumeration value="MCRFQ3" />
+            <xs:enumeration value="MCRYTD" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="reportingDate" use="optional" >
+        <xs:simpleType>
+          <xs:restriction base="xs:date">
+            <xs:minInclusive value="2011-01-01" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="PositiveDollar">
+    <xs:restriction base="xs:long">
+      <xs:totalDigits value="13" />
+      <xs:fractionDigits value="0" />
+      <xs:minInclusive value="0" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Dollar">
+    <xs:restriction base="xs:long">
+      <xs:totalDigits value="13" />
+      <xs:fractionDigits value="0" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Count">
+    <xs:restriction base="xs:long">
+      <xs:totalDigits value="13" />
+      <xs:fractionDigits value="0" />
+      <xs:minInclusive value="0" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Number">
+    <xs:restriction base="xs:long">
+      <xs:totalDigits value="13" />
+      <xs:fractionDigits value="0" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Hundredth">
+    <xs:restriction base="xs:decimal">
+      <xs:totalDigits value="13" />
+      <xs:fractionDigits value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ShortText">
+    <xs:restriction base="xs:string" >
+      <xs:maxLength value="150" />
+      <xs:pattern value="[^&lt;>%]*"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ExplanatoryText">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="4000" />
+      <xs:pattern value="[^&lt;>%]*"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

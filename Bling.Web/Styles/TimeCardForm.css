@@ -1,0 +1,50 @@
+﻿thead td
+{
+    font-weight: bold;
+    vertical-align: text-top;
+    border-bottom: 1px solid red;    
+}
+
+thead tr
+{
+    margin-bottom : 30px;
+}
+
+table
+{    
+    border-collapse: collapse;
+}
+
+td
+{
+    text-align: center;
+    padding: .3em;
+    border: 0;
+}
+
+.nameColumn
+{
+    text-align: left;
+}
+
+.weekend
+{
+    color: Purple;
+    background-color:Yellow;
+}
+
+.totalHours
+{
+    font-weight: bold !importants;
+}      
+
+.accepted
+{
+    color:Green;
+    font-weight: bold;
+}
+
+.submitted
+{
+    color:Blue;
+}

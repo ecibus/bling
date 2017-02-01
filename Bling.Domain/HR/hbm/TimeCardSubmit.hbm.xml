@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.HR">
+  <class name="TimeCardSubmit, Bling.Domain" table="dbo.xGEM_TimeCard_Submit" >
+    <id name="Id" column="Id" type="int">
+      <generator class="native"></generator>
+    </id>
+    <!--<property name="EmployeeId" column="Employ_Id" type="string" not-null="true" />-->
+    <property name="Username" column="Username" type="string" not-null="true" />
+    <property name="Manager" column="Manager" type="string" not-null="true" />
+    <property name="Month" column="[Month]" type="int" not-null="true" />
+    <property name="Year" column="[Year]" type="int" not-null="true" />
+    <property name="MonthPart" column="MonthPart" type="int" not-null="true" />
+    <property name="Submitted" column="Submitted" not-null="true" />
+    <property name="Accepted" column="Accepted" type="boolean" not-null="true" />
+    <property name="AcceptedOn" column="AcceptedOn" not-null="false" />
+    <property name="AcceptedBy" column="AcceptedBy" type="string" not-null="false" />
+
+  </class>
+</hibernate-mapping>

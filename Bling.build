@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="Bling" default="help" xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd">
+  <loadtasks assembly="C:\Tools\nantcontrib-0.92\bin\Nant.Contrib.Tasks.dll" />
+
+  <script language="C#" prefix="GEM">
+    <code>
+      <![CDATA[
+        [Function("generate_filename")]
+        public static string generate_filename()
+        {
+          DateTime now = DateTime.Now;
+          return String.Format("Bling_{0}_{1}_{2}.zip", now.Year, now.Month.ToString("00"), now.Day.ToString("00"));
+        }]]>
+    </code>
+  </script>
+
+  <property name="solution.file.name" value="Bling.sln" />
+  <property name="project.config" value="release"/>
+  <property name="build.output.dir" value="AutomatedBuildOutput"/>
+  <property name="tests.output.dir" value="${build.output.dir}/UnitTestsOutput"/>
+  
+  <property name="assembly_directory" value="Bling.Web"/>
+  <property name="package_directory" value="\\devsrv\d$\Packages\Bling"/>
+  <property name="release_directory" value="\\devsrv\d$\Application\Bling"/>
+  <property name="filename" value="${GEM::generate_filename()}"/>
+  <property name="package_name" value="${package_directory}\${filename}"/>
+
+  <target name="help">
+    <echo message="NAnt build file for Bling" />
+    <echo message="Usage:"/>
+    <echo message="  nant build   - to build the solution and run unit test"/>
+    <echo message="  nant release - to release the assembly to server"/>
+  </target>
+
+  <target name="build" depends="compile.source.debug, test.run.debug, format.test" />
+  
+  <target name="release" depends="compile.source.release, test.run.release, package">
+    <unzip zipfile="${package_name}" todir="${release_directory}"/>
+  </target>
+
+  <target name="package" depends="build">
+    <zip zipfile="${package_name}">
+      <fileset basedir="${assembly_directory}">
+        <include name="**/*.dll"/>
+        <include name="**/*.aspx"/>
+		<include name="**/*.ashx"/>
+        <include name="**/*.css"/>
+        <include name="**/*.js"/>
+        <include name="**/*.jpg"/>
+        <include name="**/*.png"/>
+        <include name="**/*.gif"/>
+        <include name="**/*.rpt"/>
+        <include name="**/*.png"/>
+        <include name="**/*.master"/>
+        <include name="**/Template.xls"/>
+        <include name="**/web.config"/>
+        <include name="**/*.asax"/>
+        <include name="**/*.xml"/>
+        <exclude name="**/dll/**"/>
+        <exclude name="**/obj/**"/>
+      </fileset>
+    </zip>
+  </target>
+
+  
+  
+  <target name="clean.source.debug">
+    <exec program="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe"
+          commandline="${solution.file.name} /t:Clean /p:Configuration=debug /v:q" workingdir="." />
+    <echo message="Clean Finished" />
+  </target>
+
+  <target name="compile.source.debug" depends="clean.source.debug">
+    <exec program="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe"
+          commandline="${solution.file.name} /t:Rebuild /p:Configuration=debug /v:q" workingdir="." />
+    <echo message="Compile Finished" />
+  </target>
+
+  <target name="test.run.debug">
+    <echo message="Starting to run tests"/>
+    <nunit2 haltonfailure="false" failonerror="false" verbose ="true" >
+      <formatter type="Xml" extension=".xml" outputdir="${tests.output.dir}" usefile="true" />
+      <test assemblyname="Bling.Tests\bin\Debug\Bling.Tests.dll">
+        <categories>
+          <exclude name="Database"/>
+        </categories>
+      </test>
+    </nunit2>
+  </target>
+
+  <target name="clean.source.release">
+    <exec program="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe"
+          commandline="${solution.file.name} /t:Clean /p:Configuration=release /v:q" workingdir="." />
+    <echo message="Clean Finished" />
+  </target>
+
+  <target name="compile.source.release" depends="clean.source.debug">
+    <exec program="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe"
+          commandline="${solution.file.name} /t:Rebuild /p:Configuration=release /v:q" workingdir="." />
+    <echo message="Compile Finished" />
+  </target>
+
+  <target name="test.run.release">
+    <echo message="Starting to run tests"/>
+    <nunit2 haltonfailure="false" failonerror="false" verbose ="true" >
+      <formatter type="Xml" extension=".xml" outputdir="${tests.output.dir}" usefile="true" />
+      <test assemblyname="Bling.Tests\bin\release\Bling.Tests.dll">
+        <categories>
+          <exclude name="Database"/>
+        </categories>
+      </test>
+    </nunit2>
+  </target>
+
+  <target name="format.test">
+    <exec basedir="C:\SourceCode\Bling\Bling.Library\NUnitResults-1.0-bin" program="NUnitResults">
+      <arg value="${tests.output.dir}\Bling.Tests.dll-results.xml" />
+      <arg value="${tests.output.dir}" />
+    </exec>
+  </target>
+
+  <target name="nunitrelease">
+    <exec program="nunit-console">
+      <arg value="Bling.Tests\bin\Release\Bling.Tests.dll" />
+      <arg value="/exclude:Database" />
+    </exec>
+  </target>
+  
+  <target name="nunit">
+    <exec program="nunit-console">
+      <arg value="Bling.Tests\bin\Debug\Bling.Tests.dll" />
+      <arg value="/exclude:Database" />
+    </exec>
+  </target>
+
+  <target name="nunitdb">
+    <exec program="nunit-console">
+      <arg value="Bling.Tests\bin\Debug\Bling.Tests.dll" />
+      <arg value="/include:Database" />
+    </exec>
+  </target>
+
+  
+</project>

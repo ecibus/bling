@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Accounting">
+  <class name="ActiveBranch, Bling.Domain" table="xGEM_ActiveBranch">
+
+    <id name="Id" column="Id" type="int"  >
+      <generator class="native"></generator>
+    </id>
+    <property name="MonthEnd" column="MonthEnd" type="string" not-null="false" />
+    <property name="CurrentMonth" column="CurrentMonth" type="int" not-null="false" />
+    <property name="CurrentMonthMinus1" column="CurrentMonthM1" type="int" not-null="false" />
+    <property name="CurrentMonthMinus2" column="CurrentMonthM2" type="int" not-null="false" />
+    <property name="FYTD" column="FYTD" type="int" not-null="false" />
+  </class>
+</hibernate-mapping>

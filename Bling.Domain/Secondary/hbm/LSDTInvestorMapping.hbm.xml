@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Secondary">
+  <class name="Bling.Domain.Secondary.LSDTInvestorMapping, Bling.Domain" table="xGEM_LSDTInvestor">
+    <id name="Id" column="Id" type="int" unsaved-value="0">
+      <generator class="native"></generator>
+    </id>
+    <property name="LoanSolutionInvestor" column="LSInvestor" type="string" length="100" not-null="true" />
+    <property name="DataTracInvestor" column="DTInvestorCode" type="string" length="100" not-null="true" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain">
+  <class name="CashDepositBranch" table="[CashDeposits-Branch#s]">
+    <id name="BranchNo" column="Branch#" type="string">
+      <generator class="assigned"></generator>
+    </id>
+    <property name="BranchName" column="BranchName" type="string" />
+  </class>
+</hibernate-mapping>

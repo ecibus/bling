@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.HR">
+  <class name="LOMaster, Bling.Domain" table="dbo.LOMaster" >
+    <id name="Code" column="LO_Code" type="string">
+      <generator class="assigned"></generator>
+    </id>
+    <property name="Name" column="LO_Name" type="string" not-null="false" />    
+
+  </class>
+</hibernate-mapping>

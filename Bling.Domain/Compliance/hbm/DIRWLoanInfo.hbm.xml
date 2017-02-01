@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Compliance">
+  <class name="DIRWLoanInfo, Bling.Domain" table="none">
+
+    <id name="FileId" column="FileId" type="string" >
+      <generator class="assigned"></generator>
+    </id>
+    <property name="LoanNumber" column="LoanNumber" type="string"  not-null="true" />
+    <property name="Borrower" column="Borrower" type="string" not-null="true" />
+    <property name="Status" column="Status" type="string" not-null="true" />
+
+    <property name="LoanProgram" column="LoanProgram" type="string" not-null="true" />
+    <property name="Underwriter" column="Underwriter" type="string" not-null="true" />
+    <property name="Funder" column="Funder" type="string" not-null="true" />
+    <property name="Processor" column="Processor" type="string" not-null="true" />
+    <property name="Reviewer" column="Reviewer" type="string" not-null="true" />
+    <property name="DateReviewed" column="DateReviewed" type="string" not-null="true" />
+    <property name="FundedDate" column="FundedDate" type="string" not-null="false" />
+    <property name="State" column="State" type="string" not-null="false" />
+    <property name="DeniedDate" column="DeniedDate" type="string" not-null="false" />
+    <property name="CancelledDate" column="CancelledDate" type="string" not-null="false" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6BA8B5FF-CA82-4F9E-8089-284D3FE0BC72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bling.Repository</RootNamespace>
+    <AssemblyName>Bling.Repository</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.DynamicProxy2, Version=2.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.PXD010704dll">
+      <HintPath>..\Bling.Library\Interop\Interop.PXD010704dll.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.0.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\OracleDataAccess\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractDao.cs" />
+    <Compile Include="Accounting\ActiveBranchDao.cs" />
+    <Compile Include="Accounting\AMBExportDao.cs" />
+    <Compile Include="Accounting\AMBImportDao.cs" />
+    <Compile Include="Accounting\AMBReportDao.cs" />
+    <Compile Include="Accounting\BranchCodeDao.cs" />
+    <Compile Include="Accounting\BranchDao.cs" />
+    <Compile Include="Accounting\CashDepositAccountDao.cs" />
+    <Compile Include="Accounting\CashDepositDao.cs" />
+    <Compile Include="Accounting\DocTrustRunHistoryDao.cs" />
+    <Compile Include="Accounting\DocTrustTransferDao.cs" />
+    <Compile Include="Accounting\IncomeBreakdownDao.cs" />
+    <Compile Include="Accounting\WarehouseAdvanceRecapDao.cs" />
+    <Compile Include="Accounting\MCRDao.cs" />
+    <Compile Include="Accounting\PennyMacCDRDao.cs" />
+    <Compile Include="Accounting\ReserveRequirementDao.cs" />
+    <Compile Include="Accounting\TrustAccountDao.cs" />
+    <Compile Include="ActorDao.cs" />
+    <Compile Include="AppraiserDao.cs" />
+    <Compile Include="BrokerDao.cs" />
+    <Compile Include="Calyx\PointDao.cs" />
+    <Compile Include="CashDepositBranchDao.cs" />
+    <Compile Include="Compliance\AuditScoreCardCommentDao.cs" />
+    <Compile Include="Compliance\AuditScoreCardDao.cs" />
+    <Compile Include="Compliance\AuditScoreCardGroupDao.cs" />
+    <Compile Include="Compliance\AuditScoreCardItemTypeDao.cs" />
+    <Compile Include="Compliance\AuditScoreCardScoreDao.cs" />
+    <Compile Include="Compliance\ChaseFundingFormDao.cs" />
+    <Compile Include="Compliance\ComplianceEaseDao.cs" />
+    <Compile Include="Compliance\DataIntegrityFieldDao.cs" />
+    <Compile Include="Compliance\DataIntegrityGroupDao.cs" />
+    <Compile Include="Compliance\DataIntegrityReviewDao.cs" />
+    <Compile Include="Compliance\DIRWDataDao.cs" />
+    <Compile Include="Compliance\DIRWLoanInfoDao.cs" />
+    <Compile Include="Compliance\LPELoanInfoDao.cs" />
+    <Compile Include="Compliance\LPEReasonDao.cs" />
+    <Compile Include="Compliance\MERSReconciliationDao.cs" />
+    <Compile Include="CSVExportDao.cs" />
+    <Compile Include="CustomerService\SecurityConnectionDao.cs" />
+    <Compile Include="Funding\CNBDao.cs" />
+    <Compile Include="Funding\JPMorganDao.cs" />
+    <Compile Include="Funding\TexasCapitalDao.cs" />
+    <Compile Include="Funding\USBDao.cs" />
+    <Compile Include="Funding\CustomerBankDao.cs" />
+    <Compile Include="Funding\FundingExceptionSummaryDao.cs" />
+    <Compile Include="Funding\ViewPointDao.cs" />
+    <Compile Include="Funding\WLSDao.cs" />
+    <Compile Include="GEMApplicationDao.cs" />
+    <Compile Include="GEMGroupDao.cs" />
+    <Compile Include="GEMUserDao.cs" />
+    <Compile Include="GenDao.cs" />
+    <Compile Include="HR\401KDao.cs" />
+    <Compile Include="HR\CensusDateRangeDao.cs" />
+    <Compile Include="HR\CommissionAnalysisDao.cs" />
+    <Compile Include="HR\ExpiredLicenseDao.cs" />
+    <Compile Include="HR\InsuranceEmployeeInfoDao.cs" />
+    <Compile Include="HR\InsuranceEnrollmentDao.cs" />
+    <Compile Include="HR\InsuranceRateDao.cs" />
+    <Compile Include="HR\InsuranceTitleDao.cs" />
+    <Compile Include="HR\JobDao.cs" />
+    <Compile Include="HR\LOAdjustmentDao.cs" />
+    <Compile Include="HR\LOBasisPointsDao.cs" />
+    <Compile Include="HR\LOCommissionDao.cs" />
+    <Compile Include="HR\LOMasterDao.cs" />
+    <Compile Include="HR\TimeCardDao.cs" />
+    <Compile Include="HR\TimeCardSubmitDao.cs" />
+    <Compile Include="HR\ValidateTimeCardDao.cs" />
+    <Compile Include="IDao.cs" />
+    <Compile Include="InvestorDao.cs" />
+    <Compile Include="IT\InventoryDao.cs" />
+    <Compile Include="IT\InventoryFilterDao.cs" />
+    <Compile Include="IT\InventoryUserDao.cs" />
+    <Compile Include="LOS\HMDAChangesDao.cs" />
+    <Compile Include="LOS\HMDADao.cs" />
+    <Compile Include="LOS\HMDAFieldDao.cs" />
+    <Compile Include="LUPopupDao.cs" />
+    <Compile Include="NotesDao.cs" />
+    <Compile Include="Processing\CSVExportDao.cs" />
+    <Compile Include="Processing\OrderAppraisalDao.cs" />
+    <Compile Include="Processing\QCExportDao.cs" />
+    <Compile Include="Processing\SelectedAppraiserDao.cs" />
+    <Compile Include="ProgramDao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportUserDao.cs" />
+    <Compile Include="Secondary\CSVExportDao.cs" />
+    <Compile Include="Secondary\HedgeGMACDao.cs" />
+    <Compile Include="Secondary\LoanLockDetailDao.cs" />
+    <Compile Include="Secondary\LoanSolutionDao.cs" />
+    <Compile Include="Secondary\LSDTInvestorMappingDao.cs" />
+    <Compile Include="Secondary\LSMapDao.cs" />
+    <Compile Include="Secondary\MCMDao.cs" />
+    <Compile Include="Secondary\ProgramCodeByInvestorDao.cs" />
+    <Compile Include="Secondary\TradeDao.cs" />
+    <Compile Include="TranslogDao.cs" />
+    <Compile Include="Underwriting\ScoreCardCommentDao.cs" />
+    <Compile Include="Underwriting\ScoreCardDao.cs" />
+    <Compile Include="Underwriting\ScoreCardGroupDao.cs" />
+    <Compile Include="Underwriting\ScoreCardLoanInfoDao.cs" />
+    <Compile Include="UserInfoDao.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bling.Domain\Bling.Domain.csproj">
+      <Project>{21F081B4-2B02-4B81-9F4E-FEF10EB76D34}</Project>
+      <Name>Bling.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

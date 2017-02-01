@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain">
+  <class name="Bling.Domain.Broker, Bling.Domain" table="brokers" where="exclude='0'">
+    <id name="Id" column="brokers_id" type="string" length="3" >
+      <generator class="assigned"></generator>
+    </id>
+    <property name="CostCenter" column="cost_ctr" type="string" length="6" not-null="true" />
+    <property name="IDNum" column="idnum" type="string" length="6" not-null="true" />
+    <property name="DBA" column="dba" type="string" length="50" not-null="true" />
+    <property name="Status" column="cur_status" type="string" length="10" not-null="true" />
+    <property name="InCorp" column="incorp" type="boolean" not-null="true" />
+    <property name="BranchType" column="branch_type" type="string" length="1" not-null="true" />
+  </class>
+</hibernate-mapping>

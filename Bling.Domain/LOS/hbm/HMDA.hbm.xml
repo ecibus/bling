@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.LOS.HMDA">
+  <class name="Bling.Domain.LOS.HMDA, Bling.Domain" table="xGEM_HMDA_Data">
+    <id name="Id" column="Id" type="Int32" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="LoanNumber" column="[Loan Number]" type="string" length="50" />
+    <property name="SubmissionDate" column="[Submission Date]" type="string" length="50" />
+    <property name="ProgramName" column="[PROG_NAME]" type="string" length="50" />
+    <property name="LoanType" column="[Loan Type]" type="string" length="50" />
+    <property name="PropertyType" column="[Property Type]" type="string" length="50" />
+    <property name="HMDALoanPurpose" column="[HMDA Loan Purpose]" type="string" length="50" />
+    <property name="OwnerOccupied" column="[Owner Occupied]" type="string" length="50" />
+    <property name="LoanAmount" column="[Loan Amount]" type="string" length="50" />
+    <property name="PreApproval" column="[PreApproval]" type="string" length="50" />
+    <property name="ActionType" column="[Action Type]" type="string" length="50" />
+    <property name="ActionDate" column="[Action Date]" type="string" length="50" />
+    <property name="PropertyStreetNo" column="[Property Street No]" type="string" length="200" />
+    <property name="PropertyStreet" column="[Property Street]" type="string" length="200" />
+    <property name="PropertyCity" column="[Property City]" type="string" length="200" />
+    <property name="County" column="[County]" type="string" length="50" />
+    <property name="PropertyState" column="[Property State]" type="string" length="50" />
+    <property name="PropertyZipCode" column="[Property Zip Code]" type="string" length="50" />
+    <property name="CensusTract" column="[Census Tract]" type="string" length="50" />
+    <property name="BorrowerRace" column="[Borrower Race]" type="string" length="200" />
+    <property name="CoborrowerRace" column="[Coborrower Race]" type="string" length="200" />
+    <property name="BorrowerSex" column="[Borrower Sex]" type="string" length="50" />
+    <property name="CoborrowerSex" column="[Coborrower Sex]" type="string" length="50" />
+    <property name="BorrowerEthnicity" column="[Borrower Ethnicity]" type="string" length="50" />
+    <property name="SpouseEthnicity" column="[Spouse Ethnicity]" type="string" length="50" />
+    <property name="BorrowerIncome" column="[Borrower Income]" type="string" length="50" />
+    <property name="CoborrowerIncome" column="[Coborrower Income]" type="string" length="50" />
+    <property name="TypeOfPurchaser" column="[Type Of Purchaser]" type="string" length="50" />
+    <property name="HmdaDenialReason" column="[Hmda Denial Reason]" type="string" length="200" />
+    <property name="RateSpread" column="[Rate Spread]" type="string" length="50" />
+    <property name="TreasuryYield" column="[Treasury Yield]" type="string" length="50" />
+    <property name="APRFromTIL" column="[APR From TIL]" type="string" length="50" />
+    <property name="LoanTerm" column="[Loan Term]" type="string" length="50" />
+    <property name="Lien" column="[Lien]" type="string" length="50" />
+    <property name="LockDateTime" column="[Lock Date/Time]" type="string" length="50" />
+    <property name="HOPEA" column="[HOPEA]" type="string" length="50" />
+    <property name="Investor" column="[Investor]" type="string" length="50" />
+    <property name="Underwriter" column="[Underwriter]" type="string" length="50" />
+    <property name="APRDenialRace" column="[APRDenialRace]" type="string" length="50" />    
+    <property name="LoanTermType" column="[Loan Term Type]" type="string" length="10" />
+    <property name="OriginalAPRTerm" column="[Original APR Term]" type="string" length="10" />
+    <property name="BorrowerFirstName" column="[Borrower First Name]" type="string" length="200" />
+    <property name="BorrowerMiddleName" column="[Borrower Middle Name]" type="string" length="200" />
+    <property name="BorrowerLastName" column="[Borrower Last Name]" type="string" length="200" />
+    <property name="CoBorrowerFirstName" column="[Co-Borrower First Name]" type="string" length="200" />
+    <property name="CoBorrowerMiddleName" column="[Co-Borrower Middle Name]" type="string" length="200" />
+    <property name="CoBorrowerLastName" column="[Co-Borrower Last Name]" type="string" length="200" />
+  </class>
+</hibernate-mapping>

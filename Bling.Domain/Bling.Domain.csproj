@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{21F081B4-2B02-4B81-9F4E-FEF10EB76D34}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bling.Domain</RootNamespace>
+    <AssemblyName>Bling.Domain</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\Interop\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Office, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\Interop\Interop.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\Interop\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bling.Library\NHibernate\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounting\ActiveBranch.cs" />
+    <Compile Include="Accounting\Branch.cs" />
+    <Compile Include="Accounting\BranchCode.cs" />
+    <Compile Include="Accounting\CashDepositAccount.cs" />
+    <Compile Include="Accounting\CashDeposit.cs" />
+    <Compile Include="Accounting\DocTrustRunHistory.cs" />
+    <Compile Include="Accounting\IBranchId.cs" />
+    <Compile Include="Accounting\IncomeBreakdown.cs" />
+    <Compile Include="Accounting\IncomeBreakdownHtml.cs" />
+    <Compile Include="Accounting\MCREnding.cs" />
+    <Compile Include="Accounting\MCRLOSItem.cs" />
+    <Compile Include="Accounting\MWE3Data.cs" />
+    <Compile Include="Accounting\RankingBranch.cs" />
+    <Compile Include="Accounting\ReserveRequirement.cs" />
+    <Compile Include="Accounting\TrackerBranch.cs" />
+    <Compile Include="Accounting\TrustAccount.cs" />
+    <Compile Include="Accounting\TrustAccountBackup.cs" />
+    <Compile Include="Actor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Address.cs" />
+    <Compile Include="Appraiser.cs" />
+    <Compile Include="Broker.cs" />
+    <Compile Include="CalendarHtml.cs" />
+    <Compile Include="CashDepositBranch.cs" />
+    <Compile Include="Compliance\AuditScoreCardComment.cs" />
+    <Compile Include="Compliance\AuditScoreCardGroup.cs" />
+    <Compile Include="Compliance\AuditScoreCardItem.cs" />
+    <Compile Include="Compliance\AuditScoreCardItemType.cs" />
+    <Compile Include="Compliance\AuditScoreCardLoanInfo.cs" />
+    <Compile Include="Compliance\AuditScoreCardScore.cs" />
+    <Compile Include="Compliance\CEField.cs" />
+    <Compile Include="Compliance\ChaseFundingFormLoanInfo.cs" />
+    <Compile Include="Compliance\ComplianceEase.cs" />
+    <Compile Include="Compliance\ComplianceEaseFee.cs" />
+    <Compile Include="Compliance\DataIntegrityField.cs" />
+    <Compile Include="Compliance\DataIntegrityGroup.cs" />
+    <Compile Include="Compliance\DataIntegrityReview.cs" />
+    <Compile Include="Compliance\DIRWData.cs" />
+    <Compile Include="Compliance\DIRWDropDown.cs" />
+    <Compile Include="Compliance\DIRWLoanInfo.cs" />
+    <Compile Include="Compliance\LPELoanInfo.cs" />
+    <Compile Include="Compliance\LPEReason.cs" />
+    <Compile Include="Compliance\MERSReconciliation.cs" />
+    <Compile Include="CSVExport.cs" />
+    <Compile Include="CustomerService\SecurityConnectionShipDateInfo.cs" />
+    <Compile Include="Extension\DateTimeExtension.cs" />
+    <Compile Include="Extension\DecimalExtension.cs" />
+    <Compile Include="Extension\DoubleExtension.cs" />
+    <Compile Include="Extension\FloatExtension.cs" />
+    <Compile Include="Extension\IntegerExtension.cs" />
+    <Compile Include="Extension\StringExtension.cs" />
+    <Compile Include="Funding\CustomerBankData.cs" />
+    <Compile Include="Funding\FundingExceptionSummary.cs" />
+    <Compile Include="GEMApplication.cs" />
+    <Compile Include="GEMGroup.cs" />
+    <Compile Include="GEMUser.cs" />
+    <Compile Include="Gen.cs" />
+    <Compile Include="HR\ByteBasisPoints.cs" />
+    <Compile Include="HR\ByteLO.cs" />
+    <Compile Include="HR\CensusDateRange.cs" />
+    <Compile Include="HR\BasisPoints.cs" />
+    <Compile Include="HR\CommissionAnalysis.cs" />
+    <Compile Include="HR\InsuranceEmployeeInfo.cs" />
+    <Compile Include="HR\ExpiredLicense.cs" />
+    <Compile Include="HR\ExpiredLicenseEmail.cs" />
+    <Compile Include="HR\InsuranceEnrollment.cs" />
+    <Compile Include="HR\InsuranceRate.cs" />
+    <Compile Include="HR\InsuranceTitle.cs" />
+    <Compile Include="HR\Job.cs" />
+    <Compile Include="HR\LOAdjustment.cs" />
+    <Compile Include="HR\LOCommission.cs" />
+    <Compile Include="HR\LOMaster.cs" />
+    <Compile Include="HR\TCCutoff.cs" />
+    <Compile Include="HR\TCHeader.cs" />
+    <Compile Include="HR\TCLineItems.cs" />
+    <Compile Include="HR\TCTotal.cs" />
+    <Compile Include="HR\TCWeek.cs" />
+    <Compile Include="HR\TimeCardSubmit.cs" />
+    <Compile Include="HR\WorkWeek.cs" />
+    <Compile Include="Investor.cs" />
+    <Compile Include="IT\Inventory.cs" />
+    <Compile Include="IT\InventoryUser.cs" />
+    <Compile Include="LookUp.cs" />
+    <Compile Include="LOS\APRAndDenialWorkbook.cs" />
+    <Compile Include="LOS\AvailableYear.cs" />
+    <Compile Include="LOS\HMDA.cs" />
+    <Compile Include="LOS\HMDAChanges.cs" />
+    <Compile Include="LOS\HMDAField.cs" />
+    <Compile Include="LOS\HMDAVerify.cs" />
+    <Compile Include="LOS\HOPEARule.cs" />
+    <Compile Include="LOS\LoanCountRule.cs" />
+    <Compile Include="Notes.cs" />
+    <Compile Include="Paginator.cs" />
+    <Compile Include="PhoneNumber.cs" />
+    <Compile Include="Processing\OrderAppraisal.cs" />
+    <Compile Include="Processing\SelectedAppraiser.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportUser.cs" />
+    <Compile Include="Secondary\CountryPlaceOptimalBlue.cs" />
+    <Compile Include="Secondary\LoanLockDetail.cs" />
+    <Compile Include="Secondary\Loan.cs" />
+    <Compile Include="Secondary\MCMClosedLoan.cs" />
+    <Compile Include="Secondary\MCMFalloutLoan.cs" />
+    <Compile Include="Secondary\MCMLockedLoan.cs" />
+    <Compile Include="Secondary\LSDTInvestorMapping.cs" />
+    <Compile Include="Secondary\LoanSolutionProgram.cs" />
+    <Compile Include="Secondary\LSMap.cs" />
+    <Compile Include="Secondary\MCMTrades.cs" />
+    <Compile Include="Secondary\ProgramCodeByInvestor.cs" />
+    <Compile Include="LUPopup.cs" />
+    <Compile Include="Translog.cs" />
+    <Compile Include="Underwriting\ScoreCard.cs" />
+    <Compile Include="Underwriting\ScoreCardComment.cs" />
+    <Compile Include="Underwriting\ScoreCardDescription.cs" />
+    <Compile Include="Underwriting\ScoreCardGroup.cs" />
+    <Compile Include="Underwriting\ScoreCardLoanInfo.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="XMLValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\GEMUser.hbm.xml" />
+    <EmbeddedResource Include="Underwriting\hbm\ScoreCardLoanInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\GEMGroup.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\GEMApplication.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LOS\hbm\HMDA.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LOS\hbm\HMDAField.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LOS\hbm\HMDAChanges.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\UserInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\TrustAccount.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\TrustAccountBackup.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\Branch.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\TrackerBranch.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\RankingBranch.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Secondary\hbm\LoanSolutionProgram.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\Investor.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Secondary\hbm\LSDTInvestorMapping.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Secondary\hbm\LSMap.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Secondary\hbm\ProgramCodeByInvestor.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\Broker.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\ReportUser.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\Actor.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\IncomeBreakdown.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\MWE3Data.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\DocTrustRunHistory.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\Gen.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\Program.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\LUPopup.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Secondary\hbm\LoanLockDetail.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\Job.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\CensusDateRange.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IT\hbm\InventoryUser.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IT\hbm\Inventory.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\LookUp.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\ExpiredLicense.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Underwriting\hbm\ScoreCard.hbm.xml" />
+    <EmbeddedResource Include="Underwriting\hbm\ScoreCardComment.hbm.xml" />
+    <EmbeddedResource Include="Underwriting\hbm\ScoreCardDescription.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Underwriting\hbm\ScoreCardGroup.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\InsuranceTitle.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\CashDepositBranch.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\InsuranceEnrollment.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\InsuranceRate.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\InsuranceEmployeeInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\BranchCode.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Secondary\hbm\MCMLockedLoan.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Secondary\hbm\MCMClosedLoan.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Secondary\hbm\MCMFallOutLoan.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Secondary\hbm\MCMTrades.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\Appraiser.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Processing\hbm\SelectedAppraiser.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Processing\hbm\OrderApprsaisal.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\DataIntegrityField.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\DIRWLoanInfo.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nhibernate-configuration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nhibernate-mapping.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\DataIntegrityGroup.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\DIRWData.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\DIRWDropDown.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\Translog.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\DataIntegrityReview.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\LPELoanInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\LPEReason.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\BasisPoints.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\CashDepositAccount.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\CashDeposit.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\LOCommission.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\TimeCardSubmit.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\LOMaster.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\LOAdjustment.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\CommissionAnalysis.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\MCREnding.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\MCRLOSItem.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Funding\hbm\FundingExceptionSummary.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Funding\hbm\CustomerBankData.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\AuditScoreCardLoanInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\AuditScoreCardItem.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\AuditScoreCardGroup.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\AuditScoreCardScore.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\AuditScoreCardComment.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\AuditScoreCardItemType.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\Notes.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\ReserveRequirement.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\hbm\ActiveBranch.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compliance\hbm\ChaseFundingFormLoanInfo.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\TCHeader.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\TCLineItems.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\TCTotal.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="hbm\CSVExport.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\ByteLO.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HR\hbm\ByteBasisPoints.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

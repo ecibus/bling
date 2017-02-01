@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain" >
+  <class name="Bling.Domain.Accounting.MCRLOSItem, Bling.Domain" table="none">
+    <id name="EmployeeId" column="EmployeeId" type="string">
+      <generator class="assigned"></generator>
+    </id>
+
+    <property name="NMLSId" column="NMLSId" type="string" length="4" not-null="true" />
+    <property name="NoOfLoans" column="NoOfLoans" type="int" not-null="true" />
+    <property name="LoanAmount" column="LoanAmount" type="int" not-null="true" />
+
+  </class>
+</hibernate-mapping>

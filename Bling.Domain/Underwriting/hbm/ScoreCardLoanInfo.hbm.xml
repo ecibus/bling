@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Underwriting">
+<class name="ScoreCardLoanInfo" table="none">
+  <id name="LoanNumber" column="LoanNumber" type="string">
+    <generator class="assigned"></generator>
+  </id>
+  <property name="Borrower" column="Borrower" type="string" />
+  <property name="Underwriter" column="Underwriter" type="string" />
+  <property name="LoanOfficer" column="LoanOfficer" type="string" />
+  <property name="Processor" column="Processor" type="string" />
+  <property name="FileId" column="File_id" type="string" />
+  <property name="Is203K" column="Is203K" type="boolean" />
+  <property name="IsPerfect" column="IsPerfect" type="boolean" />
+</class>
+</hibernate-mapping>

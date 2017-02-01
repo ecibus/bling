@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Processing">
+    <class name="Bling.Domain.Processing.SelectedAppraiser, Bling.Domain" table="xGEM_SelectedAppraiser">
+
+        <id name="Id" column="Id" type="int" >
+            <generator class="native"></generator>
+        </id>
+        <property name="CreatedOn" column="CreatedOn" type="DateTime" generated="insert" not-null="true" />
+        <property name="BranchNo" column="BranchNo" type="string" length="3" not-null="true" />
+        <property name="LoanNumber" column="LoanNumber" type="string" length="15" not-null="true" />
+        <property name="AppraiserId" column="AppraiserId" type="string" length="3" not-null="true" />
+        <property name="AddedBy" column="AddedBy" type="string" length="10" not-null="true" />
+
+    </class>
+</hibernate-mapping>

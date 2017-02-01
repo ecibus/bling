@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Bling.Domain.Compliance" assembly="Bling.Domain">
+  <class name="AuditScoreCardGroup" table="xGEM_AuditScoreCardGroup">
+    <id name="Id" column="Id" type="Int32" unsaved-value="0">
+      <generator class="native"></generator>
+    </id>
+    <property name="GroupName" column="GroupName" type="string"  not-null="true" />
+    <property name="Ordering" column="Ordering" type="integer" not-null="true" />
+    <property name="Include" column="Include" type="boolean" not-null="false" />
+    <bag name="Item" generic="true" lazy="false" table="xgem_AuditScoreCardItem">
+      <key column="GroupId" />
+      <many-to-many column="Id" class="AuditScoreCardItem" fetch="join" />
+    </bag>
+
+  </class>
+</hibernate-mapping>

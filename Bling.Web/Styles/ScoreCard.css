@@ -1,0 +1,90 @@
+﻿#ScoreCard
+{
+	list-style-type: none;
+	font-weight: bold;		
+}
+
+#ScoreCard li ul li
+{	
+	width:80%;
+	list-style-type: none;		
+}
+
+
+#ScoreCard ul
+{
+	font-weight: normal;	
+}
+
+
+.ScoreText
+{
+	position: relative;
+	left: 10px;
+	width: 90%;
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+li#score
+{	
+	font-size: xx-large;
+	color: #800000;
+	text-align: right;
+	margin-right: 250px;
+	margin-bottom: 10px;
+	position: relative;
+	top: -1em;
+	z-index: 1;
+}
+
+input
+{	
+	z-index: 100;
+	position: relative;
+}
+
+#Total
+{
+	margin-top: 10px;
+	font-size: 3em;
+	text-align: right;
+	border-top-style: solid;
+	border-top-color: #000000;
+	padding-top: 10px;
+}
+
+#TotalScore
+{
+	border-width: thin;
+	color: #800000;
+	text-align: right;
+	margin-right: 250px;
+	margin-left: 50px;
+	font-weight: bold;	
+}
+
+.Comment
+{
+	position: relative;
+	top: -3em;
+	left: 105px;
+}
+
+.score
+{
+	color: #FF0000;
+}
+
+fieldset span
+{
+	font-weight: bold;
+	color: #000080;
+}
+
+#btnPrintPreview
+{
+	float:right;
+	
+	
+}

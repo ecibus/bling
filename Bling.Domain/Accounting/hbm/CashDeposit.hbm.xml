@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Accounting">
+  <class name="CashDeposit, Bling.Domain" table="[CashDeposits-SubTable]">
+
+    <id name="Id" column="DepositNumber" type="int"  >
+      <generator class="native"></generator>
+    </id>
+    <property name="AppNum" column="app_num" type="string" not-null="true" />
+    <property name="Branch" column="Branch#" type="string" not-null="false" />
+    <property name="AccountNo" column="Account#" type="string" not-null="true" />
+    <property name="InputDate" column="InputDate" type="DateTime" not-null="true" />
+    <property name="DollarAmount" column="DollarAmount" type="Decimal" not-null="true" />
+    <property name="BankAcct" column="BankAcct" type="string" not-null="true" />
+
+  </class>
+</hibernate-mapping>

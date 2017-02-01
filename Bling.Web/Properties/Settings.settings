@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Bling.Web.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="dbName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DMD_data</Value>
+    </Setting>
+    <Setting Name="dbUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dmdreporting</Value>
+    </Setting>
+    <Setting Name="dbPass" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">techies77!</Value>
+    </Setting>
+    <Setting Name="dbServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DataTrac Data</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

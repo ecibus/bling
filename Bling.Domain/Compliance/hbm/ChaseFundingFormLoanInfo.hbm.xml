@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.Compliance">
+  <class name="ChaseFundingFormLoanInfo, Bling.Domain" table="none" mutable="false">
+    <id name="LoanNumber" column="LoanNumber" type="string">
+      <generator class="assigned"></generator>
+    </id>
+    <property name="FileId" column="FileId" not-null="true" />
+    <property name="Underwriter" column="Underwriter" not-null="true" />
+    <property name="UnderwriterEmail" column="UnderwriterEmail" not-null="true" />
+    <property name="CorrespondentName" column="CorrespondentName" not-null="true" />
+    <property name="InvestorLoanNumber" column="InvestorLoanNumber" not-null="true" />
+    <property name="CommitmentNo" column="CommitmentNo" not-null="true" />
+    <property name="UnderwritingPhoneNo" column="UnderwritingPhoneNo" not-null="true" />
+    <property name="ProductDescription" column="ProductDescription" not-null="true" />
+    <property name="ApplicationDate" column="ApplicationDate" not-null="true" />
+    <property name="PurchaseProperty" column="PurchaseProperty" not-null="true" />
+    <property name="Item2" column="Item2" not-null="true" />
+    <property name="OccInvestmentYes" column="OccInvestmentYes" not-null="true" />
+    <property name="OccInvestmentNo" column="OccInvestmentNo" not-null="true" />
+    <property name="OccInvestmentNA" column="OccInvestmentNA" not-null="true" />
+    <property name="ARMIndex" column="ARMIndex" not-null="true" />
+    <property name="ARMMargin" column="ARMMargin" not-null="true" />
+    <property name="APORPcnt" column="APORPcnt" not-null="true" />
+    <property name="Item7AYes" column="Item7AYes" not-null="true" />
+    <property name="Item7ANo" column="Item7ANo" not-null="true" />
+    <property name="Item7BYes" column="Item7BYes" not-null="true" />
+    <property name="Item7BNo" column="Item7BNo" not-null="true" />
+    <property name="Item8Yes" column="Item8Yes" not-null="true" />
+    <property name="Item8No" column="Item8No" not-null="true" />
+    <property name="IsHPMLQM" column="IsHPMLQM" not-null="true" />
+    <property name="IsHPMLAppraisal" column="IsHPMLAppraisal" not-null="true" />
+    <property name="PrepaymentPenalty" column="PrepaymentPenalty" not-null="true" />
+    <property name="QMSafeHarbor" column="QMSafeHarbor" not-null="true" />
+    <property name="QMRebuttablePresumption" column="QMRebuttablePresumption" not-null="true" />
+    <property name="NonQM" column="NonQM" not-null="true" />
+    <property name="QMNotApplicable" column="QMNotApplicable" not-null="true" />
+    <property name="HoepaAPR" column="HoepaAPR" not-null="true" />
+    <property name="PointsExcluded" column="PointsExcluded" not-null="true" />
+    <property name="FeesImposed" column="FeesImposed" not-null="true" />
+    <property name="Item15Percent" column="Item15Percent" not-null="true" />
+    <property name="Item15Amount" column="Item15Amount" not-null="true" />
+    <property name="HOEPAQMPcnt" column="HOEPAQMPcnt" not-null="true" />
+    <property name="HOEPAQMAmount" column="HOEPAQMAmount" not-null="true" />
+    <property name="StatePcnt" column="StatePcnt" not-null="true" />
+    <property name="StateAmount" column="StateAmount" not-null="true" />
+    <property name="SFFannieMae" column="SFFannieMae" not-null="true" />
+    <property name="SFFreddieMac" column="SFFreddieMac" not-null="true" />
+    <property name="MIMonthlyPremium" column="MIMonthlyPremium" not-null="true" />
+    <property name="MISinglePremium" column="MISinglePremium" not-null="true" />
+    
+    <!--<property name="LinkedLoanNumber" column="LinkedLoanNumber" not-null="true" />
+    <property name="Borrower" column="Borrower" not-null="true" />
+    <property name="LORep" column="LORep" not-null="true" />
+    <property name="Processor" column="Processor" not-null="true" />
+    <property name="Status" column="Status" not-null="true" />
+    <property name="Program" column="Program" not-null="true" />
+    <property name="LoanAmount" column="LoanAmount" not-null="true" />
+    <property name="InterestRate" column="InterestRate" not-null="true" />
+    <property name="Locked" column="Locked" not-null="true" />
+    <property name="Expires" column="Expires" not-null="true" />
+    <property name="Days" column="Days" not-null="true" />
+    <property name="InitialAuditor" column="InitialAuditor" not-null="true" />
+    <property name="AuditDate" column="AuditDate" not-null="true" />
+    <property name="SubmittedDate" column="SubmittedDate" not-null="true" />
+    <property name="FileId" column="FileId" not-null="true" />
+    <property name="InitialAuditorValue" column="InitialAuditorValue" not-null="true" />-->
+  </class>
+</hibernate-mapping>

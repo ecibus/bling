@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.LOS">
+  <class name="Bling.Domain.LOS.HMDAChanges, Bling.Domain" table="xGEM_HMDA_Changes">
+    <id name="Id" column="Id" type="Int32" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="ReportYear" column="Report_Year" type="string" length="4" />
+    <property name="LoanNumber" column="Loan_Number" type="string" length="20" />
+    <property name="FieldName" column="Field_Name" type="string" length="50" />
+    <property name="NewData" column="New_Data" type="string" length="50" />    
+    <property name="CreatedOn" column="Created_On" type="DateTime" generated="insert" />
+    <many-to-one name="GEMUser" foreign-key="GEMUserId" fetch="join"  class="Bling.Domain.GEMUser"  column="GEMUserId" cascade="none" unique="true" />
+
+  </class>
+</hibernate-mapping>

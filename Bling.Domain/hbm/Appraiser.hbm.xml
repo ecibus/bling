@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain">
+    <class name="Bling.Domain.Appraiser, Bling.Domain" table="Appraisr">
+
+        <id name="Id" column="appraisr_id" type="string" length="4" >
+            <generator class="assigned"></generator>
+        </id>
+        <property name="FirstName" column="cont_first" type="string" length="20" not-null="true" />
+        <property name="LastName" column="cont_last" type="string" length="20" not-null="true" />
+        <property name="Company" column="apr_name" type="string" length="40" not-null="true" />
+        <property name="Status" column="status" type="string" length="10" not-null="true" />
+        <property name="LicenseExpirationDate" column="license_exp" type="DateTime" not-null="true" />
+        <property name="Region" column="region" type="string" length="20" not-null="true" />
+        <property name="ApprovedLoanTypes" column="approv_loans" type="string" length="10" not-null="true" />
+        <property name="OtherCounty" column="oth_countys" type="string" not-null="true" />
+        <property name="EMail" column="appr_email" type="string" not-null="true" />
+        <property name="Exclude" column="Exclude" type="boolean" not-null="true" />
+
+        <component name="Address" class="Address">
+            <property name="Street" column="Addr" type="string" />
+            <property name="City" column="City" type="string" />
+            <property name="State" column="State" type="string" />
+            <property name="Zip" column="Zip" type="string" />
+        </component>
+
+        <component name="Phone" class="PhoneNumber">
+            <property name="AreaCode" column="phone_pre" type="string" />
+            <property name="Line" column="phone" type="string" />
+        </component>
+
+        <component name="Fax" class="PhoneNumber">
+            <property name="AreaCode" column="fax_pre" type="string" />
+            <property name="Line" column="fax" type="string" />
+        </component>
+                
+    </class>
+</hibernate-mapping>

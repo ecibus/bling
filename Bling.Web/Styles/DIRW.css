@@ -1,0 +1,50 @@
+﻿.fieldchange
+{
+    left: 60px;
+    position:relative;
+    width:27em;
+    border:2px solid green;
+    padding:5px;
+    margin:3px;
+    display:none;
+}
+
+.fieldcontent
+{
+    left: 10px;
+    position:relative;    
+}
+
+.notes
+{
+    left: 62px;
+    font-size: x-small;
+    position:relative; 
+    padding: 3px;
+}
+
+.currentdata
+{
+    color: Green;
+}
+
+.olddata
+{
+    color: Red;
+}
+
+
+.in-process { background-color: Yellow; }
+
+.updated{ display: none; }
+
+.saveerror 
+{
+    left: 60px;
+    position:relative;
+    width:20em;
+    border:2px solid red;
+    padding:5px;
+    margin:3px;
+    display:none;
+}

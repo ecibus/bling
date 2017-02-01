@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.HR">
+  <class name="LOCommission, Bling.Domain" table="xGEM_LOCommission" >
+    <id name="Id" column="Id" type="int" >
+      <generator class="native"></generator>
+    </id>
+
+    <property name="EmployId" column="EmployId" type="string" not-null="true" />
+    <property name="LoanNumber" column="LoanNumber" type="string" not-null="true" />
+    
+    <property name="ApplicationDate" column="ApplicationDate" type="DateTime" not-null="true" />
+    <property name="FundedDate" column="FundedDate" type="DateTime" not-null="true" />
+    <property name="LoanAmount" column="LoanAmount" type="Decimal" not-null="true" />
+    <property name="IsBrokeredLoan" column="IsBrokeredLoan" type="boolean" not-null="false" />
+    
+    <property name="PayDate" column="PayDate" type="DateTime" not-null="false" />
+    <property name="Volume" column="Volume" type="Decimal" not-null="false" />
+
+    <property name="BasisPointId" column="BasisPointId" type="int" not-null="false" />
+    <property name="TierId" column="TierId" type="int" not-null="false" />
+
+    <property name="Rate" column="Rate" type="Decimal" not-null="true" />
+    <property name="Commission" column="Commission" type="Decimal" not-null="true" />
+    <property name="ReCompute" column="ReCompute" type="boolean" not-null="true" />
+    <property name="IsManager" column="IsManager" type="boolean" not-null="true" />
+    <property name="IsOverride" column="IsOverride" type="boolean" not-null="true" />
+    <property name="IsWeekly" column="IsWeekly" type="boolean" not-null="true" />
+    
+  </class>
+</hibernate-mapping>

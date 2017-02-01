@@ -1,0 +1,119 @@
+﻿
+
+#ScoreCard
+{
+	list-style-type: none;
+	font-weight: bold;		
+}
+
+#ScoreCard li ul li
+{	
+	width:80%;
+	list-style-type: none;		
+}
+
+
+#ScoreCard ul
+{
+	font-weight: normal;	
+}
+
+.CheckItem
+{
+    z-index:11;
+}
+
+.ScoreItem
+{
+	position: relative;
+	left: 10px;
+	width: 90%;
+	display: inline-block;
+	vertical-align: text-top;
+	z-index:1;
+}
+
+li.GroupScore, #Total 
+{
+	font-size: xx-large;
+	color: #800000;
+    text-align: right;   
+    top: -1em; 
+}
+
+
+li.GroupScore span
+{	
+    /*
+	font-size: xx-large;
+	color: #800000;
+	text-align: right;
+	margin-right: 100px;
+	margin-bottom: 1px;
+	position: relative;
+	left:24.5em;
+	top: -1em;
+	border: 1px solid red;
+    */
+	z-index: 1;
+}
+
+#Total
+{
+	/*
+    margin-top: 10px;
+	font-size: 3em;
+	//text-align: right;
+	border-top-style: solid;
+	border-top-color: #000000;
+	padding-top: 10px;
+    */
+    
+    /*
+    font-size: xx-large;
+	color: #800000;
+	text-align: right;
+	margin-right: 100px;
+	margin-bottom: 1px;
+	position: relative;
+	//left:21em;
+	//top: -1em;
+	z-index: 1;
+	
+	border: 1px solid blue;
+    */	
+    margin-top: 20px;
+    
+    border-top-style: solid;
+	border-top-color: #000000;
+}
+
+#TotalScore
+{
+    /*
+	border-width: thin;
+	color: #800000;
+	text-align: right;
+	margin-right: 100px;
+	margin-left: 50px;
+	font-weight: bold;	
+	 * /
+	font-size: xx-large;
+	color: #800000;
+	text-align: right;
+	margin-right: 100px;
+	margin-bottom: 1px;
+	position: relative;
+	//left:21em;
+	//top: -1em;
+	z-index: 1;
+	
+	border: 1px solid blue;
+	*/
+}
+
+textarea.Comment
+{
+    height: 70px;
+    z-index: 100;
+}

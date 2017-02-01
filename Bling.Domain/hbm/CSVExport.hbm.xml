@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Bling.Domain" assembly="Bling.Domain">
+  <class name="CSVExport" table="xGEM_CSVExport">
+    <id name="Id" column="Id" type="Int32" unsaved-value="0">
+      <generator class="native"></generator>
+    </id>
+    <property name="Type" column="CSVType" type="string"  not-null="true" />
+    <property name="Key" column="CSVKey" type="string" not-null="true" />
+    <property name="Value" column="CSVValue" type="string" not-null="true" />
+
+  </class>
+</hibernate-mapping>

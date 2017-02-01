@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain">
+  <class name="Bling.Domain.GEMUser, Bling.Domain" table="xGEM_User">
+    <id name="Id" column="Id" type="Int32" unsaved-value="0">
+      <generator class="native"></generator>
+    </id>
+    
+    <property name="UserName" column="Username" type="string" length="60" not-null="false" />
+    <property name="ActorId" column="ActorId" type="string" length="4" not-null="false" />
+    <property name="EmployId" column="EmployId" type="string" length="4" not-null="false" />
+    
+    <bag name="Groups" generic="true" cascade="none" table="xGEM_UserGroup" >      
+      <key column="UserId" />
+      <many-to-many column="GroupId" foreign-key="GroupId" class="Bling.Domain.GEMGroup, Bling.Domain" />
+    </bag>
+
+    <many-to-one name="UserInfo" column="EmployId" insert="false" update="false" class="Bling.Domain.UserInfo" cascade="none" unique="true" />
+
+  </class>
+  
+</hibernate-mapping>

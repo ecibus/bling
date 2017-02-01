@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.HR">
+  <class name="CommissionAnalysis, Bling.Domain" table="none" >
+    <id name="LoanNumber" column="LoanNumber" type="string" >
+      <generator class="assigned"></generator>
+    </id>
+
+    <property name="Borrower" column="Borrower" type="string" not-null="true" />
+   
+    <property name="LoanOfficer" column="LoanOfficer" type="string" not-null="true" />
+    <property name="ApprovedLO" column="ApprovedLO" type="string" not-null="true" />
+    <property name="LoanAmount" column="LoanAmount" type="Decimal" not-null="true" />
+    <property name="ApplicationDate" column="ApplicationDate" type="string" not-null="true" />
+    <property name="FundedDate" column="FundedDate" type="string" not-null="true" />
+    <property name="CommissionStatus" column="CommissionStatus" type="string" not-null="false" />
+    <property name="CommissionStatusDate" column="CommissionStatusDate" type="string" not-null="false" />
+    <property name="Comment" column="Comment" type="string" not-null="false" />
+    <property name="LoginName" column="LoginName" type="string" not-null="false" />
+    <property name="ReleasedDate" column="ReleasedDate" type="string" not-null="false" />
+    <property name="HoldDate" column="HoldDate" type="string" not-null="false" />
+    <property name="BrokeredLoan" column="BrokeredLoan" type="string" not-null="false" />
+    <property name="Commission" column="Commission" type="Decimal" not-null="true" />
+  </class>
+</hibernate-mapping>
