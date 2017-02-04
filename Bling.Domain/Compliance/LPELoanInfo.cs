@@ -53,13 +53,15 @@ namespace Bling.Domain.Compliance
         {
             get
             {
-                if (NetPricePoint < -.5)
+                double netPricePoint = Math.Round(NetPricePoint, 3);
+
+                if (netPricePoint < -.5)
                     return "<span class='box_notice'>Underage - Requires Documentation and narrative summary.</span>";
-                
-                if (NetPricePoint <= 0.5)
+
+                if (netPricePoint <= 0.5)
                     return "<span class='box_success'>Documentation not required.</span>";
 
-                if (NetPricePoint > 0.5 && NetPricePoint <= 1.0)
+                if (netPricePoint > 0.5 && netPricePoint <= 1.0)
                     return "<span class='box_notice'>Overage - Requires Documentation and narrative summary.</span>";
 
                 return "<span class='box_error'>Overage - Exceeds maximum ceiling price.</span>";
