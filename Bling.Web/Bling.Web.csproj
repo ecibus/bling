@@ -125,6 +125,7 @@
     <Content Include="Accounting\MortgageCallReportForm.aspx" />
     <Content Include="Accounting\PennyMacCDRForm.aspx" />
     <Content Include="Accounting\ReserveRequirementForm.aspx" />
+    <Content Include="Accounting\TestReact.aspx" />
     <Content Include="Accounting\WarehouseAdvanceRecap.aspx" />
     <Content Include="Compliance\AjaxAuditScoreCard.aspx" />
     <Content Include="ComplianceByte\AjaxByteReportForm.aspx" />
@@ -528,6 +529,13 @@
     </Compile>
     <Compile Include="Accounting\ReserveRequirementForm.aspx.designer.cs">
       <DependentUpon>ReserveRequirementForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\TestReact.aspx.cs">
+      <DependentUpon>TestReact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\TestReact.aspx.designer.cs">
+      <DependentUpon>TestReact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Accounting\WarehouseAdvanceRecap.aspx.cs">
       <DependentUpon>WarehouseAdvanceRecap.aspx</DependentUpon>
