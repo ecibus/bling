@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bling.Domain" namespace="Bling.Domain.RestApi.TurningPoint">
+  <class name="ByteUser, Bling.Domain" table="GENERATED">
+
+    <id name="UserId" column="UserId" type="int"  >
+      <generator class="native"></generator>
+    </id>
+    <property name="Fullname" column="Fullname" type="string" not-null="false" />
+    <property name="Username" column="Username" type="string" not-null="false" />
+  </class>
+</hibernate-mapping>

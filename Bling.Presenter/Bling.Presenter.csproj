@@ -190,6 +190,7 @@
     <Compile Include="Processing\CPPPresenter.cs" />
     <Compile Include="Processing\GEMAppraisalPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestApi\TurningPoint\TurningPointPresenter.cs" />
     <Compile Include="Secondary\AjaxChangeProgramCodePresenter.cs" />
     <Compile Include="Secondary\AjaxCSVExportFormPresenter.cs" />
     <Compile Include="Secondary\AjaxHedgeGMACPresenter.cs" />

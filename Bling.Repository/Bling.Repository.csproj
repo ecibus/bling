@@ -159,6 +159,7 @@
     <Compile Include="ProgramDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportUserDao.cs" />
+    <Compile Include="RestApi\TurningPointDao.cs" />
     <Compile Include="Secondary\CSVExportDao.cs" />
     <Compile Include="Secondary\HedgeGMACDao.cs" />
     <Compile Include="Secondary\LoanLockDetailDao.cs" />

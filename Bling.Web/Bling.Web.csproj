@@ -126,6 +126,7 @@
     <Content Include="Accounting\PennyMacCDRForm.aspx" />
     <Content Include="Accounting\ReserveRequirementForm.aspx" />
     <Content Include="Accounting\TestReact.aspx" />
+    <Content Include="Accounting\TurningPoint.aspx" />
     <Content Include="Accounting\WarehouseAdvanceRecap.aspx" />
     <Content Include="Compliance\AjaxAuditScoreCard.aspx" />
     <Content Include="ComplianceByte\AjaxByteReportForm.aspx" />
@@ -240,6 +241,7 @@
     <Content Include="Processing\js\CSVExportForm.js" />
     <Content Include="Processing\js\QCExportForm.js" />
     <Content Include="Processing\QCExportForm.aspx" />
+    <Content Include="RestApi\AjaxTurningPoint.aspx" />
     <Content Include="Secondary\AjaxByteReportForm.aspx" />
     <Content Include="Secondary\AjaxCSVExportForm.aspx" />
     <Content Include="Secondary\AjaxHedgeGMACExtractForm.aspx" />
@@ -536,6 +538,13 @@
     </Compile>
     <Compile Include="Accounting\TestReact.aspx.designer.cs">
       <DependentUpon>TestReact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\TurningPoint.aspx.cs">
+      <DependentUpon>TurningPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\TurningPoint.aspx.designer.cs">
+      <DependentUpon>TurningPoint.aspx</DependentUpon>
     </Compile>
     <Compile Include="Accounting\WarehouseAdvanceRecap.aspx.cs">
       <DependentUpon>WarehouseAdvanceRecap.aspx</DependentUpon>
@@ -1440,6 +1449,13 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RestApi\AjaxTurningPoint.aspx.cs">
+      <DependentUpon>AjaxTurningPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RestApi\AjaxTurningPoint.aspx.designer.cs">
+      <DependentUpon>AjaxTurningPoint.aspx</DependentUpon>
     </Compile>
     <Compile Include="Secondary\AjaxByteReportForm.aspx.cs">
       <DependentUpon>AjaxByteReportForm.aspx</DependentUpon>

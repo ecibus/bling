@@ -171,6 +171,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportUser.cs" />
+    <Compile Include="RestApi\TurningPoint\ByteUser.cs" />
     <Compile Include="Secondary\CountryPlaceOptimalBlue.cs" />
     <Compile Include="Secondary\LoanLockDetail.cs" />
     <Compile Include="Secondary\Loan.cs" />
@@ -467,6 +468,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="HR\hbm\ByteBasisPoints.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RestApi\TurningPoint\hbm\ByteUser.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
