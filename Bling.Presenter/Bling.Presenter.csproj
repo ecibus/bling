@@ -92,6 +92,7 @@
     <Compile Include="Accounting\AjaxPennyMacCDRFormPresenter.cs" />
     <Compile Include="Accounting\AjaxReserveRequirementPresenter.cs" />
     <Compile Include="Accounting\AjaxTrustAccountPresenter.cs" />
+    <Compile Include="Accounting\AjaxTurningPointPresenter.cs" />
     <Compile Include="Accounting\AjaxWarehouseAdvanceRecapPresenter.cs" />
     <Compile Include="Accounting\CashDepositEntryPresenter.cs" />
     <Compile Include="Accounting\CrystalForCommission.cs" />

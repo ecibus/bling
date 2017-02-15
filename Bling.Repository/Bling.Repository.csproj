@@ -159,7 +159,7 @@
     <Compile Include="ProgramDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportUserDao.cs" />
-    <Compile Include="RestApi\TurningPointDao.cs" />
+    <Compile Include="Accounting\TurningPointDao.cs" />
     <Compile Include="Secondary\CSVExportDao.cs" />
     <Compile Include="Secondary\HedgeGMACDao.cs" />
     <Compile Include="Secondary\LoanLockDetailDao.cs" />
@@ -182,7 +182,9 @@
       <Name>Bling.Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="RestApi\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Bling.Repository.RestApi;
+using Bling.Repository.Accounting;
 using Bling.Domain.RestApi.TurningPoint;
 using Newtonsoft.Json;
 

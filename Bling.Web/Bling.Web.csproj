@@ -105,6 +105,7 @@
     <Content Include="Accounting\AjaxMCRForm.aspx" />
     <Content Include="Accounting\AjaxPennyMacCDRForm.aspx" />
     <Content Include="Accounting\AjaxReserveRequirement.aspx" />
+    <Content Include="Accounting\AjaxTurningPoint.aspx" />
     <Content Include="Accounting\AjaxWarehouseAdvanceRecap.aspx" />
     <Content Include="Accounting\AMBExportForm.aspx" />
     <Content Include="Accounting\AMBImport.aspx" />
@@ -112,6 +113,7 @@
     <Content Include="Accounting\ByteReportForm.aspx" />
     <Content Include="Accounting\CashDepositEntry.aspx" />
     <Content Include="Accounting\CSVExportForm.aspx" />
+    <Content Include="Accounting\es6\TurningPointApp.js" />
     <Content Include="Accounting\js\ActiveBranch.js" />
     <Content Include="Accounting\js\AMBExportForm.js" />
     <Content Include="Accounting\js\AMBImportForm.js" />
@@ -121,10 +123,12 @@
     <Content Include="Accounting\js\MCRForm.js" />
     <Content Include="Accounting\js\PennyMacCDRForm.js" />
     <Content Include="Accounting\js\ReserveRequirement.js" />
+    <Content Include="Accounting\js\TurningPoint.js" />
     <Content Include="Accounting\js\WarehouseAdvanceRecap.js" />
     <Content Include="Accounting\MortgageCallReportForm.aspx" />
     <Content Include="Accounting\PennyMacCDRForm.aspx" />
     <Content Include="Accounting\ReserveRequirementForm.aspx" />
+    <Content Include="Accounting\styles\TurningPoint.css" />
     <Content Include="Accounting\TestReact.aspx" />
     <Content Include="Accounting\TurningPoint.aspx" />
     <Content Include="Accounting\WarehouseAdvanceRecap.aspx" />
@@ -433,6 +437,13 @@
     </Compile>
     <Compile Include="Accounting\AjaxTrustAccount.aspx.designer.cs">
       <DependentUpon>AjaxTrustAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\AjaxTurningPoint.aspx.cs">
+      <DependentUpon>AjaxTurningPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\AjaxTurningPoint.aspx.designer.cs">
+      <DependentUpon>AjaxTurningPoint.aspx</DependentUpon>
     </Compile>
     <Compile Include="Accounting\AjaxWarehouseAdvanceRecap.aspx.cs">
       <DependentUpon>AjaxWarehouseAdvanceRecap.aspx</DependentUpon>
@@ -1792,6 +1803,7 @@
     <Content Include="handlers\create_csv.ashx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Accounting\es6\.babelrc" />
     <None Include="Compliance\Report\AuditScoreCard.pdf" />
     <Content Include="handlers\greentree.ashx" />
     <Content Include="ComplianceByte\web.config" />

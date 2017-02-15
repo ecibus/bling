@@ -7,12 +7,14 @@ using System.Data.SqlClient;
 using System.Data;
 using NHibernate;
 
-namespace Bling.Repository.RestApi
+namespace Bling.Repository.Accounting
 {
     public interface ITurningPointDao : IDao<ByteUser, int>
     {
         List<ByteUser> SearchUser(string crit);
         List<ByteUser> GetTurningPointUser();
+        void AddUser(string username);
+        void RemoveUser(string username);
     }
 
     public class TurningPointDao : AbstractDao<ByteUser, int>, ITurningPointDao
@@ -38,5 +40,20 @@ namespace Bling.Repository.RestApi
                 .List<ByteUser>()
                 .ToList();
         }
+
+        public void AddUser(string username)
+        {
+            m_session.CreateSQLQuery("exec dbo.xGEM_TurningPointAddUser :username")
+                .SetString("username", username)
+                .ExecuteUpdate();
+        }
+
+        public void RemoveUser(string username)
+        {
+            m_session.CreateSQLQuery("exec dbo.xGEM_TurningPointRemoveUser :username")
+                .SetString("username", username)
+                .ExecuteUpdate();
+        }
+
     }
 }
